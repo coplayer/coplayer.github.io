@@ -1,0 +1,637 @@
+<!DOCTYPE html>
+<html class="has-navbar-fixed-top">
+<head>
+    <meta charset="utf-8">
+<title>Tag: Spring - Ethan DevLog</title>
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+<link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/outdated-browser/1.1.5/outdatedbrowser.min.css">
+
+
+
+
+
+
+
+
+
+
+
+
+<link rel="icon" href="/images/favicon-16x16.png">
+
+
+<link rel="stylesheet" href="//fonts.googleapis.com/css?family=Ovo|Source+Code+Pro">
+<link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/bulma/0.6.2/css/bulma.min.css">
+
+
+<link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/lightgallery/1.6.8/css/lightgallery.min.css">
+<link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/justifiedGallery/3.6.5/css/justifiedGallery.min.css">
+
+
+<link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/styles/atom-one-light.min.css">
+
+
+<link rel="stylesheet" href="/css/style.css">
+
+
+<script defer src="//use.fontawesome.com/releases/v5.0.8/js/all.js"></script>
+
+
+    
+    
+    
+    
+    
+    
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-119771582-1"></script>
+<script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+
+    gtag('config', 'UA-119771582-1');
+</script>
+
+
+    
+
+
+<meta name="generator" content="Hexo 4.2.0"></head>
+<body>
+    
+<nav class="navbar is-transparent is-fixed-top navbar-main" role="navigation" aria-label="main navigation">
+    <div class="container">
+        <div class="navbar-brand">
+            <a class="navbar-item navbar-logo" href="/">
+                
+                    
+                    Ethan DevLog
+                    
+                
+            </a>
+            <div class="navbar-burger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+        
+        <div class="navbar-menu navbar-start">
+            
+            <a class="navbar-item "
+               href="/archives">Archives</a>
+            
+        </div>
+        
+        <div class="navbar-menu navbar-end">
+            
+            <a class="navbar-item search" title="Search" href="javascript:;">
+                <i class="fas fa-search"></i>
+            </a>
+            
+            
+            
+            <a class="navbar-item" title="GitHub" href="https://github.com/coplayer" target="_blank" rel="noopener">
+                
+                <i class="fab fa-github"></i>
+                
+            </a>
+               
+            
+        </div>
+    </div>
+</nav>
+
+    <section class="section section-heading">
+    <div class="container">
+        <div class="content">
+            <h5>#Spring</h5>
+        </div>
+    </div>
+</section>
+<section class="section">
+    <div class="container">
+    
+        <article class="article content gallery" itemscope itemprop="blogPost">
+    <h1 class="article-title is-size-3 is-size-4-mobile" itemprop="name">
+        
+            <a href="/2020/06/16/development/2019-06-13-gradleBuildErorr/" itemprop="url">Gradle Build 오류(javax.net.ssl.SSLException)</a>
+        
+    </h1>
+    <div class="article-meta columns is-variable is-1 is-multiline is-mobile is-size-7-mobile">
+        <span class="column is-narrow">
+            <time datetime="2020-06-16T14:11:09.621Z" itemprop="datePublished">Jun 16 2020</time>
+        </span>
+        
+        <span class="column is-narrow article-category">
+            <i class="far fa-folder"></i>
+            <a class="article-category-link" href="/categories/Development/">Development</a>
+        </span>
+        
+        
+    </div>
+    <div class="article-entry is-size-6-mobile" itemprop="articleBody">
+    
+        <html><head></head><body><p>Sprigboot &#xC5D0;&#xC11C; Gradle &#xBE4C;&#xB4DC; &#xC218;&#xD589; </p>
+<p></p><figure class="highlight plain hljs"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">javax.net.ssl.SSLException:closing inbound before receiving peer&apos;s close_notify</span><br></pre></td></tr></tbody></table></figure><p></p>
+<p>&#xB370;&#xC774;&#xD130;&#xBCA0;&#xC774;&#xC2A4;&#xC5D0; SSL&#xC124;&#xC815;&#xC774; &#xB418;&#xC5B4; &#xC788;&#xC9C0; &#xC54A;&#xC544; Springboot gradle &#xBE4C;&#xB4DC;&#xC2DC; &#xBC1C;&#xC0DD;&#xD558;&#xB294; &#xC624;&#xB958;&#xB77C;&#xACE0; &#xD569;&#xB2C8;&#xB2E4;.</p>
+<p>jdbc url &#xC5D0; &#xB2E4;&#xC74C;&#xACE0; &#xAC19;&#xC774; &#xC635;&#xC158;&#xC744; &#xCD94;&#xAC00;&#xD574; &#xC8FC;&#xBA74; &#xBE4C;&#xB4DC;&#xAC00; &#xC815;&#xC0C1;&#xC801;&#xC73C;&#xB85C; &#xC218;&#xD589;&#xB418;&#xB294; &#xAC83;&#xC744; &#xD655;&#xC778; &#xD558;&#xC600;&#xC2B5;&#xB2C8;&#xB2E4;.</p>
+<p></p><figure class="highlight plain hljs"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">ex) jdbc:myslq://localhost:3306?&amp;useSSL=false</span><br></pre></td></tr></tbody></table></figure><p></p>
+</body></html>
+    
+    </div>
+    
+    
+</article>
+
+
+
+
+    
+        <article class="article content gallery" itemscope itemprop="blogPost">
+    <h1 class="article-title is-size-3 is-size-4-mobile" itemprop="name">
+        
+            <a href="/2020/06/16/development/2019-07-11-springbootRestDocsGradle/" itemprop="url">SpringBoot + Rest Docs + Gradle</a>
+        
+    </h1>
+    <div class="article-meta columns is-variable is-1 is-multiline is-mobile is-size-7-mobile">
+        <span class="column is-narrow">
+            <time datetime="2020-06-16T14:11:09.621Z" itemprop="datePublished">Jun 16 2020</time>
+        </span>
+        
+        <span class="column is-narrow article-category">
+            <i class="far fa-folder"></i>
+            <a class="article-category-link" href="/categories/Development/">Development</a>
+        </span>
+        
+        
+    </div>
+    <div class="article-entry is-size-6-mobile" itemprop="articleBody">
+    
+        <html><head></head><body><p>API&#xB97C; &#xC9C0;&#xC18D;&#xC801;&#xC73C;&#xB85C; &#xC218;&#xC815;&#xD558;&#xBA74;&#xC11C; &#xBB38;&#xC11C;&#xB97C; &#xC218;&#xC815;&#xD558;&#xB294; &#xB370;&#xB294; &#xD55C;&#xACC4;&#xC810; &#xC788;&#xC2B5;&#xB2C8;&#xB2E4;.</p>
+<p>Spring &#xAC1C;&#xBC1C;&#xD558;&#xBA74;&#xC11C; UI&#xC640; &#xD568;&#xAED8; &#xAC04;&#xB7B5;&#xD558;&#xAC8C; &#xC81C;&#xACF5;&#xB418;&#xB294; Swagger &#xC640; REST docs&#xAC00; &#xB300;&#xD45C;&#xC801; &#xC785;&#xB2C8;&#xB2E4;.</p>
+<p>Spring &#xD504;&#xB808;&#xC784;&#xC6CD;&#xC73C;&#xB85C; &#xAC1C;&#xBC1C;&#xD558;&#xBA74;&#xC11C; Swagger&#xB97C; &#xC0AC;&#xC6A9;&#xD574; &#xBCF4;&#xC558;&#xACE0; &#xC774;&#xBC88; &#xAC1C;&#xBC1C;&#xC5D0;&#xB294; REST docs&#xB97C; &#xC801;&#xC6A9;&#xD574; &#xBCF4;&#xAE30;&#xB85C; &#xD588;&#xB2E4;.</p>
+<p>&#xAD6C;&#xAE00;&#xB9C1;&#xC744; &#xD1B5;&#xD574; &#xC5EC;&#xB7EC; &#xBE14;&#xB85C;&#xADF8;&#xB97C; &#xCC3E;&#xC544;&#xC11C; &#xC138;&#xD305;&#xC744; &#xC9C4;&#xD589; &#xD574;&#xBCF4;&#xC558;&#xC9C0;&#xB9CC; &#xC548;&#xB418;&#xB294; &#xBD80;&#xBD84;&#xC740; <a href="https://docs.spring.io/spring-restdocs/docs/current/reference/html5/" target="_blank" rel="noopener">Spring REST Docs</a> &#xC0AC;&#xC774;&#xD2B8;&#xAC00; &#xAC00;&#xC7A5; &#xBA85;&#xD655;&#xD558;&#xAC8C; &#xAC00;&#xC774;&#xB4DC;&#xB97C; &#xD558;&#xACE0; &#xC788;&#xC73C;&#xB2C8; &#xCC38;&#xACE0; &#xD558;&#xC168;&#xC73C;&#xBA74; &#xD569;&#xB2C8;&#xB2E4;.</p>
+<p>Swagger&#xC640;&#xC758; &#xCC28;&#xC774;&#xB294; &#xD14C;&#xC2A4;&#xD2B8; &#xCF54;&#xB4DC;&#xB97C; &#xC791;&#xC131;&#xD574;&#xC11C; &#xBB38;&#xC11C;&#xB97C; &#xC0DD;&#xC131;&#xD574;&#xC57C; &#xD55C;&#xB2E4;&#xB294; &#xCC28;&#xC774;&#xAC00; &#xC788;&#xC2B5;&#xB2C8;&#xB2E4;.</p>
+<p>&#xD14C;&#xC2A4;&#xD2B8; &#xCF54;&#xB4DC;&#xB85C; &#xAC1C;&#xBC1C;&#xC758; &#xC815;&#xD569;&#xC131;&#xC744; &#xD5A5;&#xC0C1;&#xD558;&#xB294; &#xB370; &#xD070; &#xB3C4;&#xC6C0;&#xC774; &#xB420;&#xAC83;&#xC73C;&#xB85C; &#xC0DD;&#xAC01; &#xB429;&#xB2C8;&#xB2E4;.</p>
+<p>&#xD604;&#xC7AC;&#xC758; &#xAC1C;&#xBC1C;&#xD658;&#xACBD;&#xC740;</p>
+<ul>
+<li>Springboot </li>
+<li>Mybatis  </li>
+<li>Gradle</li>
+</ul>
+<p>&#xC744; &#xD65C;&#xC6A9;&#xD558;&#xACE0; &#xC788;&#xC2B5;&#xB2C8;&#xB2E4;.</p>
+<p>&#xAC04;&#xB7B5;&#xD558;&#xAC8C; &#xC138;&#xD305;&#xD574;&#xC57C; &#xD558;&#xB294; &#xBD80;&#xBD84;&#xC740; &#xB2E4;&#xC74C;&#xACFC; &#xAC19;&#xC2B5;&#xB2C8;&#xB2E4;.</p>
+<ol>
+<li><p>build.gradle &#xCD94;&#xAC00;</p>
+</li>
+<li><p>test code &#xC791;&#xC131;</p>
+</li>
+<li><p>adoc &#xC0DD;&#xC131;</p>
+</li>
+<li><p>html &#xC0DD;&#xC131;</p>
+</li>
+</ol>
+</body></html>
+    
+    </div>
+    
+    
+</article>
+
+
+
+
+    
+        <article class="article content gallery" itemscope itemprop="blogPost">
+    <h1 class="article-title is-size-3 is-size-4-mobile" itemprop="name">
+        
+            <a href="/2020/06/16/development/2018-11-02-swagger/" itemprop="url">Spring 4 MVC 에서 Swagger 설정하기</a>
+        
+    </h1>
+    <div class="article-meta columns is-variable is-1 is-multiline is-mobile is-size-7-mobile">
+        <span class="column is-narrow">
+            <time datetime="2020-06-16T14:11:09.620Z" itemprop="datePublished">Jun 16 2020</time>
+        </span>
+        
+        <span class="column is-narrow article-category">
+            <i class="far fa-folder"></i>
+            <a class="article-category-link" href="/categories/Development/">Development</a>
+        </span>
+        
+        
+    </div>
+    <div class="article-entry is-size-6-mobile" itemprop="articleBody">
+    
+        <html><head></head><body><p>REST API &#xC11C;&#xBC84;&#xB97C; &#xAD6C;&#xC131;&#xD558;&#xAC8C; &#xB418;&#xBA74;<br>&#xCD08;&#xAE30; &#xC124;&#xACC4;&#xC640; &#xBCC0;&#xACBD;&#xB418;&#xB294; &#xACBD;&#xC6B0;&#xB294; &#xBB34;&#xC218;&#xD788; &#xB9CE;&#xC2B5;&#xB2C8;&#xB2E4;.</p>
+<p>&#xADF8;&#xB54C; &#xB9C8;&#xB2E4; &#xBCF8;&#xB798;&#xB294; &#xC124;&#xACC4; &#xBB38;&#xC11C;&#xB97C; &#xBCC0;&#xACBD;&#xD558;&#xACE0; &#xBC30;&#xD3EC;&#xD558;&#xB294; &#xAC83;&#xC744;<br>&#xC218;&#xC2DC;&#xB85C; &#xC774;&#xB8E8;&#xC5B4;&#xC838;&#xC57C; &#xD558;&#xC9C0;&#xB9CC; &#xC2E4;&#xBB34;&#xC5D0;&#xC11C; &#xD604;&#xC2E4;&#xC0C1; &#xC778;&#xB825; &#xAD6C;&#xC131;&#xC774;&#xB098;<br>&#xB0B4;&#xC678;&#xBD80;&#xC801;&#xC778; &#xC694;&#xC778;&#xC73C;&#xB85C; &#xC778;&#xD574;&#xC11C; &#xC5B4;&#xB824;&#xC6B4; &#xACBD;&#xC6B0;&#xAC00; &#xC788;&#xC2B5;&#xB2C8;&#xB2E4;.</p>
+<p>&#xB098;&#xC911;&#xC5D0; &#xACB0;&#xAD6D; &#xBB38;&#xC11C; &#xC870;&#xCC28; &#xB9DE;&#xC9C0; &#xC54A;&#xC544;&#xC11C; &#xC624;&#xD788;&#xB824; &#xD63C;&#xB780;&#xC744; &#xAC00;&#xC911; &#xC2DC;&#xD0A4;&#xB294; &#xACBD;&#xC6B0;&#xB3C4; &#xC874;&#xC7AC;&#xD569;&#xB2C8;&#xB2E4;.<br>(&#xBB38;&#xC11C;&#xB294; &#xBD80;&#xB514; &#xCD5C;&#xC2E0;&#xD654;&#xD569;&#xC2DC;&#xB2E4;.)</p>
+<p>&#xADF8;&#xB9AC;&#xACE0; &#xD14C;&#xC2A4;&#xD2B8;&#xC5D0; &#xC788;&#xC5B4;&#xB3C4; &#xC77C;&#xC77C;&#xD788; API&#xC758; &#xD30C;&#xB77C;&#xBBF8;&#xD130;&#xB098; &#xB9F5;&#xD551; &#xAC12;&#xC744;<br>&#xD655;&#xC778;&#xD574;&#xC11C; POSTMAN &#xD65C;&#xC6A9;&#xD558;&#xB294; &#xB4F1; &#xC870;&#xAE08;&#xC740; &#xBC88;&#xAC70;&#xB85C;&#xC6B4; &#xACBD;&#xC6B0;&#xAC00; &#xBC1C;&#xC0DD;&#xD569;&#xB2C8;&#xB2E4;.</p>
+<p>&#xC774;&#xC640; &#xAC19;&#xC740; &#xACBD;&#xC6B0; Swagger&#xB97C; &#xC0AC;&#xC6A9;&#xD574; &#xBCF4;&#xC2DC;&#xAE38; &#xBC14;&#xB78D;&#xB2C8;&#xB2E4;.</p>
+<p>&#xD3EC;&#xC2A4;&#xD305;&#xC740; Spirng 4 MVC &#xC5D0; Maven &#xAE30;&#xC900;&#xC785;&#xB2C8;&#xB2E4;.<br>(SpringBoot jpa &#xD3EC;&#xC2A4;&#xD305;&#xC774; &#xB9CE;&#xC740; &#xAD00;&#xACC4;&#xB85C;&#x2026;)</p>
+<h3 id="1-Controller-&#xC5D0;-annotation-&#xC774;-&#xC788;&#xC5B4;&#xC57C;-&#xD569;&#xB2C8;&#xB2E4;"><a href="#1-Controller-&#xC5D0;-annotation-&#xC774;-&#xC788;&#xC5B4;&#xC57C;-&#xD569;&#xB2C8;&#xB2E4;" class="headerlink" title="1. Controller &#xC5D0; annotation &#xC774; &#xC788;&#xC5B4;&#xC57C; &#xD569;&#xB2C8;&#xB2E4;."></a>1. Controller &#xC5D0; annotation &#xC774; &#xC788;&#xC5B4;&#xC57C; &#xD569;&#xB2C8;&#xB2E4;.</h3><p></p><figure class="highlight plain hljs"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">@RequestMapping(value=&quot;&quot;)</span><br></pre></td></tr></tbody></table></figure><p></p>
+<h3 id="2-pom-xml-&#xC5D0;-dependency-&#xC124;&#xC815;-&#xCD94;&#xAC00;&#xD569;&#xB2C8;&#xB2E4;"><a href="#2-pom-xml-&#xC5D0;-dependency-&#xC124;&#xC815;-&#xCD94;&#xAC00;&#xD569;&#xB2C8;&#xB2E4;" class="headerlink" title="2. pom.xml &#xC5D0; dependency &#xC124;&#xC815; &#xCD94;&#xAC00;&#xD569;&#xB2C8;&#xB2E4;."></a>2. pom.xml &#xC5D0; dependency &#xC124;&#xC815; &#xCD94;&#xAC00;&#xD569;&#xB2C8;&#xB2E4;.</h3><p></p><figure class="highlight plain hljs"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br></pre></td><td class="code"><pre><span class="line">&lt;dependency&gt;</span><br><span class="line">    &lt;groupId&gt;io.springfox&lt;/groupId&gt;</span><br><span class="line">    &lt;artifactId&gt;springfox-swagger2&lt;/artifactId&gt;</span><br><span class="line">    &lt;version&gt;2.6.1&lt;/version&gt;</span><br><span class="line">&lt;/dependency&gt;</span><br><span class="line"></span><br><span class="line">&lt;dependency&gt;</span><br><span class="line">    &lt;groupId&gt;io.springfox&lt;/groupId&gt;</span><br><span class="line">    &lt;artifactId&gt;springfox-swagger-ui&lt;/artifactId&gt;</span><br><span class="line">    &lt;version&gt;2.6.1&lt;/version&gt;</span><br><span class="line">&lt;/dependency&gt;</span><br></pre></td></tr></tbody></table></figure><p></p>
+<h3 id="3-mvc-config-xml-&#xC124;&#xC815;-&#xCD94;&#xAC00;&#xD569;&#xB2C8;&#xB2E4;"><a href="#3-mvc-config-xml-&#xC124;&#xC815;-&#xCD94;&#xAC00;&#xD569;&#xB2C8;&#xB2E4;" class="headerlink" title="3. mvc-config.xml &#xC124;&#xC815; &#xCD94;&#xAC00;&#xD569;&#xB2C8;&#xB2E4;."></a>3. mvc-config.xml &#xC124;&#xC815; &#xCD94;&#xAC00;&#xD569;&#xB2C8;&#xB2E4;.</h3><p></p><figure class="highlight plain hljs"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">&lt;bean id=&quot;swagger2Config&quot; class=&quot;springfox.documentation.swagger2.configuration.Swagger2DocumentationConfiguration&quot;&gt;&lt;/bean&gt;</span><br><span class="line"></span><br><span class="line">&lt;mvc:default-servlet-handler /&gt;</span><br><span class="line">&lt;mvc:resources location=&quot;classpath:/META-INF/resources/&quot; mapping=&quot;swagger-ui.html&quot;&gt;&lt;/mvc:resources&gt;</span><br><span class="line">&lt;mvc:resources location=&quot;classpath:/META-INF/resources/webjars/&quot; mapping=&quot;/webjars/**&quot;&gt;&lt;/mvc:resources&gt;</span><br></pre></td></tr></tbody></table></figure><p></p>
+<h3 id="4-web-xml-&#xC5D0;-sevlert-&#xC124;&#xC815;&#xD569;&#xB2C8;&#xB2E4;"><a href="#4-web-xml-&#xC5D0;-sevlert-&#xC124;&#xC815;&#xD569;&#xB2C8;&#xB2E4;" class="headerlink" title="4. web.xml &#xC5D0; sevlert &#xC124;&#xC815;&#xD569;&#xB2C8;&#xB2E4;."></a>4. web.xml &#xC5D0; sevlert &#xC124;&#xC815;&#xD569;&#xB2C8;&#xB2E4;.</h3><p></p><figure class="highlight plain hljs"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">&lt;servlet-mapping&gt;</span><br><span class="line">  &lt;servlet-name&gt;dispatcher&lt;/servlet-name&gt;</span><br><span class="line">  &lt;url-pattern&gt;/&lt;/url-pattern&gt;</span><br><span class="line">&lt;/servlet-mapping&gt;</span><br></pre></td></tr></tbody></table></figure><p></p>
+<p>&#xB8E8;&#xD2B8;&#xAC00; &#xC5F4;&#xB824;&#xC788;&#xC5B4;&#xC57C; controller&#xC5D0; &#xC811;&#xADFC;&#xC774; &#xAC00;&#xB2A5;&#xD558;&#xB2E4;.</p>
+<h3 id="5-swagger-&#xC5D0;-&#xC811;&#xC18D;&#xD558;&#xC5EC;-&#xD655;&#xC778;&#xD569;&#xB2C8;&#xB2E4;"><a href="#5-swagger-&#xC5D0;-&#xC811;&#xC18D;&#xD558;&#xC5EC;-&#xD655;&#xC778;&#xD569;&#xB2C8;&#xB2E4;" class="headerlink" title="5. swagger &#xC5D0; &#xC811;&#xC18D;&#xD558;&#xC5EC; &#xD655;&#xC778;&#xD569;&#xB2C8;&#xB2E4;."></a>5. swagger &#xC5D0; &#xC811;&#xC18D;&#xD558;&#xC5EC; &#xD655;&#xC778;&#xD569;&#xB2C8;&#xB2E4;.</h3><p></p><figure class="highlight plain hljs"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">swagger UI - http://localhost:8080/swagger-ui.html</span><br><span class="line">swagger Json doc - http://localhost:8080/v2/api-docs</span><br></pre></td></tr></tbody></table></figure><p></p>
+<p>&#xC774;&#xBC88; &#xD3EC;&#xC2A4;&#xD305;&#xC5D0;&#xC11C;&#xB294; &#xC124;&#xC815; &#xBC29;&#xBC95;&#xC5D0; &#xB300;&#xD574;&#xC11C;&#xB9CC; &#xB0A8;&#xAE41;&#xB2C8;&#xB2E4;.</p>
+<p>spring 3&#xB098; spring boot&#xC5D0; &#xB300;&#xD55C; &#xD3EC;&#xC2A4;&#xD305;&#xC774; &#xB300;&#xBD80;&#xBD84;&#xC774;&#xB77C;<br>&#xB3C4;&#xC6C0;&#xC774; &#xB418;&#xC168;&#xC73C;&#xBA74; &#xD569;&#xB2C8;&#xB2E4;.</p>
+</body></html>
+    
+    </div>
+    
+    
+</article>
+
+
+
+
+    
+        <article class="article content gallery" itemscope itemprop="blogPost">
+    <h1 class="article-title is-size-3 is-size-4-mobile" itemprop="name">
+        
+            <a href="/2020/06/16/development/2018-08-16-Logback/" itemprop="url">Spring MVC 에서 LOGBack 설정 그리고 log4jdbc 설정</a>
+        
+    </h1>
+    <div class="article-meta columns is-variable is-1 is-multiline is-mobile is-size-7-mobile">
+        <span class="column is-narrow">
+            <time datetime="2020-06-16T14:11:09.619Z" itemprop="datePublished">Jun 16 2020</time>
+        </span>
+        
+        <span class="column is-narrow article-category">
+            <i class="far fa-folder"></i>
+            <a class="article-category-link" href="/categories/Development/">Development</a>
+        </span>
+        
+        
+    </div>
+    <div class="article-entry is-size-6-mobile" itemprop="articleBody">
+    
+        <html><head></head><body><p>&#xB2E8;&#xC21C;&#xD788; logback&#xC5D0;&#xC11C; SQL&#xC5D0; &#xD30C;&#xB77C;&#xBBF8;&#xD130;&#xB97C; &#xC138;&#xD305;&#xD558;&#xACE0; SQL&#xB97C; &#xC815;&#xB82C;&#xD574;&#xC11C; log&#xB97C; &#xD6A8;&#xC728;&#xC801;&#xC73C;&#xB85C; &#xAD00;&#xB9AC; &#xD560;&#xC218; &#xC5C6;&#xC744;&#xAE4C;&#xB85C; &#xC2DC;&#xC791; &#xD558;&#xC600;&#xB294; &#xB370; &#xACB0;&#xAD6D;&#xC5D0;&#xB294; &#xB85C;&#xADF8;&#xBC31; &#xBB38;&#xC11C; &#xAE4C;&#xC9C0; &#xD655;&#xC778;&#xD558;&#xAC8C; &#xB418;&#xC5C8;&#xC2B5;&#xB2C8;&#xB2E4;.  </p>
+<p><a href="https://logback.qos.ch/reasonsToSwitch.html" target="_blank" rel="noopener">Reasons to prefer logback over log4j</a> &#xB85C;&#xADF8;&#xBC31;&#xC758; &#xC7A5;&#xC810;&#xC740; &#xD574;&#xB2F9; &#xC0AC;&#xC774;&#xD2B8;&#xC5D0;&#xC11C; &#xD655;&#xC778;&#xD560; &#xC218; &#xC788;&#xC2B5;&#xB2C8;&#xB2E4;.<br>&#xC124;&#xC815;&#xC740; Maven &#xC5D0;&#xC11C; &#xC9C4;&#xD589;&#xD558;&#xC5EC; Maven &#xBC14;&#xD0D5;&#xC73C;&#xB85C; &#xD3EC;&#xC2A4;&#xD305;&#xD569;&#xB2C8;&#xB2E4;.</p>
+<p>pom.xml &#xC5D0; dependency &#xCD94;&#xAC00;</p>
+<p></p><figure class="highlight xml hljs"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br></pre></td><td class="code"><pre><span class="line"></span><br><span class="line"><span class="hljs-tag">&lt;<span class="hljs-name">dependency</span>&gt;</span></span><br><span class="line">    <span class="hljs-tag">&lt;<span class="hljs-name">groupId</span>&gt;</span>org.slf4j<span class="hljs-tag">&lt;/<span class="hljs-name">groupId</span>&gt;</span></span><br><span class="line">    <span class="hljs-tag">&lt;<span class="hljs-name">artifactId</span>&gt;</span>jcl-over-slf4j<span class="hljs-tag">&lt;/<span class="hljs-name">artifactId</span>&gt;</span></span><br><span class="line">    <span class="hljs-tag">&lt;<span class="hljs-name">version</span>&gt;</span>1.7.7<span class="hljs-tag">&lt;/<span class="hljs-name">version</span>&gt;</span></span><br><span class="line">    <span class="hljs-tag">&lt;<span class="hljs-name">scope</span>&gt;</span>runtime<span class="hljs-tag">&lt;/<span class="hljs-name">scope</span>&gt;</span></span><br><span class="line"><span class="hljs-tag">&lt;/<span class="hljs-name">dependency</span>&gt;</span></span><br><span class="line"></span><br><span class="line"><span class="hljs-tag">&lt;<span class="hljs-name">dependency</span>&gt;</span></span><br><span class="line">    <span class="hljs-tag">&lt;<span class="hljs-name">groupId</span>&gt;</span>ch.qos.logback<span class="hljs-tag">&lt;/<span class="hljs-name">groupId</span>&gt;</span></span><br><span class="line">    <span class="hljs-tag">&lt;<span class="hljs-name">artifactId</span>&gt;</span>logback-classic<span class="hljs-tag">&lt;/<span class="hljs-name">artifactId</span>&gt;</span></span><br><span class="line">    <span class="hljs-tag">&lt;<span class="hljs-name">version</span>&gt;</span>1.1.3<span class="hljs-tag">&lt;/<span class="hljs-name">version</span>&gt;</span></span><br><span class="line"><span class="hljs-tag">&lt;/<span class="hljs-name">dependency</span>&gt;</span></span><br></pre></td></tr></tbody></table></figure><p></p>
+<p>resouce &#xD3F4;&#xB354;&#xC5D0; logback.xml &#xC124;&#xC815;<br></p><figure class="highlight xml hljs"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br></pre></td><td class="code"><pre><span class="line"></span><br><span class="line"><span class="hljs-comment">&lt;!-- Console Log Setting --&gt;</span></span><br><span class="line"><span class="hljs-tag">&lt;<span class="hljs-name">appender</span> <span class="hljs-attr">name</span>=<span class="hljs-string">&quot;STDOUT&quot;</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;ch.qos.logback.core.ConsoleAppender&quot;</span>&gt;</span></span><br><span class="line">    <span class="hljs-tag">&lt;<span class="hljs-name">withJansi</span>&gt;</span>true<span class="hljs-tag">&lt;/<span class="hljs-name">withJansi</span>&gt;</span></span><br><span class="line">    <span class="hljs-comment">&lt;!-- &#xB85C;&#xADF8;&#xC5D0;&#xC11C; &#xC81C;&#xC678;&#xB97C; &#xC704;&#xD55C; &#xD544;&#xD130;  message &#xB97C; &#xD65C;&#xC6A9; --&gt;</span></span><br><span class="line">    <span class="hljs-tag">&lt;<span class="hljs-name">filter</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;ch.qos.logback.core.filter.EvaluatorFilter&quot;</span>&gt;</span></span><br><span class="line">        <span class="hljs-tag">&lt;<span class="hljs-name">evaluator</span>&gt;</span></span><br><span class="line">            <span class="hljs-tag">&lt;<span class="hljs-name">expression</span>&gt;</span>return message.contains(&quot;&#xB85C;&#xADF8;&#xC5D0;&#xC11C; &#xC81C;&#xC678;&#xD560; &#xD0A4;&#xC6CC;&#xB4DC;&#xB97C; &#xC785;&#xB825;&quot;);<span class="hljs-tag">&lt;/<span class="hljs-name">expression</span>&gt;</span></span><br><span class="line">        <span class="hljs-tag">&lt;/<span class="hljs-name">evaluator</span>&gt;</span></span><br><span class="line">        <span class="hljs-tag">&lt;<span class="hljs-name">OnMismatch</span>&gt;</span>NEUTRAL<span class="hljs-tag">&lt;/<span class="hljs-name">OnMismatch</span>&gt;</span></span><br><span class="line">        <span class="hljs-tag">&lt;<span class="hljs-name">OnMatch</span>&gt;</span>DENY<span class="hljs-tag">&lt;/<span class="hljs-name">OnMatch</span>&gt;</span></span><br><span class="line">    <span class="hljs-tag">&lt;/<span class="hljs-name">filter</span>&gt;</span></span><br><span class="line">    <span class="hljs-comment">&lt;!-- &#xD328;&#xD134;&#xC740; &#xC790;&#xC720;&#xB86D;&#xAC8C; &#xC0AC;&#xC6A9; &#xC2E4;&#xBB34;&#xC5D0; &#xC801;&#xC6A9;&#xD55C; &#xAC83;&#xC744; &#xACF5;&#xC720;&#xD568; --&gt;</span></span><br><span class="line">    <span class="hljs-tag">&lt;<span class="hljs-name">encoder</span>&gt;</span></span><br><span class="line">        <span class="hljs-tag">&lt;<span class="hljs-name">pattern</span>&gt;</span>[%d{yyyy/MM/dd HH:mm:ss}] %highlight([%-5level])| %cyan(%-25.25logger{0}) | %highlight(%msg%n)<span class="hljs-tag">&lt;/<span class="hljs-name">pattern</span>&gt;</span></span><br><span class="line">    <span class="hljs-tag">&lt;/<span class="hljs-name">encoder</span>&gt;</span></span><br><span class="line"><span class="hljs-tag">&lt;/<span class="hljs-name">appender</span>&gt;</span></span><br><span class="line"></span><br><span class="line"><span class="hljs-comment">&lt;!--&#xB85C;&#xADF8; &#xB808;&#xBCA8;&#xC744; &#xD655;&#xC778;&#xD558;&#xC5EC; &#xCD9C;&#xB825;--&gt;</span></span><br><span class="line"><span class="hljs-tag">&lt;<span class="hljs-name">root</span> <span class="hljs-attr">level</span>=<span class="hljs-string">&quot;INFO&quot;</span>&gt;</span></span><br><span class="line">    <span class="hljs-tag">&lt;<span class="hljs-name">appender-ref</span> <span class="hljs-attr">ref</span>=<span class="hljs-string">&quot;STDOUT&quot;</span> /&gt;</span></span><br><span class="line"><span class="hljs-tag">&lt;/<span class="hljs-name">root</span>&gt;</span></span><br></pre></td></tr></tbody></table></figure><p></p>
+<p>&#xD544;&#xD130;&#xB97C; &#xD3EC;&#xD568;&#xD55C; &#xAC04;&#xB2E8;&#xD55C; &#xC124;&#xC815;&#xC785;&#xB2C8;&#xB2E4;. &#xD65C;&#xC6A9; &#xBC29;&#xBC95;&#xC740; &#xB2E4;&#xC591;&#xD569;&#xB2C8;&#xB2E4;. &#xB2E4;&#xB9CC; &#xC774;&#xB807;&#xAC8C; &#xC124;&#xC815;&#xD574;&#xC11C; &#xC0AC;&#xC6A9;&#xD560;&#xACBD;&#xC6B0; sql&#xC774; select * from where a = ? and b = ? &#xC640; &#xAC19;&#xC774; &#xBB3C;&#xC74C;&#xD45C;&#xB85C; &#xD30C;&#xB77C;&#xBBF8;&#xD130;&#xB294; &#xB530;&#xB85C; &#xD45C;&#xD604;&#xB429;&#xB2C8;&#xB2E4;. &#xD30C;&#xB9AC;&#xBBF8;&#xD130;&#xB3C4; &#xBAA8;&#xB450; &#xCE58;&#xD658;&#xD574;&#xC11C; &#xBCF4;&#xC5EC; &#xC904;&#xC218; &#xC788;&#xB294; &#xC124;&#xC815;&#xC744; &#xCD94;&#xAC00; &#xC9C4;&#xD589; &#xD588;&#xC2B5;&#xB2C8;&#xB2E4;.</p>
+<p>pom.xml&#xC5D0; &#xC124;&#xC815;&#xC744; &#xCD94;&#xAC00;&#xD569;&#xB2C8;&#xB2E4;.</p>
+<p></p><figure class="highlight xml hljs"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br></pre></td><td class="code"><pre><span class="line"></span><br><span class="line"><span class="hljs-comment">&lt;!-- https://mvnrepository.com/artifact/com.googlecode.log4jdbc/log4jdbc --&gt;</span></span><br><span class="line"><span class="hljs-tag">&lt;<span class="hljs-name">dependency</span>&gt;</span></span><br><span class="line">    <span class="hljs-tag">&lt;<span class="hljs-name">groupId</span>&gt;</span>com.googlecode.log4jdbc<span class="hljs-tag">&lt;/<span class="hljs-name">groupId</span>&gt;</span></span><br><span class="line">    <span class="hljs-tag">&lt;<span class="hljs-name">artifactId</span>&gt;</span>log4jdbc<span class="hljs-tag">&lt;/<span class="hljs-name">artifactId</span>&gt;</span></span><br><span class="line">    <span class="hljs-tag">&lt;<span class="hljs-name">version</span>&gt;</span>1.2<span class="hljs-tag">&lt;/<span class="hljs-name">version</span>&gt;</span></span><br><span class="line"><span class="hljs-tag">&lt;/<span class="hljs-name">dependency</span>&gt;</span></span><br><span class="line"></span><br><span class="line">```  </span><br><span class="line"></span><br><span class="line">spring 4 &#xB97C; &#xAE30;&#xC900;&#xC73C;&#xB85C; applicaton-config.xml &#xC5D0; jdbc &#xC124;&#xC815;&#xC744; &#xBCC0;&#xACBD;&#xD569;&#xB2C8;&#xB2E4;.</span><br><span class="line"></span><br><span class="line">```xml</span><br><span class="line"></span><br><span class="line"><span class="hljs-tag">&lt;<span class="hljs-name">bean</span> <span class="hljs-attr">id</span>=<span class="hljs-string">&quot;dataSource&quot;</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;org.apache.commons.dbcp.BasicDataSource&quot;</span> <span class="hljs-attr">destroy-method</span>=<span class="hljs-string">&quot;close&quot;</span>&gt;</span></span><br><span class="line">    <span class="hljs-tag">&lt;<span class="hljs-name">property</span> <span class="hljs-attr">name</span>=<span class="hljs-string">&quot;driverClassName&quot;</span> <span class="hljs-attr">value</span>=<span class="hljs-string">&quot;net.sf.log4jdbc.DriverSpy&quot;</span> /&gt;</span></span><br><span class="line">    ~~</span><br><span class="line"><span class="hljs-tag">&lt;/<span class="hljs-name">bean</span>&gt;</span></span><br><span class="line"><span class="hljs-comment">&lt;!-- &#xBCC0;&#xACBD;&#xD558;&#xC138;&#xC694; &#xAE30;&#xC874;&#xC740; jdbc:mysql:// --&gt;</span></span><br><span class="line"><span class="hljs-tag">&lt;<span class="hljs-name">entry</span> <span class="hljs-attr">key</span>=<span class="hljs-string">&quot;dev.db.url&quot;</span>&gt;</span>jdbc:log4jdbc:mysql://</span><br></pre></td></tr></tbody></table></figure><br>logback.xml &#xC5D0; jdbc &#xAD00;&#xB828; &#xB0B4;&#xC6A9;&#xC744; &#xCD94;&#xAC00;&#xD569;&#xB2C8;&#xB2E4;.<p></p>
+<p></p><figure class="highlight xml hljs"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line"></span><br><span class="line"><span class="hljs-comment">&lt;!--jdbc &#xAD00;&#xB828; &#xB85C;&#xADF8; &#xCEE8;&#xD2B8;&#xB864;--&gt;</span></span><br><span class="line"><span class="hljs-tag">&lt;<span class="hljs-name">logger</span> <span class="hljs-attr">name</span>=<span class="hljs-string">&quot;jdbc&quot;</span> <span class="hljs-attr">level</span>=<span class="hljs-string">&quot;OFF&quot;</span>/&gt;</span></span><br><span class="line"><span class="hljs-tag">&lt;<span class="hljs-name">logger</span> <span class="hljs-attr">name</span>=<span class="hljs-string">&quot;jdbc.sqlonly&quot;</span> <span class="hljs-attr">level</span>=<span class="hljs-string">&quot;DEBUG&quot;</span>/&gt;</span></span><br><span class="line"><span class="hljs-tag">&lt;<span class="hljs-name">logger</span> <span class="hljs-attr">name</span>=<span class="hljs-string">&quot;jdbc.sqltiming&quot;</span> <span class="hljs-attr">level</span>=<span class="hljs-string">&quot;OFF&quot;</span>/&gt;</span></span><br><span class="line"><span class="hljs-tag">&lt;<span class="hljs-name">logger</span> <span class="hljs-attr">name</span>=<span class="hljs-string">&quot;jdbc.audit&quot;</span> <span class="hljs-attr">level</span>=<span class="hljs-string">&quot;OFF&quot;</span>/&gt;</span></span><br><span class="line"><span class="hljs-tag">&lt;<span class="hljs-name">logger</span> <span class="hljs-attr">name</span>=<span class="hljs-string">&quot;jdbc.resultset&quot;</span> <span class="hljs-attr">level</span>=<span class="hljs-string">&quot;OFF&quot;</span>/&gt;</span></span><br><span class="line"><span class="hljs-tag">&lt;<span class="hljs-name">logger</span> <span class="hljs-attr">name</span>=<span class="hljs-string">&quot;jdbc.resultsettable&quot;</span> <span class="hljs-attr">level</span>=<span class="hljs-string">&quot;OFF&quot;</span>/&gt;</span></span><br><span class="line"><span class="hljs-tag">&lt;<span class="hljs-name">logger</span> <span class="hljs-attr">name</span>=<span class="hljs-string">&quot;jdbc.connection&quot;</span> <span class="hljs-attr">level</span>=<span class="hljs-string">&quot;OFF&quot;</span>/&gt;</span></span><br></pre></td></tr></tbody></table></figure><p></p>
+<p>&#xB05D;&#xC73C;&#xB85C; &#xB85C;&#xCEEC; &#xAC1C;&#xBC1C;&#xD658;&#xACBD;&#xC5D0; &#xD1B0;&#xCF13; VM Option &#xC5D0; &#xB2E4;&#xC74C;&#xC744; &#xCD94;&#xAC00;&#xD574; &#xC90D;&#xB2C8;&#xB2E4;.<br>&#xC774; &#xC635;&#xC158;&#xC774; &#xC801;&#xC6A9;&#xB418;&#xBA74; &#xCFFC;&#xB9AC; &#xBB38;&#xC774; &#xC815;&#xB82C;&#xB418;&#xC5B4; &#xBCF4;&#xC5EC; &#xC9D1;&#xB2C8;&#xB2E4;.</p>
+<p></p><figure class="highlight plain hljs"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">-Dlog4jdbc.dump.sql.maxlinelength=0</span><br></pre></td></tr></tbody></table></figure><p></p>
+<ul>
+<li>&#xCD94;&#xAC00;&#xC0AC;&#xD56D;</li>
+</ul>
+<p>&#xC0AC;&#xC6A9;&#xD558;&#xB2E4;&#xBCF4;&#xB2C8; log4jdbc.properties &#xC124;&#xC815;&#xC744; &#xCC3E;&#xB294; &#xBA54;&#xC138;&#xC9C0;&#xB97C; &#xBC1C;&#xACAC;&#xD588;&#xC2B5;&#xB2C8;&#xB2E4;.</p>
+<p>resouce &#xD3F4;&#xB354;&#xC5D0; &#xB2E4;&#xC74C;&#xACFC; &#xAC19;&#xC774; log4jdbc.properties &#xD30C;&#xC77C;&#xC744; &#xCD94;&#xAC00;&#xD569;&#xB2C8;&#xB2E4;.<br></p><figure class="highlight plain hljs"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">log4jdbc.spylogdelegator.name=net.sf.log4jdbc.log.slf4j.Slf4jSpyLogDelegator</span><br></pre></td></tr></tbody></table></figure><p></p>
+<p>&#xC774;&#xB807;&#xAC8C; &#xC124;&#xC815;&#xD558;&#xC5EC; &#xC800;&#xB294; &#xB85C;&#xADF8;&#xB97C; &#xD655;&#xC778;&#xD558;&#xACE0; &#xC788;&#xC2B5;&#xB2C8;&#xB2E4;. &#xB2E4;&#xB9CC; logback&#xC5D0; log4jdbc &#xC124;&#xC815;&#xC744; &#xD558;&#xBBC0;&#xB85C; &#xC131;&#xB2A5;&#xC5D0; &#xC5B4;&#xB5A0;&#xD55C; &#xC601;&#xD5A5;&#xC744; &#xBBF8;&#xCE58;&#xB294; &#xC9C0;&#xAE4C;&#xC9C0;&#xB294; &#xD655;&#xC778;&#xD574;&#xBCF4;&#xC9C0; &#xBABB;&#xD558;&#xC600;&#xC2B5;&#xB2C8;&#xB2E4;. &#xD3EC;&#xC2A4;&#xD305;&#xC744; &#xBCF4;&#xC2DC;&#xACE0; &#xC131;&#xB2A5;&#xC5D0; &#xBB38;&#xC81C;&#xAC00; &#xB418;&#xC2E0;&#xB2E4;&#xBA74; jdbc &#xC124;&#xC815;&#xC744; &#xC81C;&#xC678;&#xD558;&#xACE0; &#xC801;&#xC6A9;&#xD558;&#xC2DC;&#xBA74; &#xB429;&#xB2C8;&#xB2E4;.</p>
+</body></html>
+    
+    </div>
+    
+    
+</article>
+
+
+
+
+    
+        <article class="article content gallery" itemscope itemprop="blogPost">
+    <h1 class="article-title is-size-3 is-size-4-mobile" itemprop="name">
+        
+            <a href="/2020/06/16/development/2018-06-05-springAnnotation/" itemprop="url">SpringAnnotation</a>
+        
+    </h1>
+    <div class="article-meta columns is-variable is-1 is-multiline is-mobile is-size-7-mobile">
+        <span class="column is-narrow">
+            <time datetime="2020-06-16T14:11:09.618Z" itemprop="datePublished">Jun 16 2020</time>
+        </span>
+        
+        <span class="column is-narrow article-category">
+            <i class="far fa-folder"></i>
+            <a class="article-category-link" href="/categories/Development/">Development</a>
+        </span>
+        
+        
+    </div>
+    <div class="article-entry is-size-6-mobile" itemprop="articleBody">
+    
+        <html><head></head><body><p>&#xC2A4;&#xD504;&#xB9C1; MVC&#xC5D0;&#xC11C; &#xC790;&#xC8FC; &#xC0AC;&#xC6A9;&#xB418;&#xB294; Annotation&#xC744; &#xAC04;&#xB7B5;&#xD558;&#xAC8C; &#xC815;&#xB9AC;&#xD55C;&#xB2E4;.</p>
+<hr>
+<p>@Component - &#xD074;&#xB798;&#xC2A4;&#xC5D0; &#xC120;&#xC5B8;&#xB418;&#xB294; Annotation. Spring component-scanning &#xC5D0; &#xC758;&#xD574; &#xC120;&#xC5B8;&#xB41C; &#xD074;&#xB798;&#xC2A4;&#xB294; &#xCEE8;&#xD14D;&#xC2A4;&#xD2B8;&#xC5D0; &#xBE48;&#xC73C;&#xB85C; &#xB4F1;&#xB85D;&#xB41C;&#xB2E4;.</p>
+<p>@Autowired - </p>
+<p>@Controller - MVC&#xD328;&#xD134;&#xC758; Controller&#xB85C; &#xC120;&#xC5B8;&#xD55C;&#xB2E4;.  @Component&#xB85C; &#xC120;&#xC5B8; &#xD560; &#xC218; &#xC788;&#xC9C0;&#xB9CC; @RequestMapping(value={&#x201C;/uri&#x201D;})@ResponseBody &#xB4F1;&#xC744; &#xD65C;&#xC6A9;&#xD560; &#xC218; &#xC788;&#xB2E4;.</p>
+<p>@RestController - @ResponseBody&#xB97C; &#xC120;&#xC5B8;&#xD558;&#xC9C0; &#xC54A;&#xB294;&#xB2E4;. RestController(Spring 4.0.1&#xBD80;&#xD130; &#xC81C;&#xACF5;)</p>
+<p>@RequestMapping  </p>
+<p>@Repository </p>
+<p>@Service  </p>
+<p>@Required  </p>
+<p>@Qualifier</p>
+<p>@Resource</p>
+<p>@Scope </p>
+<p>@PostConstruct - Spring LifeCycle&#xC5D0;&#xC11C; InitializingBean&#xC778;&#xD130;&#xD398;&#xC774;&#xC2A4;&#xC758; afterPropertiesSet &#xC5ED;&#xD560;&#xC744; &#xD560;&#xC218; &#xC788;&#xB3C4;&#xB85D; &#xBA54;&#xC18C;&#xB4DC; &#xC0C1;&#xB2E8;&#xC5D0; &#xC120;&#xC5B8;&#xD558;&#xB2E4;.(Bean &#xCD08;&#xAE30;&#xD654;&#xD560; &#xB54C; &#xC218;&#xD589;)</p>
+<p>@PreDestroy  - Spring LifeCycle&#xC5D0;&#xC11C; DisposableBean &#xC778;&#xD130;&#xD398;&#xC774;&#xC2A4;&#xC758; destroy &#xC5ED;&#xD560;&#xC744; &#xD560;&#xC218; &#xC788;&#xB3C4;&#xB85D; &#xBA54;&#xC18C;&#xB4DC; &#xC0C1;&#xB2E8;&#xC5D0; &#xC120;&#xC5B8;&#xD55C;&#xB2E4;.(Bean &#xC18C;&#xBA78;&#xB420; &#xB54C; &#xC218;&#xD589;)</p>
+<p>@Inject  </p>
+<p>@RequestParam  </p>
+<p>@SessionAttributes  </p>
+<p>@RequestBody  </p>
+<p>@ResponseBody  </p>
+<p>@PathVariablegit  </p>
+<p>@Aspect - AOP &#xD074;&#xB798;&#xC2A4; &#xC120;&#xC5B8;</p>
+<p>@Pointcut(&#x201C;whthin(&#xBC94;&#xC704;)&#x201D;)</p>
+</body></html>
+    
+    </div>
+    
+    
+</article>
+
+
+
+
+    
+        <article class="article content gallery" itemscope itemprop="blogPost">
+    <h1 class="article-title is-size-3 is-size-4-mobile" itemprop="name">
+        
+            <a href="/2020/06/16/development/2018-06-11-SpringStudy/" itemprop="url">Spring DI</a>
+        
+    </h1>
+    <div class="article-meta columns is-variable is-1 is-multiline is-mobile is-size-7-mobile">
+        <span class="column is-narrow">
+            <time datetime="2020-06-16T14:11:09.618Z" itemprop="datePublished">Jun 16 2020</time>
+        </span>
+        
+        <span class="column is-narrow article-category">
+            <i class="far fa-folder"></i>
+            <a class="article-category-link" href="/categories/Development/">Development</a>
+        </span>
+        
+        
+    </div>
+    <div class="article-entry is-size-6-mobile" itemprop="articleBody">
+    
+        <html><head></head><body><p>&#xD504;&#xB85C;&#xC81D;&#xD2B8;&#xC5D0;&#xC11C; &#xAFB8;&#xC900;&#xD788; &#xC0AC;&#xC6A9;&#xD574; &#xC624;&#xB358; FrameWork&#xC774;&#xB2E4;. &#xB2E8;&#xC21C;&#xD558;&#xAC8C; CRUD&#xB97C; &#xAD6C;&#xD604;&#xD558;&#xB294; &#xB370; &#xCD08;&#xC810;&#xC744; &#xB9DE;&#xCDB0;&#xC11C; &#xC0AC;&#xC6A9;&#xD558;&#xC600;&#xC73C;&#xB098; &#xC81C;&#xB300;&#xB85C; &#xB41C; &#xC774;&#xD574;&#xB97C; &#xD558;&#xACE0; &#xC751;&#xC6A9;&#xD574; &#xB098;&#xAC00;&#xAE30; &#xC704;&#xD574;&#xC11C;&#xB294; &#xC815;&#xB9AC;&#xAC00; &#xD544;&#xC694;&#xD558;&#xB2E4;&#xB294; &#xC0DD;&#xAC01;&#xC774; &#xC808;&#xC2E4;&#xD55C; &#xC694;&#xC998;&#xC774;&#xB2E4;. </p>
+<p>&#xAE30;&#xBCF8;&#xBD80;&#xD130; &#xB2E4;&#xC2DC; &#xC2DC;&#xC791;&#xD558;&#xC790;.</p>
+<hr>
+<h2 id="Spring-&#xC758;-DI"><a href="#Spring-&#xC758;-DI" class="headerlink" title="Spring &#xC758; DI"></a>Spring &#xC758; DI</h2><p>&#xC2A4;&#xD504;&#xB9C1;&#xC758; &#xAE30;&#xBCF8;&#xC801;&#xC778; &#xAD6C;&#xC870; &#xC911;&#xC5D0; DI(Dependency Injection)&#xB294; &#xAD6C;&#xC131;&#xC694;&#xC18C;&#xAC04;&#xC758; &#xC758;&#xC874; &#xAD00;&#xACC4;&#xAC00; &#xC18C;&#xC2A4;&#xCF54;&#xB4DC; &#xB0B4;&#xBD80;&#xAC00; &#xC544;&#xB2CC; &#xC678;&#xBD80;&#xC758; &#xC124;&#xC815;&#xC744; &#xD1B5;&#xD574; &#xC815;&#xC758;&#xB418;&#xAC8C; &#xD558;&#xB294; &#xB514;&#xC790;&#xC778; &#xD328;&#xD134; &#xC911;&#xC758; &#xD558;&#xB098;&#xC774;&#xB2E4;. &#xC720;&#xC5F0; &#xD558;&#xB3C4;&#xB85D; &#xAD6C;&#xD604;&#xD560; &#xC218; &#xC788;&#xB2E4;.</p>
+<h2 id="Srping-DI-&#xC7A5;&#xC810;"><a href="#Srping-DI-&#xC7A5;&#xC810;" class="headerlink" title="Srping DI &#xC7A5;&#xC810;"></a>Srping DI &#xC7A5;&#xC810;</h2><p>Spring&#xC5D0;&#xC11C;&#xB294; &#xBE48;&#xD329;&#xD1A0;&#xB9AC;&#xB97C; xml&#xC5D0; &#xC120;&#xC5B8;&#xD558;&#xC5EC; &#xC774;&#xB97C; &#xAC1D;&#xCCB4;&#xC5D0; &#xC8FC;&#xC785;&#xD558;&#xC5EC; &#xACB0;&#xD569;&#xB3C4;*&#xB97C; &#xB0AE;&#xCD94;&#xC5B4; &#xCF54;&#xB4DC;&#xB97C; &#xBCC0;&#xACBD;&#xD558;&#xAC70;&#xB098; &#xC124;&#xACC4;&#xBCC0;&#xACBD;&#xC5D0; &#xC720;&#xC5F0;&#xD558;&#xAC8C; &#xB300;&#xCC98;&#xD560;&#xC218; &#xC788;&#xC73C;&#xBA70; &#xD611;&#xC5C5;&#xC5D0; &#xC788;&#xC5B4;&#xC11C; &#xC774;&#xB97C; &#xD1B5;&#xD558;&#xC5EC; &#xAC1D;&#xCCB4;&#xB97C; &#xC77C;&#xAD00;&#xC131; &#xC788;&#xAC8C; &#xC0AC;&#xC6A9;&#xD558;&#xACE0; &#xC720;&#xC9C0;&#xBCF4;&#xC218;&#xC758; &#xD3B8;&#xC758;&#xB97C; &#xC81C;&#xACF5;&#xD55C;&#xB2E4;.<br>DI&#xB294; OOP&#xC758; &#xAC1C;&#xB150;&#xACFC; &#xC720;&#xC0AC;&#xD558;&#xBA70; DI&#xB97C; &#xD1B5;&#xD558;&#xC5EC; &#xC8FC;&#xC785;&#xB41C; &#xAC1D;&#xCCB4;&#xB9CC;&#xC744; &#xBCC0;&#xACBD;&#xD558;&#xC5EC; &#xC8FC;&#xC785;&#xBC1B;&#xC740; &#xAC1D;&#xCCB4;&#xB97C; &#xBCC0;&#xACBD;&#xD560; &#xC218; &#xC788;&#xB2E4;.</p>
+<hr>
+<ul>
+<li>&#xC18C;&#xD504;&#xD2B8;&#xC6E8;&#xC5B4; &#xACF5;&#xD559;&#xC5D0;&#xC11C;, &#xACB0;&#xD569;&#xB3C4;(coupling) &#xB610;&#xB294; &#xC758;&#xC874;&#xB3C4;&#xB294; &#xC5B4;&#xB5A4; &#xBAA8;&#xB4C8;&#xC774; &#xB2E4;&#xB978; &#xBAA8;&#xB4C8;&#xC5D0; &#xC758;&#xC874;&#xD558;&#xB294; &#xC815;&#xB3C4;&#xB97C; &#xB098;&#xD0C0;&#xB0B4;&#xB294; &#xAC83;&#xC774;&#xB2E4;.</li>
+</ul>
+<h2 id="&#xC2A4;&#xD504;&#xB9C1;-&#xCEE8;&#xD14C;&#xC774;&#xB108;-&#xC0DD;&#xBA85;&#xC8FC;&#xAE30;-Lifecycle"><a href="#&#xC2A4;&#xD504;&#xB9C1;-&#xCEE8;&#xD14C;&#xC774;&#xB108;-&#xC0DD;&#xBA85;&#xC8FC;&#xAE30;-Lifecycle" class="headerlink" title="&#xC2A4;&#xD504;&#xB9C1; &#xCEE8;&#xD14C;&#xC774;&#xB108; &#xC0DD;&#xBA85;&#xC8FC;&#xAE30; (Lifecycle)"></a>&#xC2A4;&#xD504;&#xB9C1; &#xCEE8;&#xD14C;&#xC774;&#xB108; &#xC0DD;&#xBA85;&#xC8FC;&#xAE30; (Lifecycle)</h2><p>Spring &#xCEE8;&#xD14C;&#xC774;&#xB108;&#xC758; lifecycle&#xC744; &#xC774;&#xC6A9;&#xD558;&#xC5EC; &#xC0DD;&#xC131;&#xC2DC; &#xC18C;&#xBA78;&#xC2DC; &#xC2E4;&#xD589;&#xB418;&#xB294; &#xBA54;&#xC18C;&#xB4DC;&#xB97C; &#xAD6C;&#xD604;&#xD560; &#xC218; &#xC788;&#xB2E4;.</p>
+<p></p><figure class="highlight java hljs"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br></pre></td><td class="code"><pre><span class="line">   	<span class="hljs-comment">// &#xC0DD;&#xC131;</span></span><br><span class="line">GenericXmlApplicationContext ctx = <span class="hljs-keyword">new</span> GenericXmlApplicationContext();</span><br><span class="line">       <span class="hljs-comment">// &#xC124;&#xC815;</span></span><br><span class="line">	ctx.load(<span class="hljs-string">&quot;classpath:applicationCTX.xml&quot;</span>);	</span><br><span class="line">	</span><br><span class="line">	ctx.refresh(); <span class="hljs-comment">//--&gt;InitilizingBean afterProrpertiesSet &#xBA54;&#xC18C;&#xB4DC; &#xD638;&#xCD9C;</span></span><br><span class="line">	<span class="hljs-comment">// &#xC0AC;&#xC6A9;</span></span><br><span class="line">	Student student = ctx.getBean(<span class="hljs-string">&quot;student&quot;</span>, Student.class);	</span><br><span class="line">	System.out.println(<span class="hljs-string">&quot;&#xC774;&#xB984; : &quot;</span> + student.getName());</span><br><span class="line">	System.out.println(<span class="hljs-string">&quot;&#xB098;&#xC774; : &quot;</span> + student.getAge());</span><br><span class="line">	<span class="hljs-comment">// &#xC885;&#xB8CC;</span></span><br><span class="line">	ctx.close();<span class="hljs-comment">//--&gt; DisposableBean destroy &#xBA54;&#xC18C;&#xB4DC; &#xD638;&#xCD9C;</span></span><br></pre></td></tr></tbody></table></figure><p></p>
+<p>&#xC778;&#xD130;&#xD398;&#xC774;&#xC2A4; &#xAD6C;&#xD604; &#xCF54;&#xB4DC;<br></p><figure class="highlight java hljs"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br></pre></td><td class="code"><pre><span class="line">   <span class="hljs-keyword">public</span> <span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">student</span> <span class="hljs-keyword">implements</span> <span class="hljs-title">InitializingBean</span>, <span class="hljs-title">DisposableBean</span></span>{</span><br><span class="line"></span><br><span class="line">   <span class="hljs-meta">@Override</span></span><br><span class="line"><span class="hljs-function"><span class="hljs-keyword">public</span> <span class="hljs-keyword">void</span> <span class="hljs-title">afterPropertiesSet</span><span class="hljs-params">()</span> <span class="hljs-keyword">throws</span> Exception </span>{</span><br><span class="line">	<span class="hljs-comment">// TODO Auto-generated method stub</span></span><br><span class="line">	System.out.println(<span class="hljs-string">&quot;afterPropertiesSet()&quot;</span>);</span><br><span class="line">}</span><br><span class="line"></span><br><span class="line"><span class="hljs-meta">@Override</span></span><br><span class="line"><span class="hljs-function"><span class="hljs-keyword">public</span> <span class="hljs-keyword">void</span> <span class="hljs-title">destroy</span><span class="hljs-params">()</span> <span class="hljs-keyword">throws</span> Exception </span>{</span><br><span class="line">	<span class="hljs-comment">// TODO Auto-generated method stub</span></span><br><span class="line">	System.out.println(<span class="hljs-string">&quot;destroy()&quot;</span>);</span><br><span class="line">}</span><br></pre></td></tr></tbody></table></figure><p></p>
+<p>Annotation &#xAD6C;&#xD604;<br></p><figure class="highlight java hljs"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line">   <span class="hljs-meta">@PostConstruct</span></span><br><span class="line"><span class="hljs-function"><span class="hljs-keyword">public</span> <span class="hljs-keyword">void</span> <span class="hljs-title">initMethod</span><span class="hljs-params">()</span> </span>{</span><br><span class="line">	System.out.println(<span class="hljs-string">&quot;initMethod()&quot;</span>);</span><br><span class="line">}</span><br><span class="line"></span><br><span class="line"><span class="hljs-meta">@PreDestroy</span></span><br><span class="line"><span class="hljs-function"><span class="hljs-keyword">public</span> <span class="hljs-keyword">void</span> <span class="hljs-title">destroyMethod</span><span class="hljs-params">()</span> </span>{</span><br><span class="line">	System.out.println(<span class="hljs-string">&quot;destroyMethod()&quot;</span>);</span><br><span class="line">}</span><br></pre></td></tr></tbody></table></figure><p></p>
+<h3 id="AOP-Aspect-Oriented-Programing"><a href="#AOP-Aspect-Oriented-Programing" class="headerlink" title="AOP(Aspect Oriented Programing)"></a>AOP(Aspect Oriented Programing)</h3><ul>
+<li>Java&#xC5D0;&#xC11C;&#xB294; &#xB2E4;&#xC911; &#xC0C1;&#xC18D;&#xC774; &#xBD88;&#xAC00;&#xD558;&#xB2E4;. &#xB2E4;&#xC591;&#xD55C; &#xBAA8;&#xB4C8;&#xC5D0; &#xACF5;&#xD1B5;&#xAE30;&#xB2A5;&#xC744; &#xBD80;&#xC5EC;&#xD558;&#xB294; &#xD55C;&#xACC4;&#xAC00; &#xC788;&#xB2E4;. AOP&#xB294; &#xACF5;&#xD1B5; &#xAE30;&#xB2A5;&#xC744; &#xBD84;&#xB9AC;&#xD558;&#xC5EC; &#xBAA8;&#xB4C8;&#xC5D0; &#xC801;&#xC6A9;&#xD558;&#xB294; &#xAE30;&#xB2A5;&#xC774;&#xB2E4;.</li>
+</ul>
+<h3 id="AOP-&#xC6A9;&#xC5B4;"><a href="#AOP-&#xC6A9;&#xC5B4;" class="headerlink" title="AOP &#xC6A9;&#xC5B4;"></a>AOP &#xC6A9;&#xC5B4;</h3><ul>
+<li>Aspect : &#xACF5;&#xD1B5;&#xAE30;&#xB2A5;</li>
+<li>Advice : Aspect&#xC758; &#xAE30;&#xB2A5; &#xC790;&#xCCB4;</li>
+<li>joinpoint : Advice&#xB97C; &#xC801;&#xC6A9;&#xD558;&#xB294; &#xBD80;&#xBD84;</li>
+<li>Pointcut : joinpoint&#xC758; &#xBD80;&#xBD84;&#xC73C;&#xB85C; &#xC2E4;&#xC81C; advice&#xAC00; &#xC801;&#xC6A9;&#xB41C; &#xBD80;&#xBD84;</li>
+<li>Weaving : Advice&#xB97C; &#xD575;&#xC2EC; &#xADF8;&#xB2DD;&#xC5D0; &#xC801;&#xC6A9;&#xD558;&#xB294; &#xD589;&#xC704;</li>
+</ul>
+<h3 id="AOP&#xC758;-&#xC801;&#xC6A9;"><a href="#AOP&#xC758;-&#xC801;&#xC6A9;" class="headerlink" title="AOP&#xC758; &#xC801;&#xC6A9;"></a>AOP&#xC758; &#xC801;&#xC6A9;</h3><ul>
+<li>pom.xml &#xC124;&#xC815;   </li>
+</ul>
+<p></p><figure class="highlight xml hljs"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line"><span class="hljs-comment">&lt;!-- AOP --&gt;</span></span><br><span class="line"><span class="hljs-tag">&lt;<span class="hljs-name">dependency</span>&gt;</span></span><br><span class="line">	<span class="hljs-tag">&lt;<span class="hljs-name">groupId</span>&gt;</span>org.aspectj<span class="hljs-tag">&lt;/<span class="hljs-name">groupId</span>&gt;</span></span><br><span class="line">	<span class="hljs-tag">&lt;<span class="hljs-name">artifactId</span>&gt;</span>aspectjweaver<span class="hljs-tag">&lt;/<span class="hljs-name">artifactId</span>&gt;</span></span><br><span class="line">	<span class="hljs-tag">&lt;<span class="hljs-name">version</span>&gt;</span>1.8.2<span class="hljs-tag">&lt;/<span class="hljs-name">version</span>&gt;</span><span class="hljs-comment">&lt;!-- &#xBC84;&#xC804; &#xC801;&#xC6A9;&#xD655;&#xC778;&#xC774; &#xD544;&#xC694;&#xD568; --&gt;</span></span><br><span class="line"><span class="hljs-tag">&lt;/<span class="hljs-name">dependency</span>&gt;</span></span><br></pre></td></tr></tbody></table></figure><p></p>
+<ul>
+<li><p>&#xACF5;&#xD1B5; &#xAE30;&#xB2A5;&#xC758; &#xD074;&#xB798;&#xC2A4; &#xC0DD;&#xC131; - Advice &#xC5ED;&#xD560; &#xD074;&#xB799;&#xC2A4;<br></p><figure class="highlight java hljs"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br></pre></td><td class="code"><pre><span class="line"><span class="hljs-keyword">import</span> org.aspectj.lang.JoinPoint;</span><br><span class="line"><span class="hljs-keyword">import</span> org.aspectj.lang.ProceedingJoinPoint;</span><br><span class="line"></span><br><span class="line"><span class="hljs-keyword">public</span> <span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">LogAop</span> </span>{</span><br><span class="line"></span><br><span class="line">	<span class="hljs-function"><span class="hljs-keyword">public</span> Object <span class="hljs-title">loggerAop</span><span class="hljs-params">(ProceedingJoinPoint joinpoint)</span> <span class="hljs-keyword">throws</span> Throwable </span>{</span><br><span class="line">		String signatureStr = joinpoint.getS1</span><br><span class="line">		String signatureStr = joinpoint.getSignature().toShortString(); <span class="hljs-comment">//&#xBA54;&#xC18C;&#xB4DC;&#xC758; &#xB124;&#xC784;</span></span><br><span class="line">		System.out.println( signatureStr + <span class="hljs-string">&quot; is start.&quot;</span>);</span><br><span class="line">		<span class="hljs-keyword">long</span> st = System.currentTimeMillis();</span><br><span class="line">		</span><br><span class="line">		<span class="hljs-keyword">try</span> {</span><br><span class="line">			Object obj = joinpoint.proceed();<span class="hljs-comment">//&#xBA54;&#xC18C;&#xB4DC; &#xC218;&#xD589;</span></span><br><span class="line">			<span class="hljs-keyword">return</span> obj;</span><br><span class="line">		} <span class="hljs-keyword">finally</span> {</span><br><span class="line">			<span class="hljs-keyword">long</span> et = System.currentTimeMillis();</span><br><span class="line">			System.out.println( signatureStr + <span class="hljs-string">&quot; is finished.&quot;</span>);</span><br><span class="line">			System.out.println( signatureStr + <span class="hljs-string">&quot; &#xACBD;&#xACFC;&#xC2DC;&#xAC04; : &quot;</span> + (et - st));</span><br><span class="line">		}</span><br><span class="line">	}</span><br><span class="line">}</span><br></pre></td></tr></tbody></table></figure><p></p>
+</li>
+<li><p>xml &#xC124;&#xC815; &#xD30C;&#xC77C;&#xC5D0; Aspect &#xC124;&#xC815;  - &#xB124;&#xC784;&#xC2A4;&#xD398;&#xC774;&#xC2A4;&#xC5D0;&#xC11C; aop &#xC124;&#xC815;&#xC744; &#xCD94;&#xAC00;&#xD568;</p>
+</li>
+</ul>
+<p></p><figure class="highlight xml hljs"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br></pre></td><td class="code"><pre><span class="line"><span class="hljs-tag">&lt;<span class="hljs-name">bean</span> <span class="hljs-attr">id</span>=<span class="hljs-string">&quot;logAop&quot;</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;com.javalec.ex.LogAop&quot;</span> /&gt;</span></span><br><span class="line"></span><br><span class="line"><span class="hljs-tag">&lt;<span class="hljs-name">aop:config</span>&gt;</span></span><br><span class="line">	<span class="hljs-tag">&lt;<span class="hljs-name">aop:aspect</span> <span class="hljs-attr">id</span>=<span class="hljs-string">&quot;logger&quot;</span> <span class="hljs-attr">ref</span>=<span class="hljs-string">&quot;logAop&quot;</span>&gt;</span></span><br><span class="line">		<span class="hljs-tag">&lt;<span class="hljs-name">aop:pointcut</span> <span class="hljs-attr">id</span>=<span class="hljs-string">&quot;publicM&quot;</span> <span class="hljs-attr">expression</span>=<span class="hljs-string">&quot;within(com.javalec.ex.*)&quot;</span>  /&gt;</span><span class="hljs-comment">&lt;!--&#xC774;&#xB984;&#xACFC; &#xC801;&#xC6A9;&#xBC94;&#xC704; &#xC9C0;&#xC815;--&gt;</span></span><br><span class="line">		<span class="hljs-tag">&lt;<span class="hljs-name">aop:around</span> <span class="hljs-attr">pointcut-ref</span>=<span class="hljs-string">&quot;publicM&quot;</span> <span class="hljs-attr">method</span>=<span class="hljs-string">&quot;loggerAop&quot;</span> /&gt;</span><span class="hljs-comment">&lt;!--AOP&#xC758; &#xAE30;&#xB2A5; &#xC9C0;&#xC815;--&gt;</span></span><br><span class="line">		<span class="hljs-comment">&lt;!--</span></span><br><span class="line"><span class="hljs-comment">		&lt;aop:before : &#xBA54;&#xC18C;&#xB4DC; &#xC2E4;&#xD589;&#xC804;</span></span><br><span class="line"><span class="hljs-comment">		&lt;aop:after-returning : &#xBA54;&#xC18C;&#xB4DC; &#xC815;&#xC0C1; &#xC2E4;&#xD589; &#xD6C4; </span></span><br><span class="line"><span class="hljs-comment">		&lt;aop:after-throwing :  &#xBA54;&#xC18C;&#xB4DC; &#xC2E4;&#xD589; &#xC911; exception &#xBC1C;&#xC0DD;&#xC2DC;</span></span><br><span class="line"><span class="hljs-comment">		&lt;aop:after : &#xBA54;&#xC18C;&#xB4DC; &#xC2E4;&#xD589;&#xC911; exception&#xC774; &#xBC1C;&#xC0DD;&#xD558;&#xC5EC;&#xB3C4; &#xC2E4;&#xD589;</span></span><br><span class="line"><span class="hljs-comment">		&lt;aop:around : &#xBA54;&#xC18C;&#xB4DC; &#xC2E4;&#xD589; &#xC804;/&#xD6C4; &#xBC0F; exception&#xC774; &#xBC1C;&#xC0DD;&#xD558;&#xC5EC;&#xB3C4; &#xC2E4;&#xD589;</span></span><br><span class="line"><span class="hljs-comment">		--&gt;</span></span><br><span class="line"></span><br><span class="line">	<span class="hljs-tag">&lt;/<span class="hljs-name">aop:aspect</span>&gt;</span></span><br><span class="line"><span class="hljs-tag">&lt;/<span class="hljs-name">aop:config</span>&gt;</span></span><br></pre></td></tr></tbody></table></figure><p></p>
+<p>AOP&#xB97C; @Aspect &#xC5B4;&#xB178;&#xD14C;&#xC774;&#xC158;&#xC5D0; &#xC758;&#xD574;&#xC11C; &#xAD6C;&#xD604;&#xD560; &#xC218; &#xC788;&#xB2E4;. &#xC18C;&#xC2A4; xml &#xC124;&#xC815;&#xC5D0;&#xC11C; &#xB290;&#xB07C;&#xB294; &#xBCF5;&#xC7A1;&#xB3C4;&#xB294; &#xB354; &#xB0AE;&#xC740; &#xB4EF;&#xD558;&#xB098; &#xAC1C;&#xC778;&#xC801;&#xC73C;&#xB85C; &#xC2E4;&#xBB34;&#xC5D0;&#xC11C;&#xB294; &#xC14B;&#xC5C5;&#xC744; &#xC9C1;&#xC811; &#xD574;&#xBCF4;&#xB294; &#xAE30;&#xD68C;&#xAC00; &#xB9CE;&#xC9C0; &#xC54A;&#xC544; &#xC5EC;&#xB7EC; &#xC18C;&#xC2A4;&#xB97C; &#xCC38;&#xACE0;&#xD574;&#xBD10;&#xC57C;&#xACA0;&#xB2E4;.</p>
+<hr>
+<h3 id="pom-xml-&#xC124;&#xC815;"><a href="#pom-xml-&#xC124;&#xC815;" class="headerlink" title="pom.xml &#xC124;&#xC815;"></a>pom.xml &#xC124;&#xC815;</h3><p></p><figure class="highlight xml hljs"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line"><span class="hljs-comment">&lt;!-- AOP --&gt;</span></span><br><span class="line"><span class="hljs-tag">&lt;<span class="hljs-name">dependency</span>&gt;</span></span><br><span class="line">    <span class="hljs-tag">&lt;<span class="hljs-name">groupId</span>&gt;</span>org.aspectj<span class="hljs-tag">&lt;/<span class="hljs-name">groupId</span>&gt;</span></span><br><span class="line">    <span class="hljs-tag">&lt;<span class="hljs-name">artifactId</span>&gt;</span>aspectjweaver<span class="hljs-tag">&lt;/<span class="hljs-name">artifactId</span>&gt;</span></span><br><span class="line">    <span class="hljs-tag">&lt;<span class="hljs-name">version</span>&gt;</span>1.8.2<span class="hljs-tag">&lt;/<span class="hljs-name">version</span>&gt;</span><span class="hljs-comment">&lt;!-- &#xBC84;&#xC804; &#xC801;&#xC6A9;&#xD655;&#xC778;&#xC774; &#xD544;&#xC694;&#xD568; --&gt;</span></span><br><span class="line"><span class="hljs-tag">&lt;/<span class="hljs-name">dependency</span>&gt;</span></span><br></pre></td></tr></tbody></table></figure><p></p>
+<h3 id="Aspect-&#xAC00;-&#xAD6C;&#xD604;&#xB41C;-class-&#xD30C;&#xC77C;-&#xC0DD;&#xC131;"><a href="#Aspect-&#xAC00;-&#xAD6C;&#xD604;&#xB41C;-class-&#xD30C;&#xC77C;-&#xC0DD;&#xC131;" class="headerlink" title="@Aspect &#xAC00; &#xAD6C;&#xD604;&#xB41C; class &#xD30C;&#xC77C; &#xC0DD;&#xC131;"></a>@Aspect &#xAC00; &#xAD6C;&#xD604;&#xB41C; class &#xD30C;&#xC77C; &#xC0DD;&#xC131;</h3><p></p><figure class="highlight java hljs"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br></pre></td><td class="code"><pre><span class="line"><span class="hljs-keyword">import</span> org.aspectj.lang.ProceedingJoinPoint;</span><br><span class="line"><span class="hljs-keyword">import</span> org.aspectj.lang.annotation.Around;</span><br><span class="line"><span class="hljs-keyword">import</span> org.aspectj.lang.annotation.Aspect;</span><br><span class="line"><span class="hljs-keyword">import</span> org.aspectj.lang.annotation.Before;</span><br><span class="line"><span class="hljs-keyword">import</span> org.aspectj.lang.annotation.Pointcut;</span><br><span class="line"></span><br><span class="line"><span class="hljs-meta">@Aspect</span><span class="hljs-comment">//AOP &#xD074;&#xB798;&#xC2A4; &#xC9C0;&#xC815;</span></span><br><span class="line"><span class="hljs-keyword">public</span> <span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">LogAop</span> </span>{</span><br><span class="line">	</span><br><span class="line">	<span class="hljs-meta">@Pointcut</span>(<span class="hljs-string">&quot;within(com.javalec.ex.*)&quot;</span>)<span class="hljs-comment">//&#xBC94;&#xC704; &#xC9C0;&#xC815;</span></span><br><span class="line">	<span class="hljs-function"><span class="hljs-keyword">private</span> <span class="hljs-keyword">void</span> <span class="hljs-title">pointcutMethod</span><span class="hljs-params">()</span> </span>{</span><br><span class="line">	}</span><br><span class="line">	</span><br><span class="line">	</span><br><span class="line">	<span class="hljs-meta">@Around</span>(<span class="hljs-string">&quot;pointcutMethod()&quot;</span>)<span class="hljs-comment">//pointcut &#xB3D9;&#xC791; &#xC9C0;&#xC815;</span></span><br><span class="line">	<span class="hljs-function"><span class="hljs-keyword">public</span> Object <span class="hljs-title">loggerAop</span><span class="hljs-params">(ProceedingJoinPoint joinpoint)</span> <span class="hljs-keyword">throws</span> Throwable </span>{</span><br><span class="line">		String signatureStr = joinpoint.getSignature().toShortString();</span><br><span class="line">		System.out.println( signatureStr + <span class="hljs-string">&quot; is start.&quot;</span>);</span><br><span class="line">		<span class="hljs-keyword">long</span> st = System.currentTimeMillis();</span><br><span class="line">		</span><br><span class="line">		<span class="hljs-keyword">try</span> {</span><br><span class="line">			Object obj = joinpoint.proceed();</span><br><span class="line">			<span class="hljs-keyword">return</span> obj;</span><br><span class="line">		} <span class="hljs-keyword">finally</span> {</span><br><span class="line">			<span class="hljs-keyword">long</span> et = System.currentTimeMillis();</span><br><span class="line">			System.out.println( signatureStr + <span class="hljs-string">&quot; is finished.&quot;</span>);</span><br><span class="line">			System.out.println( signatureStr + <span class="hljs-string">&quot; &#xACBD;&#xACFC;&#xC2DC;&#xAC04; : &quot;</span> + (et - st));</span><br><span class="line">		}</span><br><span class="line">		</span><br><span class="line">	}</span><br><span class="line">	</span><br><span class="line">	<span class="hljs-meta">@Before</span>(<span class="hljs-string">&quot;within(com.javalec.ex.*)&quot;</span>)<span class="hljs-comment">//&#xAE30;&#xB2A5;&#xC774; &#xC2DC;&#xC791;&#xD558;&#xAE30;&#xC804;&#xC5D0; &#xC2E4;&#xD589;&#xB418;&#xB294; advice</span></span><br><span class="line">	<span class="hljs-function"><span class="hljs-keyword">public</span> <span class="hljs-keyword">void</span> <span class="hljs-title">beforAdvice</span><span class="hljs-params">()</span> </span>{</span><br><span class="line">		System.out.println(<span class="hljs-string">&quot;beforAdvice()&quot;</span>);</span><br><span class="line">	}</span><br><span class="line">	</span><br><span class="line">}</span><br></pre></td></tr></tbody></table></figure><p></p>
+<h3 id="3-XML&#xD30C;&#xC77C;-lt-aop-aspect-autoproxy-gt-&#xC124;&#xC815;"><a href="#3-XML&#xD30C;&#xC77C;-lt-aop-aspect-autoproxy-gt-&#xC124;&#xC815;" class="headerlink" title="3. XML&#xD30C;&#xC77C; &lt;aop:aspect-autoproxy&gt; &#xC124;&#xC815;"></a>3. XML&#xD30C;&#xC77C; <code>&lt;aop:aspect-autoproxy&gt;</code> &#xC124;&#xC815;</h3><h2 id="21"><a href="#21" class="headerlink" title="21"></a><figure class="highlight xml hljs"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="hljs-tag">&lt;<span class="hljs-name">aop:aspectj-autoproxy</span> /&gt;</span></span><br><span class="line"><span class="hljs-tag">&lt;<span class="hljs-name">bean</span> <span class="hljs-attr">id</span>=<span class="hljs-string">&quot;logAop&quot;</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;com.javalec.ex.LogAop&quot;</span> /&gt;</span><span class="hljs-comment">&lt;!-- AOP &#xD074;&#xB798;&#xC2A4; &#xC9C0;&#xC815;--&gt;</span></span><br></pre></td></tr></tbody></table></figure></h2><p>pointcut &#xD45C;&#xD604;&#xC2DD;<br></p><figure class="highlight plain hljs"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br></pre></td><td class="code"><pre><span class="line">//	@Pointcut(&quot;execution(public void get*(..))&quot;)	// public void&#xC778; &#xBAA8;&#xB4E0; get&#xBA54;&#xC18C;&#xB4DC;</span><br><span class="line">//	@Pointcut(&quot;execution(* com.javalec.ex.*.*())&quot;)	// com.javalec.ex &#xD328;&#xD0A4;&#xC9C0;&#xC5D0; &#xD30C;&#xB77C;&#xBBF8;&#xD130;&#xAC00; &#xC5C6;&#xB294; &#xBAA8;&#xB4E0; &#xBA54;&#xC18C;&#xB4DC;</span><br><span class="line">//	@Pointcut(&quot;execution(* com.javalec.ex..*.*())&quot;)	// com.javalec.ex &#xD328;&#xD0A4;&#xC9C0; &amp; com.javalec.ex &#xD558;&#xC704; &#xD328;&#xD0A4;&#xC9C0;&#xC5D0; &#xD30C;&#xB77C;&#xBBF8;&#xD130;&#xAC00; &#xC5C6;&#xB294; &#xBAA8;&#xB4E0; &#xBA54;&#xC18C;&#xB4DC;</span><br><span class="line">//	@Pointcut(&quot;execution(* com.javalec.ex.Worker.*())&quot;)	// com.javalec.ex.Worker &#xC548;&#xC758; &#xBAA8;&#xB4E0; &#xBA54;&#xC18C;&#xB4DC;</span><br><span class="line"></span><br><span class="line">//	@Pointcut(&quot;within(com.javalec.ex.*)&quot;)	//com.javalec.ex &#xD328;&#xD0A4;&#xC9C0; &#xC548;&#xC5D0; &#xC788;&#xB294; &#xBAA8;&#xB4E0; &#xBA54;&#xC18C;&#xB4DC;</span><br><span class="line">//	@Pointcut(&quot;within(com.javalec.ex..*)&quot;)  //com.javalec.ex &#xD328;&#xD0A4;&#xC9C0; &#xBC0F; &#xD558;&#xC704; &#xD328;&#xD0A4;&#xC9C0; &#xC548;&#xC5D0; &#xC788;&#xB294; &#xBAA8;&#xB4E0; &#xBA54;&#xC18C;&#xB4DC;</span><br><span class="line">//	@Pointcut(&quot;within(com.javalec.ex.Worker)&quot;) //com.javalec.ex.Worker &#xBAA8;&#xB4E0; &#xBA54;&#xC18C;&#xB4DC;</span><br><span class="line">	</span><br><span class="line">//	@Pointcut(&quot;bean(student)&quot;)	//student &#xBE48;&#xC5D0;&#xB9CC; &#xC801;&#xC6A9;</span><br><span class="line">//	@Pointcut(&quot;bean(*ker)&quot;)		//~ker&#xB85C; &#xB05D;&#xB098;&#xB294; &#xBE48;&#xC5D0;&#xB9CC; &#xC801;&#xC6A9;</span><br></pre></td></tr></tbody></table></figure><p></p>
+</body></html>
+    
+    </div>
+    
+    
+</article>
+
+
+
+
+    
+        <article class="article content gallery" itemscope itemprop="blogPost">
+    <h1 class="article-title is-size-3 is-size-4-mobile" itemprop="name">
+        
+            <a href="/2020/06/16/development/2018-06-05-spring/" itemprop="url">SpringBoot</a>
+        
+    </h1>
+    <div class="article-meta columns is-variable is-1 is-multiline is-mobile is-size-7-mobile">
+        <span class="column is-narrow">
+            <time datetime="2020-06-16T14:11:09.618Z" itemprop="datePublished">Jun 16 2020</time>
+        </span>
+        
+        <span class="column is-narrow article-category">
+            <i class="far fa-folder"></i>
+            <a class="article-category-link" href="/categories/Development/">Development</a>
+        </span>
+        
+        
+    </div>
+    <div class="article-entry is-size-6-mobile" itemprop="articleBody">
+    
+        <html><head></head><body><p>Spring Boot makes it easy to create stand-alone, production-grade Spring based Applications that you can &#x201C;just run&#x201D;.<br>Spring  &#xACF5;&#xC2DD; &#xC0AC;&#xC774;&#xD2B8;&#xC758; Spring boot&#xC5D0; &#xB300;&#xD55C; &#xCCAB; &#xC18C;&#xAC1C;&#xC774;&#xB2E4;. &#xB9D0; &#xADF8;&#xB300;&#xB85C; &#xC27D;&#xAC8C; &#xB9CC;&#xB4E4;&#xACE0; &#x201C;just run&#x201D; &#xD558;&#xBA74; &#xB418;&#xB294; &#xC5B4;&#xD50C;&#xB9AC;&#xCF00;&#xC774;&#xC158; &#xD50C;&#xB7AB;&#xD3FC;&#xC774;&#xB2E4;.</p>
+<hr>
+<p>&#xB2E4;&#xB978; &#xC5B8;&#xC5B4; &#xC9C4;&#xC601;&#xC5D0;&#xC11C;&#xC758; &#xC6F9; &#xD504;&#xB808;&#xC784;&#xC6CD;&#xC778; node.js &#xC758; express, python &#xC758; django, ruby &#xC758; rails &#xB4F1;&#xC740; &#xBE60;&#xB974;&#xACE0; &#xD2B9;&#xC774;&#xD55C; &#xC124;&#xC815;&#xC5C6;&#xC774; &#xC6F9;&#xC744; &#xC0DD;&#xC131;&#xD558;&#xC5EC; &#xC11C;&#xBE44;&#xC2A4; &#xBC0F; &#xD14C;&#xC2A4;&#xD2B8;&#xB97C; &#xC2E4;&#xD589;&#xC218; &#xC788;&#xB294; &#xBC18;&#xBA74;&#xC758; spring&#xC740; &#xB9CE;&#xC740; &#xAE30;&#xB2A5;&#xC774; &#xC788;&#xB294; &#xB9CC;&#xD07C; dependency &#xC124;&#xC815;&#xC774;&#xB098; &#xAE30;&#xD0C0; xml &#xC124;&#xC815;(&#xCD08;&#xAE30; &#xBE4C;&#xB4DC;&#xC5C5;), was&#xB098; &#xC11C;&#xBC84; &#xBC30;&#xD3EC;&#xC2DC; &#xBC1C;&#xC0DD; &#xBB38;&#xC81C;&#xB97C; &#xD574;&#xACB0;&#xD558;&#xB294; &#xB370; &#xB9CE;&#xC740; &#xC2DC;&#xAC04;&#xC744; &#xD560;&#xC560; &#xD574;&#xC57C;&#xD55C;&#xB2E4;.</p>
+<p>&#xC544;&#xB9C8;&#xB3C4; &#xC774;&#xB7F0;&#xD55C; &#xB2E8;&#xC810;&#xC744; &#xBCF4;&#xC644;&#xD558;&#xB294; &#xC810;&#xC5D0;&#xC11C; java &#xC9C4;&#xC601;&#xC758; spring boot&#xB294; &#xC0AC;&#xC6A9;&#xD560;&#xB9CC;&#xD55C; &#xC774;&#xC720;&#xB294; &#xCDA9;&#xBD84;&#xD558;&#xB2E4;&#xACE0; &#xBCF8;&#xB2E4;.</p>
+<h2 id="Spring-boot-&#xC7A5;&#xC810;"><a href="#Spring-boot-&#xC7A5;&#xC810;" class="headerlink" title="- Spring boot &#xC7A5;&#xC810;"></a>- Spring boot &#xC7A5;&#xC810;</h2><ul>
+<li>&#xB3C5;&#xB9BD; &#xC2E4;&#xD589; &#xD615; Spring &#xC560;&#xD50C;&#xB9AC;&#xCF00;&#xC774;&#xC158; &#xC791;&#xC131;(&#xAC1C;&#xBC1C; &#xC9C4;&#xD589;&#xD560;&#xB54C; &#xB530;&#xB85C; tomcat&#xC124;&#xC815; &#xD544;&#xC694;&#xC5C6;&#xC74C;)</li>
+<li>Tomcat, Jetty &#xB610;&#xB294; Undertow&#xB97C; &#xC9C1;&#xC811; &#xC784;&#xBCA0;&#xB4DC; (WAR &#xD30C;&#xC77C;&#xC744; &#xBC30;&#xCE58; &#xD560; &#xD544;&#xC694; &#xC5C6;&#xC74C;)</li>
+<li>XML &#xC0DD;&#xC131;&#xC744;&#xC704;&#xD55C; &#xCF54;&#xB4DC; &#xC0DD;&#xC131; &#xBC0F; &#xC694;&#xAD6C; &#xC0AC;&#xD56D; &#xC5C6;&#xC74C;</li>
+<li>Dependency &#xC758; &#xD45C;&#xC900;&#xD654;(maven, gradle)</li>
+</ul>
+</body></html>
+    
+    </div>
+    
+    
+</article>
+
+
+
+
+    
+    
+    </div>
+</section>
+    <footer class="footer">
+    <div class="container">
+        <div class="columns content">
+            <div class="column is-narrow has-text-centered">
+                &copy; 2020 Ethan&nbsp;
+                Powered by <a href="http://hexo.io/" target="_blank">Hexo</a> & <a
+                        href="http://github.com/ppoffice/hexo-theme-minos">Minos</a>
+            </div>
+            <div class="column is-hidden-mobile"></div>
+
+            
+            
+        </div>
+    </div>
+</footer>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script src="//cdnjs.cloudflare.com/ajax/libs/moment.js/2.22.2/moment-with-locales.min.js"></script>
+
+<!-- test if the browser is outdated -->
+<div id="outdated">
+    <h6>Your browser is out-of-date!</h6>
+    <p>Update your browser to view this website correctly. <a id="btnUpdateBrowser" href="http://outdatedbrowser.com/" target="_blank" rel="noopener">Update my browser now </a></p>
+    <p class="last"><a href="#" id="btnCloseUpdateBrowser" title="Close">&times;</a></p>
+</div>
+<script src="//cdnjs.cloudflare.com/ajax/libs/outdated-browser/1.1.5/outdatedbrowser.min.js"></script>
+<script>
+    $(document).ready(function () {
+        // plugin function, place inside DOM ready function
+        outdatedBrowser({
+            bgColor: '#f25648',
+            color: '#ffffff',
+            lowerThan: 'flex'
+        })
+    });
+</script>
+
+<script>
+    window.FontAwesomeConfig = {
+        searchPseudoElements: true
+    }
+    moment.locale("en-AU");
+</script>
+
+
+    
+    
+<script src="//cdnjs.cloudflare.com/ajax/libs/lightgallery/1.6.8/js/lightgallery-all.min.js"></script>
+<script src="//cdnjs.cloudflare.com/ajax/libs/justifiedGallery/3.6.5/js/jquery.justifiedGallery.min.js"></script>
+<script>
+    (function ($) {
+        $(document).ready(function () {
+            if (typeof($.fn.lightGallery) === 'function') {
+                $('.article.gallery').lightGallery({ selector: '.gallery-item' });
+            }
+            if (typeof($.fn.justifiedGallery) === 'function') {
+                $('.justified-gallery').justifiedGallery();
+            }
+        });
+    })(jQuery);
+</script>
+
+    
+    
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/clipboard.js/2.0.0/clipboard.min.js"></script>
+    <style>
+        .hljs {
+            position: relative;
+        }
+
+        .hljs .clipboard-btn {
+            float: right;
+            color: #9a9a9a;
+            background: none;
+            border: none;
+            cursor: pointer;
+        }
+
+        .hljs .clipboard-btn:hover {
+          color: #8a8a8a;
+        }
+
+        .hljs > .clipboard-btn {
+            display: none;
+            position: absolute;
+            right: 4px;
+            top: 4px;
+        }
+
+        .hljs:hover > .clipboard-btn {
+            display: inline;
+        }
+
+        .hljs > figcaption > .clipboard-btn {
+            margin-right: 4px;
+        }
+    </style>
+    <script>
+      $(document).ready(function () {
+        $('figure.hljs').each(function(i, figure) {
+          var codeId = 'code-' + i;
+          var code = figure.querySelector('.code');
+          var copyButton = $('<button>Copy <i class="far fa-clipboard"></i></button>');
+          code.id = codeId;
+          copyButton.addClass('clipboard-btn');
+          copyButton.attr('data-clipboard-target-id', codeId);
+
+          var figcaption = figure.querySelector('figcaption');
+
+          if (figcaption) {
+            figcaption.append(copyButton[0]);
+          } else {
+            figure.prepend(copyButton[0]);
+          }
+        })
+
+        var clipboard = new ClipboardJS('.clipboard-btn', {
+          target: function(trigger) {
+            return document.getElementById(trigger.getAttribute('data-clipboard-target-id'));
+          }
+        });
+        clipboard.on('success', function(e) {
+          e.clearSelection();
+        })
+      })
+    </script>
+
+    
+    
+
+    
+
+
+
+<script src="/js/script.js"></script>
+
+
+    
+    <div class="searchbox ins-search">
+    <div class="searchbox-mask"></div>
+    <div class="searchbox-container ins-search-container">
+        <div class="searchbox-input-wrapper">
+            <input type="text" class="searchbox-input ins-search-input" placeholder="Type something..." />
+            <span class="searchbox-close ins-close ins-selectable"><i class="fa fa-times-circle"></i></span>
+        </div>
+        <div class="searchbox-result-wrapper ins-section-wrapper">
+            <div class="ins-section-container"></div>
+        </div>
+    </div>
+</div>
+<script>
+    (function (window) {
+        var INSIGHT_CONFIG = {
+            TRANSLATION: {
+                POSTS: 'Posts',
+                PAGES: 'Pages',
+                CATEGORIES: 'Categories',
+                TAGS: 'Tags',
+                UNTITLED: '(Untitled)',
+            },
+            CONTENT_URL: '/content.json',
+        };
+        window.INSIGHT_CONFIG = INSIGHT_CONFIG;
+    })(window);
+</script>
+
+<script src="/js/insight.js"></script>
+
+    
+</body>
+</html>

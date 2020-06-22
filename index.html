@@ -1,0 +1,716 @@
+<!DOCTYPE html>
+<html class="has-navbar-fixed-top">
+<head>
+    <meta charset="utf-8">
+<title>Ethan DevLog</title>
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+<link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/outdated-browser/1.1.5/outdatedbrowser.min.css">
+
+
+
+
+
+
+
+
+
+
+
+
+<link rel="icon" href="/images/favicon-16x16.png">
+
+
+<link rel="stylesheet" href="//fonts.googleapis.com/css?family=Ovo|Source+Code+Pro">
+<link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/bulma/0.6.2/css/bulma.min.css">
+
+
+<link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/lightgallery/1.6.8/css/lightgallery.min.css">
+<link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/justifiedGallery/3.6.5/css/justifiedGallery.min.css">
+
+
+<link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/styles/atom-one-light.min.css">
+
+
+<link rel="stylesheet" href="/css/style.css">
+
+
+<script defer src="//use.fontawesome.com/releases/v5.0.8/js/all.js"></script>
+
+
+    
+    
+    
+    
+    
+    
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-119771582-1"></script>
+<script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+
+    gtag('config', 'UA-119771582-1');
+</script>
+
+
+    
+
+
+<meta name="generator" content="Hexo 4.2.0"></head>
+<body>
+    
+<nav class="navbar is-transparent is-fixed-top navbar-main" role="navigation" aria-label="main navigation">
+    <div class="container">
+        <div class="navbar-brand">
+            <a class="navbar-item navbar-logo" href="/">
+                
+                    
+                    Ethan DevLog
+                    
+                
+            </a>
+            <div class="navbar-burger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+        
+        <div class="navbar-menu navbar-start">
+            
+            <a class="navbar-item "
+               href="/archives">Archives</a>
+            
+        </div>
+        
+        <div class="navbar-menu navbar-end">
+            
+            <a class="navbar-item search" title="Search" href="javascript:;">
+                <i class="fas fa-search"></i>
+            </a>
+            
+            
+            
+            <a class="navbar-item" title="GitHub" href="https://github.com/coplayer" target="_blank" rel="noopener">
+                
+                <i class="fab fa-github"></i>
+                
+            </a>
+               
+            
+        </div>
+    </div>
+</nav>
+
+    <section class="section">
+    <div class="container">
+    
+        <article class="article content gallery" itemscope itemprop="blogPost">
+    <h1 class="article-title is-size-3 is-size-4-mobile" itemprop="name">
+        
+            <a href="/2020/06/23/development/2020-06-16-JSStringPrototype/" itemprop="url">JS String.prototype</a>
+        
+    </h1>
+    <div class="article-meta columns is-variable is-1 is-multiline is-mobile is-size-7-mobile">
+        <span class="column is-narrow">
+            <time datetime="2020-06-22T20:40:40.980Z" itemprop="datePublished">Jun 23 2020</time>
+        </span>
+        
+        <span class="column is-narrow article-category">
+            <i class="far fa-folder"></i>
+            <a class="article-category-link" href="/categories/Development/">Development</a>
+        </span>
+        
+        
+    </div>
+    <div class="article-entry is-size-6-mobile" itemprop="articleBody">
+    
+        <html><head></head><body><p>JS String.prototype &#xC911; &#xC720;&#xC6A9;&#xD55C; &#xBA87;&#xAC00;&#xC9C0; &#xC815;&#xB9AC; </p>
+<ol>
+<li>String.chartAt() &#xC778;&#xB371;&#xC2A4;&#xC758; character &#xB9AC;&#xD134;<br>&#xB9CC;&#xC57D; &#xC778;&#xB371;&#xC2A4;&#xAC00; &#xBB38;&#xC790;&#xC5F4; &#xAE38;&#xC774;&#xBCF4;&#xB2E4; &#xD070; &#xACBD;&#xC6B0; &#xBE48; &#xBB38;&#xC790;&#xC5F4; &#x201C; &#x201C; &#xC744; &#xB9AC;&#xD134;</li>
+</ol>
+<p></p><figure class="highlight javascript hljs"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line"><span class="hljs-keyword">const</span> sentence = <span class="hljs-string">&apos;I want to be a nice person&apos;</span>;</span><br><span class="line"><span class="hljs-keyword">const</span> index = <span class="hljs-number">4</span>;</span><br><span class="line"></span><br><span class="line"><span class="hljs-built_in">console</span>.log(<span class="hljs-string">`The character at index <span class="hljs-subst">${index}</span> is <span class="hljs-subst">${sentence.charAt(index)}</span>`</span>);</span><br><span class="line"></span><br><span class="line"><span class="hljs-comment">//The character at index 4 is n</span></span><br></pre></td></tr></tbody></table></figure><p></p>
+<ol start="2">
+<li>String.split()<br>str.split([separator[, limit]]) &#xBB38;&#xC790;&#xC5F4;&#xC744; &#xAD6C;&#xBD84;&#xC790;&#xB97C; &#xC774;&#xC6A9;&#xD558;&#xC5EC; &#xBC30;&#xC5F4;&#xB85C; &#xB9AC;&#xD134; &#xC778;&#xB371;&#xC2A4;&#xB97C; &#xB123;&#xC5B4; limit </li>
+</ol>
+<p></p><figure class="highlight javascript hljs"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line"><span class="hljs-keyword">const</span> sentence = <span class="hljs-string">&quot;I want to be a nice person&quot;</span>;</span><br><span class="line"><span class="hljs-keyword">const</span> array1 = sentence.split(<span class="hljs-string">&quot; &quot;</span>);</span><br><span class="line"><span class="hljs-built_in">console</span>.log(array1);</span><br><span class="line"><span class="hljs-comment">//[&quot;I&quot;, &quot;want&quot;, &quot;to&quot;, &quot;be&quot;, &quot;a&quot;, &quot;nice&quot;, &quot;person&quot;]</span></span><br><span class="line"></span><br><span class="line"><span class="hljs-keyword">const</span> array2 = sentence.split(<span class="hljs-string">&quot;&quot;</span>, <span class="hljs-number">3</span>);</span><br><span class="line"><span class="hljs-built_in">console</span>.log(array2);</span><br><span class="line"></span><br><span class="line"><span class="hljs-comment">//[&quot;I&quot;, &quot; &quot;, &quot;w&quot;]</span></span><br></pre></td></tr></tbody></table></figure><p></p>
+<ol start="3">
+<li>String splice()<br>str.slice(beginIndex[, endIndex])<br>index&#xB97C; &#xC9C0;&#xC815;&#xD558;&#xC5EC; &#xBB38;&#xC790;&#xC5F4;&#xC744; &#xB9AC;&#xD134;</li>
+</ol>
+<p></p><figure class="highlight javascript hljs"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br></pre></td><td class="code"><pre><span class="line"><span class="hljs-keyword">const</span> str = <span class="hljs-string">&apos;The quick brown fox jumps over the lazy dog.&apos;</span>;</span><br><span class="line"></span><br><span class="line"><span class="hljs-built_in">console</span>.log(str.slice(<span class="hljs-number">31</span>));</span><br><span class="line"><span class="hljs-comment">// expected output: &quot;the lazy dog.&quot;</span></span><br><span class="line"></span><br><span class="line"><span class="hljs-built_in">console</span>.log(str.slice(<span class="hljs-number">4</span>, <span class="hljs-number">19</span>));</span><br><span class="line"><span class="hljs-comment">// expected output: &quot;quick brown fox&quot;</span></span><br><span class="line"></span><br><span class="line"><span class="hljs-built_in">console</span>.log(str.slice(<span class="hljs-number">-4</span>));</span><br><span class="line"><span class="hljs-comment">// expected output: &quot;dog.&quot;</span></span><br><span class="line"></span><br><span class="line"><span class="hljs-built_in">console</span>.log(str.slice(<span class="hljs-number">-9</span>, <span class="hljs-number">-5</span>));</span><br><span class="line"><span class="hljs-comment">// expected output: &quot;lazy&quot;</span></span><br></pre></td></tr></tbody></table></figure><p></p>
+<p>&#xCC38;&#xC870; &#xD398;&#xC774;&#xC9C0; <a href="https://developer.mozilla.org/ko/docs/Web/JavaScript/Reference/" target="_blank" rel="noopener">https://developer.mozilla.org/ko/docs/Web/JavaScript/Reference/</a></p>
+</body></html>
+    
+    </div>
+    
+    
+</article>
+
+
+
+
+    
+        <article class="article content gallery" itemscope itemprop="blogPost">
+    <h1 class="article-title is-size-3 is-size-4-mobile" itemprop="name">
+        
+            <a href="/2020/06/22/algorithm/2020-06-22-sort/" itemprop="url">Sort</a>
+        
+    </h1>
+    <div class="article-meta columns is-variable is-1 is-multiline is-mobile is-size-7-mobile">
+        <span class="column is-narrow">
+            <time datetime="2020-06-22T00:30:20.000Z" itemprop="datePublished">Jun 22 2020</time>
+        </span>
+        
+        <span class="column is-narrow article-category">
+            <i class="far fa-folder"></i>
+            <a class="article-category-link" href="/categories/Spring/">Spring</a>
+        </span>
+        
+        
+    </div>
+    <div class="article-entry is-size-6-mobile" itemprop="articleBody">
+    
+        <html><head></head><body><h3 id="1-Bubble-Sort"><a href="#1-Bubble-Sort" class="headerlink" title="1. Bubble Sort"></a>1. Bubble Sort</h3><p>&#xBC84;&#xBE14;&#xC815;&#xB82C;&#xC740; &#xB450; &#xC778;&#xC811;&#xD55C; &#xC6D0;&#xC18C;&#xC758; &#xD06C;&#xAE30;&#xB97C; &#xBE44;&#xAD50;&#xD558;&#xC5EC; &#xC815;&#xB82C;&#xD558;&#xB294; &#xBC29;&#xBC95; O(n)</p>
+<p></p><figure class="highlight javascript hljs"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br></pre></td><td class="code"><pre><span class="line"><span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">bubble</span>(<span class="hljs-params">arr</span>) </span>{</span><br><span class="line">  <span class="hljs-keyword">let</span> result = arr.slice();</span><br><span class="line"></span><br><span class="line">  <span class="hljs-keyword">for</span> (<span class="hljs-keyword">let</span> i = <span class="hljs-number">0</span>; i &lt; result.length - <span class="hljs-number">1</span>; i++) {</span><br><span class="line">    <span class="hljs-comment">// &#xD55C;&#xBC88; &#xC21C;&#xC678;&#xD558;&#xBA74; result &#xAC00;&#xC7A5; &#xB05D;&#xC5D0; &#xD070;&#xC218;&#xAC00; &#xC815;&#xB82C;&#xB418;&#xBBC0;&#xB85C; -i </span></span><br><span class="line">    <span class="hljs-keyword">for</span> (<span class="hljs-keyword">let</span> j = <span class="hljs-number">0</span>; j &lt; result.length - i; j++) {  </span><br><span class="line">      <span class="hljs-keyword">if</span> (result[j] &gt; result[j + <span class="hljs-number">1</span>]) {</span><br><span class="line">        <span class="hljs-keyword">let</span> temp = result[j];</span><br><span class="line">        result[j] = result[j + <span class="hljs-number">1</span>];</span><br><span class="line">        result[j + <span class="hljs-number">1</span>] = temp;</span><br><span class="line">      }</span><br><span class="line">    }</span><br><span class="line">  }</span><br><span class="line">  <span class="hljs-keyword">return</span> result;</span><br><span class="line">}</span><br></pre></td></tr></tbody></table></figure><p></p>
+<h3 id="2-Merge-Sort"><a href="#2-Merge-Sort" class="headerlink" title="2. Merge Sort"></a>2. Merge Sort</h3><ol>
+<li><p>&#xB9AC;&#xC2A4;&#xD2B8;&#xC758; &#xAE38;&#xC774;&#xAC00; 0 &#xB610;&#xB294; 1&#xC774;&#xBA74; &#xC774;&#xBBF8; &#xC815;&#xB82C;&#xB41C; &#xAC83;&#xC73C;&#xB85C; &#xBCF8;&#xB2E4;. &#xADF8;&#xB807;&#xC9C0; &#xC54A;&#xC740; &#xACBD;&#xC6B0;&#xC5D0;&#xB294;</p>
+</li>
+<li><p>&#xC815;&#xB82C;&#xB418;&#xC9C0; &#xC54A;&#xC740; &#xB9AC;&#xC2A4;&#xD2B8;&#xB97C; &#xC808;&#xBC18;&#xC73C;&#xB85C; &#xC798;&#xB77C; &#xBE44;&#xC2B7;&#xD55C; &#xD06C;&#xAE30;&#xC758; &#xB450; &#xBD80;&#xBD84; &#xB9AC;&#xC2A4;&#xD2B8;&#xB85C; &#xB098;&#xB208;&#xB2E4;.</p>
+</li>
+<li><p>&#xAC01; &#xBD80;&#xBD84; &#xB9AC;&#xC2A4;&#xD2B8;&#xB97C; &#xC7AC;&#xADC0;&#xC801;&#xC73C;&#xB85C; &#xD569;&#xBCD1; &#xC815;&#xB82C;&#xC744; &#xC774;&#xC6A9;&#xD574; &#xC815;&#xB82C;&#xD55C;&#xB2E4;.</p>
+</li>
+<li><p>&#xB450; &#xBD80;&#xBD84; &#xB9AC;&#xC2A4;&#xD2B8;&#xB97C; &#xB2E4;&#xC2DC; &#xD558;&#xB098;&#xC758; &#xC815;&#xB82C;&#xB41C; &#xB9AC;&#xC2A4;&#xD2B8;&#xB85C; &#xD569;&#xBCD1;&#xD55C;&#xB2E4;.<br></p><figure class="highlight javascript hljs"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br></pre></td><td class="code"><pre><span class="line"></span><br><span class="line"><span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">mergeSort</span>(<span class="hljs-params">arr</span>) </span>{</span><br><span class="line">  <span class="hljs-keyword">if</span> (arr.length &lt;= <span class="hljs-number">1</span>) <span class="hljs-keyword">return</span> arr;</span><br><span class="line">  <span class="hljs-keyword">const</span> mid = <span class="hljs-built_in">Math</span>.floor(arr.length / <span class="hljs-number">2</span>);</span><br><span class="line">  <span class="hljs-keyword">const</span> left = arr.slice(<span class="hljs-number">0</span>, mid);</span><br><span class="line">  <span class="hljs-keyword">let</span> right = arr.slice(mid);</span><br><span class="line"></span><br><span class="line">  <span class="hljs-keyword">return</span> merge(mergeSort(left), mergeSort(right));</span><br><span class="line">}</span><br><span class="line"></span><br><span class="line"><span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">merge</span>(<span class="hljs-params">left, right</span>) </span>{</span><br><span class="line">    </span><br><span class="line">    <span class="hljs-keyword">let</span> result = [];</span><br><span class="line">    <span class="hljs-keyword">while</span> (left.length &amp;&amp; right.length) {</span><br><span class="line">    <span class="hljs-keyword">if</span> (left[<span class="hljs-number">0</span>] &lt; right[<span class="hljs-number">0</span>]) {</span><br><span class="line">        result.push(left.shift());</span><br><span class="line">    } <span class="hljs-keyword">else</span> {</span><br><span class="line">        result.push(right.shift());</span><br><span class="line">    }</span><br><span class="line">    }</span><br><span class="line"></span><br><span class="line">    <span class="hljs-keyword">while</span> (left.length) {</span><br><span class="line">    result.push(left.shift());</span><br><span class="line">    }</span><br><span class="line">    <span class="hljs-keyword">while</span> (right.length) {</span><br><span class="line">    result.push(right.shift());</span><br><span class="line">    }</span><br><span class="line"></span><br><span class="line">    <span class="hljs-keyword">return</span> result;</span><br><span class="line">}</span><br><span class="line"></span><br><span class="line"><span class="hljs-keyword">let</span> arr = [<span class="hljs-number">4</span>, <span class="hljs-number">1</span>, <span class="hljs-number">5</span>, <span class="hljs-number">3</span>, <span class="hljs-number">2</span>, <span class="hljs-number">6</span>, <span class="hljs-number">7</span>];</span><br><span class="line"><span class="hljs-built_in">console</span>.log(arr);</span><br><span class="line"><span class="hljs-built_in">console</span>.log(mergeSort(arr));</span><br></pre></td></tr></tbody></table></figure><p></p>
+</li>
+</ol>
+<h3 id="3-Quck-Sort"><a href="#3-Quck-Sort" class="headerlink" title="3. Quck Sort"></a>3. Quck Sort</h3><p>&#xAE30;&#xC900;&#xAC12;&#xC744; &#xB450;&#xACE0; &#xC791;&#xC73C;&#xBA74; &#xC67C;&#xCABD; &#xD06C;&#xBA74; &#xC624;&#xB978;&#xCABD;&#xC73C;&#xB85C; &#xC774;&#xB3D9;&#xC2DC;&#xD0A4;&#xB294; &#xAC83;&#xC744; &#xBC18;&#xBCF5;&#xD55C;&#xB2E4;.</p>
+<p></p><figure class="highlight javascript hljs"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br></pre></td><td class="code"><pre><span class="line">unction quckSort(arr) {</span><br><span class="line">  <span class="hljs-keyword">if</span> (arr.length &lt;= <span class="hljs-number">1</span>) <span class="hljs-keyword">return</span> arr;</span><br><span class="line"></span><br><span class="line">  <span class="hljs-keyword">let</span> pivot = arr[<span class="hljs-number">0</span>];</span><br><span class="line">  <span class="hljs-keyword">let</span> left = [];</span><br><span class="line">  <span class="hljs-keyword">let</span> right = [];</span><br><span class="line"></span><br><span class="line">  <span class="hljs-keyword">for</span> (<span class="hljs-keyword">let</span> i = <span class="hljs-number">1</span>; i &lt; arr.length; i++) {</span><br><span class="line">    <span class="hljs-keyword">if</span> (pivot &gt; arr[i]) {</span><br><span class="line">      left.push(arr[i]);</span><br><span class="line">    } <span class="hljs-keyword">else</span> {</span><br><span class="line">      right.push(arr[i]);</span><br><span class="line">    }</span><br><span class="line">  }</span><br><span class="line"></span><br><span class="line">  <span class="hljs-keyword">return</span> quckSort(left).concat(pivot, quckSort(right));</span><br><span class="line">}</span><br><span class="line"></span><br><span class="line"><span class="hljs-keyword">const</span> arr = [<span class="hljs-number">4</span>, <span class="hljs-number">1</span>, <span class="hljs-number">5</span>, <span class="hljs-number">3</span>, <span class="hljs-number">2</span>, <span class="hljs-number">6</span>, <span class="hljs-number">7</span>];</span><br><span class="line"><span class="hljs-built_in">console</span>.log(arr);</span><br><span class="line"><span class="hljs-built_in">console</span>.log(quckSort(arr));</span><br></pre></td></tr></tbody></table></figure><p></p>
+</body></html>
+    
+    </div>
+    
+    
+</article>
+
+
+
+
+    
+        <article class="article content gallery" itemscope itemprop="blogPost">
+    <h1 class="article-title is-size-3 is-size-4-mobile" itemprop="name">
+        
+            <a href="/2020/06/22/spring/2020-06-22-jpa/" itemprop="url">JPA</a>
+        
+    </h1>
+    <div class="article-meta columns is-variable is-1 is-multiline is-mobile is-size-7-mobile">
+        <span class="column is-narrow">
+            <time datetime="2020-06-22T00:30:20.000Z" itemprop="datePublished">Jun 22 2020</time>
+        </span>
+        
+        <span class="column is-narrow article-category">
+            <i class="far fa-folder"></i>
+            <a class="article-category-link" href="/categories/Spring/">Spring</a>
+        </span>
+        
+        
+    </div>
+    <div class="article-entry is-size-6-mobile" itemprop="articleBody">
+    
+        
+    
+    </div>
+    
+    
+</article>
+
+
+
+
+    
+        <article class="article content gallery" itemscope itemprop="blogPost">
+    <h1 class="article-title is-size-3 is-size-4-mobile" itemprop="name">
+        
+            <a href="/2020/06/16/development/2020-06-15-JSMapReduce/" itemprop="url">Array.prototype Map() Reduce()</a>
+        
+    </h1>
+    <div class="article-meta columns is-variable is-1 is-multiline is-mobile is-size-7-mobile">
+        <span class="column is-narrow">
+            <time datetime="2020-06-16T14:11:09.622Z" itemprop="datePublished">Jun 16 2020</time>
+        </span>
+        
+        <span class="column is-narrow article-category">
+            <i class="far fa-folder"></i>
+            <a class="article-category-link" href="/categories/Development/">Development</a>
+        </span>
+        
+        
+    </div>
+    <div class="article-entry is-size-6-mobile" itemprop="articleBody">
+    
+        <html><head></head><body><p>Javascript&#xC758; Array.prototype &#xB450;&#xAC00;&#xC9C0; for&#xC744; &#xC0AC;&#xC6A9;&#xD558;&#xC9C0;&#xC54A;&#xACE0; Array &#xD615;&#xD0DC;&#xC758; Object&#xB97C; &#xC81C;&#xC5B4;</p>
+<h4 id="Array-prototype-map"><a href="#Array-prototype-map" class="headerlink" title="Array.prototype.map()"></a>Array.prototype.map()</h4><p></p><figure class="highlight javascript hljs"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br></pre></td><td class="code"><pre><span class="line"><span class="hljs-comment">/*</span></span><br><span class="line"><span class="hljs-comment">map() &#xBA54;&#xC11C;&#xB4DC;&#xB294; &#xBC30;&#xC5F4; &#xB0B4;&#xC758; &#xBAA8;&#xB4E0; &#xC694;&#xC18C; &#xAC01;&#xAC01;&#xC5D0; &#xB300;&#xD558;&#xC5EC; &#xC8FC;&#xC5B4;&#xC9C4; &#xD568;&#xC218;&#xB97C; &#xD638;&#xCD9C;&#xD55C; &#xACB0;&#xACFC;&#xB97C; &#xBAA8;&#xC544; &#xC0C8;&#xB85C;&#xC6B4; &#xBC30;&#xC5F4;&#xC744; &#xBC18;&#xD658;&#xD569;&#xB2C8;&#xB2E4;.</span></span><br><span class="line"><span class="hljs-comment">*/</span></span><br><span class="line"></span><br><span class="line"><span class="hljs-keyword">const</span> array1 = [<span class="hljs-number">1</span>, <span class="hljs-number">4</span>, <span class="hljs-number">9</span>, <span class="hljs-number">16</span>];</span><br><span class="line"></span><br><span class="line"><span class="hljs-comment">//array.map(element )</span></span><br><span class="line"><span class="hljs-keyword">const</span> map1 = array1.map(<span class="hljs-function"><span class="hljs-params">x</span> =&gt;</span> x * <span class="hljs-number">2</span>);</span><br><span class="line"></span><br><span class="line"><span class="hljs-built_in">console</span>.log(map1);</span><br><span class="line"><span class="hljs-comment">// expected output: Array [2, 8, 18, 32]</span></span><br></pre></td></tr></tbody></table></figure><br>&#xAE30;&#xBCF8; &#xC801;&#xC778; &#xC124;&#xBA85; &#xC678;&#xC5D0;&#xB3C4; Array&#xC758; &#xAC01; &#xC694;&#xC18C;&#xB97C; if(&#xC870;&#xAC74;&#xBB38;) &#xC774;&#xB098; &#xAE30;&#xD0C0; &#xB85C;&#xC9C1;&#xC744; &#xD1B5;&#xD574;&#xC11C; &#xD544;&#xC694;&#xD55C; &#xBC30;&#xC5F4;&#xB85C; &#xBC18;&#xD658;&#xD558;&#xACE0; &#xC2F6;&#xB2E4;&#xBA74; &#xD65C;&#xC6A9;<p></p>
+<p>&#xC544;&#xB798;&#xCC98;&#xB7FC; &#xC778;&#xB371;&#xC2A4;&#xC640; &#xD568;&#xAED8; &#xD65C;&#xC6A9;&#xB3C4; &#xAC00;&#xB2A5;</p>
+<p></p><figure class="highlight javascript hljs"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line"><span class="hljs-keyword">const</span> array1 = [<span class="hljs-number">1</span>, <span class="hljs-number">4</span>, <span class="hljs-number">9</span>, <span class="hljs-number">16</span>];</span><br><span class="line"></span><br><span class="line"><span class="hljs-keyword">const</span> map1 = array1.map(<span class="hljs-function">(<span class="hljs-params">element, index</span>) =&gt;</span> {</span><br><span class="line">  <span class="hljs-built_in">console</span>.log(element, index);</span><br><span class="line">  <span class="hljs-keyword">return</span> element;</span><br><span class="line">});</span><br><span class="line"></span><br><span class="line"><span class="hljs-built_in">console</span>.log(map1);</span><br></pre></td></tr></tbody></table></figure><p></p>
+<h4 id="Array-prototype-map-1"><a href="#Array-prototype-map-1" class="headerlink" title="Array.prototype.map()"></a>Array.prototype.map()</h4><p></p><figure class="highlight javascript hljs"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line"><span class="hljs-keyword">const</span> array1 = [<span class="hljs-number">1</span>, <span class="hljs-number">2</span>, <span class="hljs-number">3</span>, <span class="hljs-number">4</span>];</span><br><span class="line"><span class="hljs-keyword">const</span> reducer = <span class="hljs-function">(<span class="hljs-params">accumulator, currentValue</span>) =&gt;</span> accumulator + currentValue;</span><br><span class="line"></span><br><span class="line"><span class="hljs-comment">// 1 + 2 + 3 + 4</span></span><br><span class="line"><span class="hljs-built_in">console</span>.log(array1.reduce(reducer));</span><br><span class="line"><span class="hljs-comment">// expected output: 10</span></span><br><span class="line"></span><br><span class="line"><span class="hljs-comment">// 5 + 1 + 2 + 3 + 4</span></span><br><span class="line"><span class="hljs-built_in">console</span>.log(array1.reduce(reducer, <span class="hljs-number">5</span>));</span><br><span class="line"><span class="hljs-comment">// expected output: 15</span></span><br></pre></td></tr></tbody></table></figure><br>accumulator &#xAE30;&#xB2A5;&#xC744; &#xD65C;&#xC6A9;&#xD558;&#xC5EC; &#xB204;&#xC0B0;&#xAE30;&#xB2A5;&#xC73C;&#xB85C; &#xD65C;&#xC6A9;&#xD558;&#xB098; &#xB2E4;&#xC591;&#xD55C; &#xD65C;&#xC6A9;&#xBC95;&#xC774; &#xC788;&#xB2E4;.<p></p>
+<p>&#xC911;&#xBCF5;&#xC758; &#xC81C;&#xAC70;<br></p><figure class="highlight javascript hljs"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br></pre></td><td class="code"><pre><span class="line"><span class="hljs-keyword">let</span> arr = [<span class="hljs-number">1</span>, <span class="hljs-number">2</span>, <span class="hljs-number">1</span>, <span class="hljs-number">2</span>, <span class="hljs-number">3</span>, <span class="hljs-number">5</span>, <span class="hljs-number">4</span>, <span class="hljs-number">5</span>, <span class="hljs-number">3</span>, <span class="hljs-number">4</span>, <span class="hljs-number">4</span>, <span class="hljs-number">4</span>, <span class="hljs-number">4</span>];</span><br><span class="line"><span class="hljs-keyword">let</span> result = arr.sort().reduce(<span class="hljs-function">(<span class="hljs-params">accumulator, current</span>) =&gt;</span> {</span><br><span class="line">    <span class="hljs-keyword">const</span> length = accumulator.length</span><br><span class="line">    <span class="hljs-keyword">if</span> (length === <span class="hljs-number">0</span> || accumulator[length - <span class="hljs-number">1</span>] !== current) {</span><br><span class="line">        accumulator.push(current);</span><br><span class="line">    }</span><br><span class="line">    <span class="hljs-keyword">return</span> accumulator;</span><br><span class="line">}, []);</span><br><span class="line"><span class="hljs-built_in">console</span>.log(result); <span class="hljs-comment">//[1,2,3,4,5]</span></span><br><span class="line"></span><br><span class="line"><span class="hljs-comment">/*</span></span><br><span class="line"><span class="hljs-comment">&#xB3D9;&#xC77C;&#xAE30;&#xB2A5;</span></span><br><span class="line"><span class="hljs-comment">*/</span></span><br><span class="line"><span class="hljs-keyword">let</span> result = <span class="hljs-built_in">Array</span>.from(<span class="hljs-keyword">new</span> <span class="hljs-built_in">Set</span>(arr));</span><br></pre></td></tr></tbody></table></figure><p></p>
+<p>reduce&#xB85C; map, filter, find &#xBAA8;&#xB450; &#xAD6C;&#xD604;&#xAC00;&#xB2A5;<br></p><figure class="highlight javascript hljs"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br></pre></td><td class="code"><pre><span class="line"><span class="hljs-keyword">let</span> arr = [<span class="hljs-number">9</span>, <span class="hljs-number">2</span>, <span class="hljs-number">8</span>, <span class="hljs-number">5</span>, <span class="hljs-number">7</span>]</span><br><span class="line"><span class="hljs-keyword">let</span> sum = arr.reduce(<span class="hljs-function">(<span class="hljs-params">pre, val</span>) =&gt;</span> pre + val)</span><br><span class="line"><span class="hljs-built_in">console</span>.log(sum)	<span class="hljs-comment">// 31</span></span><br><span class="line"></span><br><span class="line"><span class="hljs-comment">// map</span></span><br><span class="line"><span class="hljs-keyword">var</span> arr = [<span class="hljs-string">&apos;foo&apos;</span>, <span class="hljs-string">&apos;hello&apos;</span>, <span class="hljs-string">&apos;diamond&apos;</span>, <span class="hljs-string">&apos;A&apos;</span>]</span><br><span class="line"><span class="hljs-keyword">var</span> arr2 = arr.reduce(<span class="hljs-function">(<span class="hljs-params">pre, value</span>) =&gt;</span> {</span><br><span class="line">    pre.push(value.length)</span><br><span class="line">    <span class="hljs-keyword">return</span> pre</span><br><span class="line">}, [])</span><br><span class="line"><span class="hljs-built_in">console</span>.log(arr2)   <span class="hljs-comment">// [3, 5, 7, 1]</span></span><br><span class="line"></span><br><span class="line"><span class="hljs-comment">// filter</span></span><br><span class="line"><span class="hljs-keyword">var</span> arr = [<span class="hljs-number">4</span>, <span class="hljs-number">15</span>, <span class="hljs-number">377</span>, <span class="hljs-number">395</span>, <span class="hljs-number">400</span>, <span class="hljs-number">1024</span>, <span class="hljs-number">3000</span>]</span><br><span class="line"><span class="hljs-keyword">var</span> arr2 = arr.reduce(<span class="hljs-function">(<span class="hljs-params">pre, value</span>) =&gt;</span> {</span><br><span class="line">    <span class="hljs-keyword">if</span> (value % <span class="hljs-number">5</span> == <span class="hljs-number">0</span>) {</span><br><span class="line">        pre.push(value);</span><br><span class="line">    }</span><br><span class="line">    <span class="hljs-keyword">return</span> pre;</span><br><span class="line">}, []);</span><br><span class="line"><span class="hljs-built_in">console</span>.log(arr2)    <span class="hljs-comment">// [15, 395, 400, 3000]</span></span><br><span class="line"></span><br><span class="line"><span class="hljs-comment">// find</span></span><br><span class="line"><span class="hljs-keyword">var</span> arr = [<span class="hljs-number">4</span>, <span class="hljs-number">15</span>, <span class="hljs-number">377</span>, <span class="hljs-number">395</span>, <span class="hljs-number">400</span>, <span class="hljs-number">1024</span>, <span class="hljs-number">3000</span>]</span><br><span class="line"><span class="hljs-keyword">var</span> arr2 = arr.reduce(<span class="hljs-function">(<span class="hljs-params">pre, value</span>) =&gt;</span> {</span><br><span class="line">    <span class="hljs-keyword">if</span> (<span class="hljs-keyword">typeof</span> pre == <span class="hljs-string">&apos;undefined&apos;</span> &amp;&amp; value % <span class="hljs-number">5</span> == <span class="hljs-number">0</span>) {</span><br><span class="line">        pre = value;</span><br><span class="line">    }</span><br><span class="line">    <span class="hljs-keyword">return</span> pre;</span><br><span class="line">}, <span class="hljs-literal">undefined</span>);</span><br><span class="line"><span class="hljs-built_in">console</span>.log(arr2)  <span class="hljs-comment">// 15</span></span><br></pre></td></tr></tbody></table></figure><p></p>
+<p>&#xCC38;&#xACE0;&#xB9C1;&#xD06C;<br><a href="https://velog.io/@decody/map-%EC%A0%95%EB%A6%AC" target="_blank" rel="noopener">https://velog.io/@decody/map-%EC%A0%95%EB%A6%AC</a></p>
+</body></html>
+    
+    </div>
+    
+    
+</article>
+
+
+
+
+    
+        <article class="article content gallery" itemscope itemprop="blogPost">
+    <h1 class="article-title is-size-3 is-size-4-mobile" itemprop="name">
+        
+            <a href="/2020/06/16/development/2019-03-29-GitlabServer/" itemprop="url">Gitlab 설치하기(Docker on Mac)</a>
+        
+    </h1>
+    <div class="article-meta columns is-variable is-1 is-multiline is-mobile is-size-7-mobile">
+        <span class="column is-narrow">
+            <time datetime="2020-06-16T14:11:09.621Z" itemprop="datePublished">Jun 16 2020</time>
+        </span>
+        
+        <span class="column is-narrow article-category">
+            <i class="far fa-folder"></i>
+            <a class="article-category-link" href="/categories/Development/">Development</a>
+        </span>
+        
+        
+    </div>
+    <div class="article-entry is-size-6-mobile" itemprop="articleBody">
+    
+        <html><head></head><body><p>Github&#xC640; Gitlab &#xBAA8;&#xB450; &#xD074;&#xB77C;&#xC6B0;&#xB4DC;&#xB97C; &#xC9C0;&#xC6D0;&#xD558;&#xACE0; &#xC788;&#xB2E4;.<br>&#xB2E4;&#xB978; &#xC124;&#xCE58; &#xC5C6;&#xC774; &#xAC00;&#xC785; &#xB808;&#xD30C;&#xC9C0;&#xD1A0;&#xB9AC; &#xC0DD;&#xC131;&#xC744; &#xD1B5;&#xD574; &#xC0AC;&#xC6A9;&#xD560; &#xC218; &#xC788;&#xB2E4;.</p>
+<p>&#xC790;&#xCCB4;&#xC801;&#xC73C;&#xB85C; Git&#xC744; &#xAD00;&#xB9AC;&#xD558;&#xACE0; &#xC788;&#xB358; &#xAC83;&#xC744; &#xC11C;&#xBC84;&#xB85C; &#xAD00;&#xB9AC;&#xD558;&#xACE0; &#xCF54;&#xB4DC;&#xB9AC;&#xBDF0;&#xB97C;<br>&#xC6D0;&#xD560;&#xD558;&#xAC8C; &#xD558;&#xACE0; &#xC2F6;&#xC740; &#xC695;&#xAD6C;&#xAC00; &#xC0DD;&#xACA8;&#xC11C; Gitlab&#xC744; &#xC124;&#xCE58;&#xD558;&#xACE0;&#xC790; &#xD588;&#xB2E4;.</p>
+<p>Gitlab <a href="https://docs.gitlab.com/runner/install/osx.html" target="_blank" rel="noopener">&#xACF5;&#xC2DD; &#xD648;&#xD398;&#xC774;&#xC9C0;</a> &#xC5D0;&#xC11C; &#xAC00;&#xC774;&#xB4DC;&#xB97C; &#xC81C;&#xACF5;&#xD558;&#xACE0; &#xC788;&#xB2E4;.</p>
+<p>&#xD558;&#xC9C0;&#xB9CC; &#xC815;&#xC0C1;&#xC801;&#xC73C;&#xB85C; &#xC791;&#xB3D9;&#xB418;&#xC9C0; &#xC54A;&#xC558;&#xB2E4;. &#xD604;&#xC7AC; &#xC0AC;&#xC6A9;&#xD558;&#xACE0; &#xC788;&#xB294; &#xAC1C;&#xBC1C; &#xC11C;&#xBC84;&#xAC00; &#xB9E5;&#xC774;&#xAE30; &#xB54C;&#xBB38;&#xC77C;&#xC9C0;&#xB3C4; &#xBAA8;&#xB974;&#xACA0;&#xC9C0;&#xB9CC; &#xB2E4;&#xB978; &#xBC29;&#xBC95;&#xC744; &#xC11C;&#xCE6D;&#xD574;&#xC11C; Docker&#xC5D0; gitlab&#xC744; &#xC124;&#xCE58; &#xD558;&#xB294; &#xBC29;&#xBC95;&#xC73C;&#xB85C; &#xC804;&#xD658;&#xD558;&#xC600;&#xB2E4;.</p>
+<p>Docker &#xB294; <a href="https://www.docker.com/products/docker-desktop" target="_blank" rel="noopener">&#xC774;&#xACF3;</a> &#xC5D0;&#xC11C; &#xB2E4;&#xC6B4; &#xBC1B;&#xC544; &#xC124;&#xCE58;&#xD560; &#xC218; &#xC788;&#xB2E4;.<br>&#xAC00;&#xC785;&#xACFC; &#xB85C;&#xADF8;&#xC778;&#xC740; &#xAC1C;&#xBCC4;&#xC801;&#xC73C;&#xB85C; &#xD558;&#xC790;.</p>
+<p>&#xB2E4;&#xC74C;&#xACFC; &#xAC19;&#xC774; &#xCEE4;&#xBA58;&#xB4DC;&#xB97C; &#xC218;&#xD589;&#xD55C;&#xB2E4;.</p>
+<p></p><figure class="highlight plain hljs"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line">docker run --detach --name gitlab \</span><br><span class="line">    --hostname gitlab.local \</span><br><span class="line">    --publish 30000:30000 \</span><br><span class="line">    --publish 30001:22 \</span><br><span class="line">    --env GITLAB_OMNIBUS_CONFIG=&quot;external_url &apos;http://gitlab.local:30000&apos;;          </span><br><span class="line">    gitlab_rails[&apos;gitlab_shell_ssh_port&apos;]=30000;&quot; \</span><br><span class="line">    gitlab/gitlab-ce:9.1.0-ce.0</span><br></pre></td></tr></tbody></table></figure><p></p>
+<p>publish port &#xC640; external_url &#xC740; &#xAC1C;&#xC778;&#xC5D0; &#xB9DE;&#xAC8C; &#xC124;&#xC815;&#xD558;&#xC790;.</p>
+<p>&#xD574;&#xB2F9; &#xCEE4;&#xBA58;&#xB4DC;&#xAC00; &#xC624;&#xB958; &#xC5C6;&#xC774; &#xC218;&#xD589;&#xB418;&#xBA74; docker images&#xC5D0; gitlab&#xC11C;&#xBC84;&#xAC00; &#xC218;&#xD589; &#xC911;&#xC77C; &#xAC83;&#xC774;&#xB2E4;.  </p>
+<p><a href="http://gitlab.local:30000" target="_blank" rel="noopener">http://gitlab.local:30000</a> &#xC5D0; &#xC811;&#xC18D;&#xD558;&#xBA74; &#xAE43;&#xB819; &#xB85C;&#xADF8;&#xC778; &#xD654;&#xBA74;&#xC744; &#xD655;&#xC778;&#xD560; &#xC218; &#xC788;&#xB2E4;.</p>
+</body></html>
+    
+    </div>
+    
+    
+</article>
+
+
+
+
+    
+        <article class="article content gallery" itemscope itemprop="blogPost">
+    <h1 class="article-title is-size-3 is-size-4-mobile" itemprop="name">
+        
+            <a href="/2020/06/16/development/2019-06-12-javaIPAdress/" itemprop="url">Java IP address 사용하기</a>
+        
+    </h1>
+    <div class="article-meta columns is-variable is-1 is-multiline is-mobile is-size-7-mobile">
+        <span class="column is-narrow">
+            <time datetime="2020-06-16T14:11:09.621Z" itemprop="datePublished">Jun 16 2020</time>
+        </span>
+        
+        <span class="column is-narrow article-category">
+            <i class="far fa-folder"></i>
+            <a class="article-category-link" href="/categories/Development/">Development</a>
+        </span>
+        
+        
+    </div>
+    <div class="article-entry is-size-6-mobile" itemprop="articleBody">
+    
+        <html><head></head><body><p>&#xC815;&#xC801;&#xC73C;&#xB85C; &#xC9C0;&#xC815;&#xB41C; IP&#xB97C; &#xAC1C;&#xBC1C;&#xC790;&#xB4E4;&#xC758; IP&#xC5D0; &#xB9DE;&#xAC8C; &#xB3D9;&#xC801;&#xC73C;&#xB85C; &#xD560;&#xB2F9;&#xB418;&#xB3C4;&#xB85D; &#xD504;&#xB85C;&#xADF8;&#xB7A8;&#xC744; &#xC218;&#xC815;&#xD558;&#xB358; &#xB3C4;&#xC911;&#xC5D0; &#xC0AC;&#xC6A9;&#xD55C; &#xD074;&#xB798;&#xC2A4;&#xC5D0;&#xC11C; &#xC774;&#xC0C1;&#xD55C; &#xC544;&#xC774;&#xD53C;&#xAC00; &#xD560;&#xB2F9;&#xB418;&#xB294; &#xAC83;&#xC744; &#xD655;&#xC778;&#xD558;&#xAC8C; &#xB418;&#xC5C8;&#xC2B5;&#xB2C8;&#xB2E4;. InetAddress Class &#xB0B4;&#xBD80;&#xB97C; &#xC0B4;&#xD3B4;&#xBCF4;&#xBA74; hostname &#xC774; &#x201C;localhost&#x201D; &#xC77C; &#xB54C;&#xB9CC; &#xC815;&#xD655;&#xD55C; IP&#xB97C; &#xB9AC;&#xD134; &#xD558;&#xB3C4;&#xB85D; &#xAD6C;&#xD604;&#xB418;&#xC5B4; &#xC788;&#xC5C8;&#xC2B5;&#xB2C8;&#xB2E4;. </p>
+<p></p><figure class="highlight java hljs"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">String ip = <span class="hljs-string">&quot;&quot;</span>;</span><br><span class="line"><span class="hljs-keyword">try</span>{</span><br><span class="line">    ip = InetAddress.getLocalHost().getHostAddress();</span><br><span class="line">}<span class="hljs-keyword">catch</span>(UnknownHostException e){</span><br><span class="line">    e.printStackTrace();</span><br><span class="line">}</span><br></pre></td></tr></tbody></table></figure><p></p>
+<p>&#xC720;&#xB2C9;&#xC2A4;&#xC640; &#xB9AC;&#xB205;&#xC2A4; &#xACC4;&#xC5F4;&#xC5D0;&#xC11C; hostname &#xC774; &#xC0AC;&#xC6A9;&#xC790;&#xC5D0; &#xB530;&#xB77C; &#xB3D9;&#xC801;&#xC73C;&#xB85C; &#xBC14;&#xB00C;&#xBA74;&#xC11C; IP&#xAC00; &#xC81C;&#xB300;&#xB85C; &#xD560;&#xB2F9;&#xB418;&#xC9C0; &#xC54A;&#xB294; &#xAC83;&#xC774; &#xC6D0;&#xC778;&#xC774;&#xC5C8;&#xC2B5;&#xB2C8;&#xB2E4;. &#xC544;&#xB798;&#xC640; &#xAC19;&#xC774; &#xCF54;&#xB4DC;&#xB97C; &#xC218;&#xC815;&#xD558;&#xC600;&#xC2B5;&#xB2C8;&#xB2E4;.</p>
+<p></p><figure class="highlight java hljs"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br></pre></td><td class="code"><pre><span class="line">String ip= <span class="hljs-string">&quot;&quot;</span>;</span><br><span class="line"></span><br><span class="line"><span class="hljs-keyword">try</span> {</span><br><span class="line">    Enumeration&lt;NetworkInterface&gt; nienum = NetworkInterface.getNetworkInterfaces();</span><br><span class="line"></span><br><span class="line">    <span class="hljs-keyword">while</span> (nienum.hasMoreElements()) {</span><br><span class="line"></span><br><span class="line">        NetworkInterface ni = nienum.nextElement();</span><br><span class="line"></span><br><span class="line">        Enumeration&lt;InetAddress&gt; kk= ni.getInetAddresses();</span><br><span class="line"></span><br><span class="line">        <span class="hljs-keyword">while</span> (kk.hasMoreElements()) {</span><br><span class="line"></span><br><span class="line">            InetAddress inetAddress = kk.nextElement();</span><br><span class="line"></span><br><span class="line">            <span class="hljs-keyword">if</span> (!inetAddress.isLoopbackAddress() &amp;&amp;</span><br><span class="line"></span><br><span class="line">                    !inetAddress.isLinkLocalAddress() &amp;&amp;</span><br><span class="line"></span><br><span class="line">                    inetAddress.isSiteLocalAddress()) {</span><br><span class="line"></span><br><span class="line">                ip = inetAddress.getHostAddress().toString();</span><br><span class="line"></span><br><span class="line">            }</span><br><span class="line">        }</span><br><span class="line">    }</span><br><span class="line">} <span class="hljs-keyword">catch</span> (SocketException e) {</span><br><span class="line">    e.printStackTrace();</span><br><span class="line">}</span><br></pre></td></tr></tbody></table></figure><br>&#xB124;&#xD2B8;&#xC6CC;&#xD06C; &#xC778;&#xD130;&#xD398;&#xC774;&#xC2A4;&#xC5D0; &#xD560;&#xB2F9;&#xB41C; &#xC11C;&#xBC84; &#xC8FC;&#xC18C;&#xB97C; &#xD560;&#xB2F9;&#xD558;&#xB3C4;&#xB85D; &#xC18C;&#xC2A4;&#xB97C; &#xC218;&#xC815;&#xD558;&#xC5EC; &#xB9E5;&#xC774;&#xB098; &#xB9AC;&#xB205;&#xC2A4;&#xC5D0;&#xC11C;&#xB3C4; &#xACE0;&#xC720; &#xC544;&#xC774;&#xD53C;&#xB97C; &#xC815;&#xC0C1;&#xC801;&#xC73C;&#xB85C; &#xB9AC;&#xD134;&#xD558;&#xB3C4;&#xB85D; &#xD558;&#xC600;&#xC2B5;&#xB2C8;&#xB2E4;.<p></p>
+</body></html>
+    
+    </div>
+    
+    
+</article>
+
+
+
+
+    
+        <article class="article content gallery" itemscope itemprop="blogPost">
+    <h1 class="article-title is-size-3 is-size-4-mobile" itemprop="name">
+        
+            <a href="/2020/06/16/development/2018-11-22-LinuxCommand2/" itemprop="url">Linux 명령어(top, free, grep option) </a>
+        
+    </h1>
+    <div class="article-meta columns is-variable is-1 is-multiline is-mobile is-size-7-mobile">
+        <span class="column is-narrow">
+            <time datetime="2020-06-16T14:11:09.621Z" itemprop="datePublished">Jun 16 2020</time>
+        </span>
+        
+        <span class="column is-narrow article-category">
+            <i class="far fa-folder"></i>
+            <a class="article-category-link" href="/categories/Development/">Development</a>
+        </span>
+        
+        
+    </div>
+    <div class="article-entry is-size-6-mobile" itemprop="articleBody">
+    
+        <html><head></head><body><h2 id="1-&#xC2DC;&#xC2A4;&#xD15C;&#xC758;-&#xBA54;&#xBAA8;&#xB9AC;-&#xC815;&#xBCF4;-&#xD30C;&#xC77C;-&#xCD9C;&#xB825;"><a href="#1-&#xC2DC;&#xC2A4;&#xD15C;&#xC758;-&#xBA54;&#xBAA8;&#xB9AC;-&#xC815;&#xBCF4;-&#xD30C;&#xC77C;-&#xCD9C;&#xB825;" class="headerlink" title="1. &#xC2DC;&#xC2A4;&#xD15C;&#xC758; &#xBA54;&#xBAA8;&#xB9AC; &#xC815;&#xBCF4; &#xD30C;&#xC77C; &#xCD9C;&#xB825;"></a>1. &#xC2DC;&#xC2A4;&#xD15C;&#xC758; &#xBA54;&#xBAA8;&#xB9AC; &#xC815;&#xBCF4; &#xD30C;&#xC77C; &#xCD9C;&#xB825;</h2><p></p><figure class="highlight plain hljs"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">cat /proc/meminfo</span><br></pre></td></tr></tbody></table></figure><p></p>
+<h2 id="2-&#xC2DC;&#xC2A4;&#xD15C;-&#xD504;&#xB85C;&#xC138;&#xC2A4;-&#xC0C1;&#xC138;-&#xB0B4;&#xC6A9;&#xBCF4;&#xAE30;"><a href="#2-&#xC2DC;&#xC2A4;&#xD15C;-&#xD504;&#xB85C;&#xC138;&#xC2A4;-&#xC0C1;&#xC138;-&#xB0B4;&#xC6A9;&#xBCF4;&#xAE30;" class="headerlink" title="2. &#xC2DC;&#xC2A4;&#xD15C; &#xD504;&#xB85C;&#xC138;&#xC2A4; &#xC0C1;&#xC138; &#xB0B4;&#xC6A9;&#xBCF4;&#xAE30;"></a>2. &#xC2DC;&#xC2A4;&#xD15C; &#xD504;&#xB85C;&#xC138;&#xC2A4; &#xC0C1;&#xC138; &#xB0B4;&#xC6A9;&#xBCF4;&#xAE30;</h2><p>&#xC708;&#xB3C4;&#xC6B0;&#xC758; &#xC791;&#xC5C5; &#xAD00;&#xB9AC;&#xC790;&#xC640; &#xBE44;&#xC2B7;&#xD55C; &#xD615;&#xD0DC;&#xB97C; &#xB748;&#xB2E4;.</p>
+<p></p><figure class="highlight plain hljs"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">top</span><br></pre></td></tr></tbody></table></figure><p></p>
+<ul>
+<li>&#xCD9C;&#xB825; &#xB0B4;&#xC6A9; &#xC0C1;&#xC138; &#xC124;&#xBA85;  </li>
+</ul>
+<blockquote>
+<p>[PID] : &#xD504;&#xB85C;&#xC138;&#xC2A4; ID<br>[USER] : &#xD504;&#xB85C;&#xC138;&#xC2A4;&#xB97C; &#xC2E4;&#xD589;&#xC2DC;&#xD0A8; &#xC0AC;&#xC6A9;&#xC790; ID<br>[PR] : &#xD504;&#xB85C;&#xC138;&#xC2A4;&#xC758; &#xC6B0;&#xC120;&#xC21C;&#xC704;<br>[NI] : NICE &#xAC12;, &#xB9C8;&#xC774;&#xB108;&#xC2A4;&#xB97C; &#xAC00;&#xC9C0;&#xB294; &#xAC12;&#xC774; &#xC6B0;&#xC120;&#xC21C;&#xC704;&#xAC00; &#xB192;&#xC74C;<br>[VIRT] : &#xAC00;&#xC0C1; &#xBA54;&#xBAA8;&#xB9AC;&#xC758; &#xC0AC;&#xC6A9;&#xB7C9;(SWAP+RES)<br>[RES] : &#xD604;&#xC7AC; &#xD398;&#xC774;&#xC9C0;&#xAC00; &#xC0C1;&#xC8FC;&#xD558;&#xACE0; &#xC788;&#xB294; &#xD06C;&#xAE30;<br>[SHR] : &#xAC00;&#xC0C1; &#xBA54;&#xBAA8;&#xB9AC; &#xC911; &#xC0AC;&#xC6A9;&#xC911;&#xC778; &#xBA54;&#xBAA8;&#xB9AC;&#xB97C; &#xC81C;&#xC678;&#xD55C; &#xC794;&#xC5EC; &#xAC00;&#xC0C1; &#xBA54;&#xBAA8;&#xB9AC;<br>[S] : &#xD504;&#xB85C;&#xC138;&#xC2A4;&#xC758; &#xC0C1;&#xD0DC;<br>[%CPU] : &#xD504;&#xB85C;&#xC138;&#xC2A4;&#xAC00; &#xC0AC;&#xC6A9;&#xD558;&#xB294; CPU&#xC758; &#xC0AC;&#xC6A9;&#xB960;<br>[%MEM] : &#xD504;&#xB85C;&#xC138;&#xC2A4;&#xAC00; &#xC0AC;&#xC6A9;&#xD558;&#xB294; &#xBA54;&#xBAA8;&#xB9AC;&#xC758; &#xC0AC;&#xC6A9;&#xB960;<br>[TIME+] : &#xD504;&#xB85C;&#xC138;&#xC2A4;&#xAC00; CPU&#xB97C; &#xC0AC;&#xC6A9;&#xD55C; &#xC2DC;&#xAC04;<br>[COMMAND] : &#xC2E4;&#xD589;&#xB41C; &#xBA85;&#xB839;&#xC5B4;  </p>
+</blockquote>
+<blockquote>
+<p>SHIFT + M &#xBA54;&#xBAA8;&#xB9AC; &#xC0AC;&#xC6A9;&#xB960; &#xC815;&#xB82C;<br>SHIFT + N PID &#xAE30;&#xC900; &#xC815;&#xB82C;<br>SHIFT + P CPU &#xC0AC;&#xC6A9;&#xB960; &#xC815;&#xB82C;<br>SHIFT + T &#xC2E4;&#xD589;&#xC2DC;&#xAC04; &#xAE30;&#xC900; &#xC815;&#xB82C;<br>SHIFT + R &#xC815;&#xB82C; &#xAE30;&#xC900;&#xBCC0;&#xACBD;</p>
+</blockquote>
+<hr>
+<h2 id="3-&#xBA54;&#xBAA8;&#xB9AC;-&#xBAA8;&#xB2C8;&#xD130;&#xB9C1;"><a href="#3-&#xBA54;&#xBAA8;&#xB9AC;-&#xBAA8;&#xB2C8;&#xD130;&#xB9C1;" class="headerlink" title="3. &#xBA54;&#xBAA8;&#xB9AC; &#xBAA8;&#xB2C8;&#xD130;&#xB9C1;"></a>3. &#xBA54;&#xBAA8;&#xB9AC; &#xBAA8;&#xB2C8;&#xD130;&#xB9C1;</h2><p></p><figure class="highlight plain hljs"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">free -m</span><br></pre></td></tr></tbody></table></figure><p></p>
+<hr>
+<h2 id="4-&#xB514;&#xC2A4;&#xD06C;-&#xBAA8;&#xB2C8;&#xD130;&#xB9C1;"><a href="#4-&#xB514;&#xC2A4;&#xD06C;-&#xBAA8;&#xB2C8;&#xD130;&#xB9C1;" class="headerlink" title="4. &#xB514;&#xC2A4;&#xD06C; &#xBAA8;&#xB2C8;&#xD130;&#xB9C1;"></a>4. &#xB514;&#xC2A4;&#xD06C; &#xBAA8;&#xB2C8;&#xD130;&#xB9C1;</h2><p></p><figure class="highlight plain hljs"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">df</span><br></pre></td></tr></tbody></table></figure><p></p>
+<blockquote>
+<p>[-h] : &#xC6A9;&#xB7C9;&#xC744; &#xC77D;&#xAE30; &#xC27D;&#xAC8C; &#xB2E8;&#xC704;&#xB97C; &#xACC4;&#xC0B0;&#xD558;&#xC5EC; &#xCD9C;&#xB825;<br>[-T] : &#xD30C;&#xC77C; &#xC2DC;&#xC2A4;&#xD15C; &#xC885;&#xB958;&#xC640; &#xD568;&#xAED8; &#xB514;&#xC2A4;&#xD06C; &#xC815;&#xBCF4; &#xCD9C;&#xB825;</p>
+</blockquote>
+<hr>
+<h2 id="5-grep-option"><a href="#5-grep-option" class="headerlink" title="5. grep option"></a>5. grep option</h2><p></p><figure class="highlight plain hljs"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">grep</span><br></pre></td></tr></tbody></table></figure><p></p>
+<p>-E, &#x2013;extended-regexp : &#xD655;&#xC7A5; &#xC815;&#xADDC;&#xD45C;&#xD604;&#xC2DD;&#xC73C;&#xB85C; &#xD328;&#xD134;&#xC744; &#xD574;&#xC11D;&#xD55C;&#xB2E4;(=egrep &#xAC19;&#xC740; &#xC758;&#xBBF8;)<br>-F, &#x2013;fixed-strings : newline&#xC73C;&#xB85C; &#xBD84;&#xB9AC;&#xB41C; &#xACE0;&#xC815;&#xB41C; &#xBB38;&#xC790;&#xC5F4;&#xC758; &#xB9AC;&#xC2A4;&#xD2B8;&#xB85C;&#xC368; &#xD328;&#xD134;&#xC744; &#xD574;&#xC11D;&#xD55C;&#xB2E4;</p>
+</body></html>
+    
+    </div>
+    
+    
+</article>
+
+
+
+
+    
+        <article class="article content gallery" itemscope itemprop="blogPost">
+    <h1 class="article-title is-size-3 is-size-4-mobile" itemprop="name">
+        
+            <a href="/2020/06/16/development/2019-06-13-gradleBuildErorr/" itemprop="url">Gradle Build 오류(javax.net.ssl.SSLException)</a>
+        
+    </h1>
+    <div class="article-meta columns is-variable is-1 is-multiline is-mobile is-size-7-mobile">
+        <span class="column is-narrow">
+            <time datetime="2020-06-16T14:11:09.621Z" itemprop="datePublished">Jun 16 2020</time>
+        </span>
+        
+        <span class="column is-narrow article-category">
+            <i class="far fa-folder"></i>
+            <a class="article-category-link" href="/categories/Development/">Development</a>
+        </span>
+        
+        
+    </div>
+    <div class="article-entry is-size-6-mobile" itemprop="articleBody">
+    
+        <html><head></head><body><p>Sprigboot &#xC5D0;&#xC11C; Gradle &#xBE4C;&#xB4DC; &#xC218;&#xD589; </p>
+<p></p><figure class="highlight plain hljs"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">javax.net.ssl.SSLException:closing inbound before receiving peer&apos;s close_notify</span><br></pre></td></tr></tbody></table></figure><p></p>
+<p>&#xB370;&#xC774;&#xD130;&#xBCA0;&#xC774;&#xC2A4;&#xC5D0; SSL&#xC124;&#xC815;&#xC774; &#xB418;&#xC5B4; &#xC788;&#xC9C0; &#xC54A;&#xC544; Springboot gradle &#xBE4C;&#xB4DC;&#xC2DC; &#xBC1C;&#xC0DD;&#xD558;&#xB294; &#xC624;&#xB958;&#xB77C;&#xACE0; &#xD569;&#xB2C8;&#xB2E4;.</p>
+<p>jdbc url &#xC5D0; &#xB2E4;&#xC74C;&#xACE0; &#xAC19;&#xC774; &#xC635;&#xC158;&#xC744; &#xCD94;&#xAC00;&#xD574; &#xC8FC;&#xBA74; &#xBE4C;&#xB4DC;&#xAC00; &#xC815;&#xC0C1;&#xC801;&#xC73C;&#xB85C; &#xC218;&#xD589;&#xB418;&#xB294; &#xAC83;&#xC744; &#xD655;&#xC778; &#xD558;&#xC600;&#xC2B5;&#xB2C8;&#xB2E4;.</p>
+<p></p><figure class="highlight plain hljs"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">ex) jdbc:myslq://localhost:3306?&amp;useSSL=false</span><br></pre></td></tr></tbody></table></figure><p></p>
+</body></html>
+    
+    </div>
+    
+    
+</article>
+
+
+
+
+    
+        <article class="article content gallery" itemscope itemprop="blogPost">
+    <h1 class="article-title is-size-3 is-size-4-mobile" itemprop="name">
+        
+            <a href="/2020/06/16/development/2019-07-09-intellijTomcatConfig/" itemprop="url">Intellij Tomcat 로그 한글깨짐 현상 </a>
+        
+    </h1>
+    <div class="article-meta columns is-variable is-1 is-multiline is-mobile is-size-7-mobile">
+        <span class="column is-narrow">
+            <time datetime="2020-06-16T14:11:09.621Z" itemprop="datePublished">Jun 16 2020</time>
+        </span>
+        
+        <span class="column is-narrow article-category">
+            <i class="far fa-folder"></i>
+            <a class="article-category-link" href="/categories/Development/">Development</a>
+        </span>
+        
+        
+    </div>
+    <div class="article-entry is-size-6-mobile" itemprop="articleBody">
+    
+        <html><head></head><body><p>Intellij &#xC758; tomcat &#xB85C;&#xADF8; &#xC911; &#xD55C;&#xAE00;&#xC774; &#xAE68;&#xC9C0;&#xB294; &#xD604;&#xC0C1; </p>
+<p>Intellij&#xC758; &#xC624;&#xB978;&#xCABD; &#xC0C1;&#xB2E8; Editconfiguration<br>Configuration &#xC758; VM options&#xC5D0; &#xB2E4;&#xC74C; &#xCF54;&#xB4DC; &#xCD94;&#xAC00;</p>
+<p></p><figure class="highlight plain hljs"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">-Dfile.encoding=UTF-8</span><br></pre></td></tr></tbody></table></figure><p></p>
+</body></html>
+    
+    </div>
+    
+    
+</article>
+
+
+
+
+    
+        <article class="article content gallery" itemscope itemprop="blogPost">
+    <h1 class="article-title is-size-3 is-size-4-mobile" itemprop="name">
+        
+            <a href="/2020/06/16/development/2019-07-11-springbootRestDocsGradle/" itemprop="url">SpringBoot + Rest Docs + Gradle</a>
+        
+    </h1>
+    <div class="article-meta columns is-variable is-1 is-multiline is-mobile is-size-7-mobile">
+        <span class="column is-narrow">
+            <time datetime="2020-06-16T14:11:09.621Z" itemprop="datePublished">Jun 16 2020</time>
+        </span>
+        
+        <span class="column is-narrow article-category">
+            <i class="far fa-folder"></i>
+            <a class="article-category-link" href="/categories/Development/">Development</a>
+        </span>
+        
+        
+    </div>
+    <div class="article-entry is-size-6-mobile" itemprop="articleBody">
+    
+        <html><head></head><body><p>API&#xB97C; &#xC9C0;&#xC18D;&#xC801;&#xC73C;&#xB85C; &#xC218;&#xC815;&#xD558;&#xBA74;&#xC11C; &#xBB38;&#xC11C;&#xB97C; &#xC218;&#xC815;&#xD558;&#xB294; &#xB370;&#xB294; &#xD55C;&#xACC4;&#xC810; &#xC788;&#xC2B5;&#xB2C8;&#xB2E4;.</p>
+<p>Spring &#xAC1C;&#xBC1C;&#xD558;&#xBA74;&#xC11C; UI&#xC640; &#xD568;&#xAED8; &#xAC04;&#xB7B5;&#xD558;&#xAC8C; &#xC81C;&#xACF5;&#xB418;&#xB294; Swagger &#xC640; REST docs&#xAC00; &#xB300;&#xD45C;&#xC801; &#xC785;&#xB2C8;&#xB2E4;.</p>
+<p>Spring &#xD504;&#xB808;&#xC784;&#xC6CD;&#xC73C;&#xB85C; &#xAC1C;&#xBC1C;&#xD558;&#xBA74;&#xC11C; Swagger&#xB97C; &#xC0AC;&#xC6A9;&#xD574; &#xBCF4;&#xC558;&#xACE0; &#xC774;&#xBC88; &#xAC1C;&#xBC1C;&#xC5D0;&#xB294; REST docs&#xB97C; &#xC801;&#xC6A9;&#xD574; &#xBCF4;&#xAE30;&#xB85C; &#xD588;&#xB2E4;.</p>
+<p>&#xAD6C;&#xAE00;&#xB9C1;&#xC744; &#xD1B5;&#xD574; &#xC5EC;&#xB7EC; &#xBE14;&#xB85C;&#xADF8;&#xB97C; &#xCC3E;&#xC544;&#xC11C; &#xC138;&#xD305;&#xC744; &#xC9C4;&#xD589; &#xD574;&#xBCF4;&#xC558;&#xC9C0;&#xB9CC; &#xC548;&#xB418;&#xB294; &#xBD80;&#xBD84;&#xC740; <a href="https://docs.spring.io/spring-restdocs/docs/current/reference/html5/" target="_blank" rel="noopener">Spring REST Docs</a> &#xC0AC;&#xC774;&#xD2B8;&#xAC00; &#xAC00;&#xC7A5; &#xBA85;&#xD655;&#xD558;&#xAC8C; &#xAC00;&#xC774;&#xB4DC;&#xB97C; &#xD558;&#xACE0; &#xC788;&#xC73C;&#xB2C8; &#xCC38;&#xACE0; &#xD558;&#xC168;&#xC73C;&#xBA74; &#xD569;&#xB2C8;&#xB2E4;.</p>
+<p>Swagger&#xC640;&#xC758; &#xCC28;&#xC774;&#xB294; &#xD14C;&#xC2A4;&#xD2B8; &#xCF54;&#xB4DC;&#xB97C; &#xC791;&#xC131;&#xD574;&#xC11C; &#xBB38;&#xC11C;&#xB97C; &#xC0DD;&#xC131;&#xD574;&#xC57C; &#xD55C;&#xB2E4;&#xB294; &#xCC28;&#xC774;&#xAC00; &#xC788;&#xC2B5;&#xB2C8;&#xB2E4;.</p>
+<p>&#xD14C;&#xC2A4;&#xD2B8; &#xCF54;&#xB4DC;&#xB85C; &#xAC1C;&#xBC1C;&#xC758; &#xC815;&#xD569;&#xC131;&#xC744; &#xD5A5;&#xC0C1;&#xD558;&#xB294; &#xB370; &#xD070; &#xB3C4;&#xC6C0;&#xC774; &#xB420;&#xAC83;&#xC73C;&#xB85C; &#xC0DD;&#xAC01; &#xB429;&#xB2C8;&#xB2E4;.</p>
+<p>&#xD604;&#xC7AC;&#xC758; &#xAC1C;&#xBC1C;&#xD658;&#xACBD;&#xC740;</p>
+<ul>
+<li>Springboot </li>
+<li>Mybatis  </li>
+<li>Gradle</li>
+</ul>
+<p>&#xC744; &#xD65C;&#xC6A9;&#xD558;&#xACE0; &#xC788;&#xC2B5;&#xB2C8;&#xB2E4;.</p>
+<p>&#xAC04;&#xB7B5;&#xD558;&#xAC8C; &#xC138;&#xD305;&#xD574;&#xC57C; &#xD558;&#xB294; &#xBD80;&#xBD84;&#xC740; &#xB2E4;&#xC74C;&#xACFC; &#xAC19;&#xC2B5;&#xB2C8;&#xB2E4;.</p>
+<ol>
+<li><p>build.gradle &#xCD94;&#xAC00;</p>
+</li>
+<li><p>test code &#xC791;&#xC131;</p>
+</li>
+<li><p>adoc &#xC0DD;&#xC131;</p>
+</li>
+<li><p>html &#xC0DD;&#xC131;</p>
+</li>
+</ol>
+</body></html>
+    
+    </div>
+    
+    
+</article>
+
+
+
+
+    
+    
+        
+<nav class="pagination is-centered is-rounded" role="navigation" aria-label="pagination">
+    <div class="pagination-previous is-invisible is-hidden-mobile">
+        <a href="/page/0/">Prev</a>
+    </div>
+    <div class="pagination-next">
+        <a href="/page/2/">Next</a>
+    </div>
+    <ul class="pagination-list is-hidden-mobile">
+        
+        <li><a class="pagination-link is-current" href="/">1</a></li>
+        
+        <li><a class="pagination-link" href="/page/2/">2</a></li>
+        
+        <li><span class="pagination-ellipsis">&hellip;</span></li>
+        
+        <li><a class="pagination-link" href="/page/5/">5</a></li>
+        
+    </ul>
+</nav>
+    
+    </div>
+</section>
+    <footer class="footer">
+    <div class="container">
+        <div class="columns content">
+            <div class="column is-narrow has-text-centered">
+                &copy; 2020 Ethan&nbsp;
+                Powered by <a href="http://hexo.io/" target="_blank">Hexo</a> & <a
+                        href="http://github.com/ppoffice/hexo-theme-minos">Minos</a>
+            </div>
+            <div class="column is-hidden-mobile"></div>
+
+            
+            
+        </div>
+    </div>
+</footer>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script src="//cdnjs.cloudflare.com/ajax/libs/moment.js/2.22.2/moment-with-locales.min.js"></script>
+
+<!-- test if the browser is outdated -->
+<div id="outdated">
+    <h6>Your browser is out-of-date!</h6>
+    <p>Update your browser to view this website correctly. <a id="btnUpdateBrowser" href="http://outdatedbrowser.com/" target="_blank" rel="noopener">Update my browser now </a></p>
+    <p class="last"><a href="#" id="btnCloseUpdateBrowser" title="Close">&times;</a></p>
+</div>
+<script src="//cdnjs.cloudflare.com/ajax/libs/outdated-browser/1.1.5/outdatedbrowser.min.js"></script>
+<script>
+    $(document).ready(function () {
+        // plugin function, place inside DOM ready function
+        outdatedBrowser({
+            bgColor: '#f25648',
+            color: '#ffffff',
+            lowerThan: 'flex'
+        })
+    });
+</script>
+
+<script>
+    window.FontAwesomeConfig = {
+        searchPseudoElements: true
+    }
+    moment.locale("en-AU");
+</script>
+
+
+    
+    
+<script src="//cdnjs.cloudflare.com/ajax/libs/lightgallery/1.6.8/js/lightgallery-all.min.js"></script>
+<script src="//cdnjs.cloudflare.com/ajax/libs/justifiedGallery/3.6.5/js/jquery.justifiedGallery.min.js"></script>
+<script>
+    (function ($) {
+        $(document).ready(function () {
+            if (typeof($.fn.lightGallery) === 'function') {
+                $('.article.gallery').lightGallery({ selector: '.gallery-item' });
+            }
+            if (typeof($.fn.justifiedGallery) === 'function') {
+                $('.justified-gallery').justifiedGallery();
+            }
+        });
+    })(jQuery);
+</script>
+
+    
+    
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/clipboard.js/2.0.0/clipboard.min.js"></script>
+    <style>
+        .hljs {
+            position: relative;
+        }
+
+        .hljs .clipboard-btn {
+            float: right;
+            color: #9a9a9a;
+            background: none;
+            border: none;
+            cursor: pointer;
+        }
+
+        .hljs .clipboard-btn:hover {
+          color: #8a8a8a;
+        }
+
+        .hljs > .clipboard-btn {
+            display: none;
+            position: absolute;
+            right: 4px;
+            top: 4px;
+        }
+
+        .hljs:hover > .clipboard-btn {
+            display: inline;
+        }
+
+        .hljs > figcaption > .clipboard-btn {
+            margin-right: 4px;
+        }
+    </style>
+    <script>
+      $(document).ready(function () {
+        $('figure.hljs').each(function(i, figure) {
+          var codeId = 'code-' + i;
+          var code = figure.querySelector('.code');
+          var copyButton = $('<button>Copy <i class="far fa-clipboard"></i></button>');
+          code.id = codeId;
+          copyButton.addClass('clipboard-btn');
+          copyButton.attr('data-clipboard-target-id', codeId);
+
+          var figcaption = figure.querySelector('figcaption');
+
+          if (figcaption) {
+            figcaption.append(copyButton[0]);
+          } else {
+            figure.prepend(copyButton[0]);
+          }
+        })
+
+        var clipboard = new ClipboardJS('.clipboard-btn', {
+          target: function(trigger) {
+            return document.getElementById(trigger.getAttribute('data-clipboard-target-id'));
+          }
+        });
+        clipboard.on('success', function(e) {
+          e.clearSelection();
+        })
+      })
+    </script>
+
+    
+    
+
+    
+
+
+
+<script src="/js/script.js"></script>
+
+
+    
+    <div class="searchbox ins-search">
+    <div class="searchbox-mask"></div>
+    <div class="searchbox-container ins-search-container">
+        <div class="searchbox-input-wrapper">
+            <input type="text" class="searchbox-input ins-search-input" placeholder="Type something..." />
+            <span class="searchbox-close ins-close ins-selectable"><i class="fa fa-times-circle"></i></span>
+        </div>
+        <div class="searchbox-result-wrapper ins-section-wrapper">
+            <div class="ins-section-container"></div>
+        </div>
+    </div>
+</div>
+<script>
+    (function (window) {
+        var INSIGHT_CONFIG = {
+            TRANSLATION: {
+                POSTS: 'Posts',
+                PAGES: 'Pages',
+                CATEGORIES: 'Categories',
+                TAGS: 'Tags',
+                UNTITLED: '(Untitled)',
+            },
+            CONTENT_URL: '/content.json',
+        };
+        window.INSIGHT_CONFIG = INSIGHT_CONFIG;
+    })(window);
+</script>
+
+<script src="/js/insight.js"></script>
+
+    
+</body>
+</html>

@@ -1,0 +1,329 @@
+<!DOCTYPE html>
+<html class="has-navbar-fixed-top">
+<head>
+    <meta charset="utf-8">
+<title>Tag: Gitlab, Docker - Ethan DevLog</title>
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+<link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/outdated-browser/1.1.5/outdatedbrowser.min.css">
+
+
+
+
+
+
+
+
+
+
+
+
+<link rel="icon" href="/images/favicon-16x16.png">
+
+
+<link rel="stylesheet" href="//fonts.googleapis.com/css?family=Ovo|Source+Code+Pro">
+<link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/bulma/0.6.2/css/bulma.min.css">
+
+
+<link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/lightgallery/1.6.8/css/lightgallery.min.css">
+<link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/justifiedGallery/3.6.5/css/justifiedGallery.min.css">
+
+
+<link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/styles/atom-one-light.min.css">
+
+
+<link rel="stylesheet" href="/css/style.css">
+
+
+<script defer src="//use.fontawesome.com/releases/v5.0.8/js/all.js"></script>
+
+
+    
+    
+    
+    
+    
+    
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-119771582-1"></script>
+<script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+
+    gtag('config', 'UA-119771582-1');
+</script>
+
+
+    
+
+
+<meta name="generator" content="Hexo 4.2.0"></head>
+<body>
+    
+<nav class="navbar is-transparent is-fixed-top navbar-main" role="navigation" aria-label="main navigation">
+    <div class="container">
+        <div class="navbar-brand">
+            <a class="navbar-item navbar-logo" href="/">
+                
+                    
+                    Ethan DevLog
+                    
+                
+            </a>
+            <div class="navbar-burger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+        
+        <div class="navbar-menu navbar-start">
+            
+            <a class="navbar-item "
+               href="/archives">Archives</a>
+            
+        </div>
+        
+        <div class="navbar-menu navbar-end">
+            
+            <a class="navbar-item search" title="Search" href="javascript:;">
+                <i class="fas fa-search"></i>
+            </a>
+            
+            
+            
+            <a class="navbar-item" title="GitHub" href="https://github.com/coplayer" target="_blank" rel="noopener">
+                
+                <i class="fab fa-github"></i>
+                
+            </a>
+               
+            
+        </div>
+    </div>
+</nav>
+
+    <section class="section section-heading">
+    <div class="container">
+        <div class="content">
+            <h5>#Gitlab, Docker</h5>
+        </div>
+    </div>
+</section>
+<section class="section">
+    <div class="container">
+    
+        <article class="article content gallery" itemscope itemprop="blogPost">
+    <h1 class="article-title is-size-3 is-size-4-mobile" itemprop="name">
+        
+            <a href="/2020/06/16/development/2019-03-29-GitlabServer/" itemprop="url">Gitlab 설치하기(Docker on Mac)</a>
+        
+    </h1>
+    <div class="article-meta columns is-variable is-1 is-multiline is-mobile is-size-7-mobile">
+        <span class="column is-narrow">
+            <time datetime="2020-06-16T14:11:09.621Z" itemprop="datePublished">Jun 16 2020</time>
+        </span>
+        
+        <span class="column is-narrow article-category">
+            <i class="far fa-folder"></i>
+            <a class="article-category-link" href="/categories/Development/">Development</a>
+        </span>
+        
+        
+    </div>
+    <div class="article-entry is-size-6-mobile" itemprop="articleBody">
+    
+        <html><head></head><body><p>Github&#xC640; Gitlab &#xBAA8;&#xB450; &#xD074;&#xB77C;&#xC6B0;&#xB4DC;&#xB97C; &#xC9C0;&#xC6D0;&#xD558;&#xACE0; &#xC788;&#xB2E4;.<br>&#xB2E4;&#xB978; &#xC124;&#xCE58; &#xC5C6;&#xC774; &#xAC00;&#xC785; &#xB808;&#xD30C;&#xC9C0;&#xD1A0;&#xB9AC; &#xC0DD;&#xC131;&#xC744; &#xD1B5;&#xD574; &#xC0AC;&#xC6A9;&#xD560; &#xC218; &#xC788;&#xB2E4;.</p>
+<p>&#xC790;&#xCCB4;&#xC801;&#xC73C;&#xB85C; Git&#xC744; &#xAD00;&#xB9AC;&#xD558;&#xACE0; &#xC788;&#xB358; &#xAC83;&#xC744; &#xC11C;&#xBC84;&#xB85C; &#xAD00;&#xB9AC;&#xD558;&#xACE0; &#xCF54;&#xB4DC;&#xB9AC;&#xBDF0;&#xB97C;<br>&#xC6D0;&#xD560;&#xD558;&#xAC8C; &#xD558;&#xACE0; &#xC2F6;&#xC740; &#xC695;&#xAD6C;&#xAC00; &#xC0DD;&#xACA8;&#xC11C; Gitlab&#xC744; &#xC124;&#xCE58;&#xD558;&#xACE0;&#xC790; &#xD588;&#xB2E4;.</p>
+<p>Gitlab <a href="https://docs.gitlab.com/runner/install/osx.html" target="_blank" rel="noopener">&#xACF5;&#xC2DD; &#xD648;&#xD398;&#xC774;&#xC9C0;</a> &#xC5D0;&#xC11C; &#xAC00;&#xC774;&#xB4DC;&#xB97C; &#xC81C;&#xACF5;&#xD558;&#xACE0; &#xC788;&#xB2E4;.</p>
+<p>&#xD558;&#xC9C0;&#xB9CC; &#xC815;&#xC0C1;&#xC801;&#xC73C;&#xB85C; &#xC791;&#xB3D9;&#xB418;&#xC9C0; &#xC54A;&#xC558;&#xB2E4;. &#xD604;&#xC7AC; &#xC0AC;&#xC6A9;&#xD558;&#xACE0; &#xC788;&#xB294; &#xAC1C;&#xBC1C; &#xC11C;&#xBC84;&#xAC00; &#xB9E5;&#xC774;&#xAE30; &#xB54C;&#xBB38;&#xC77C;&#xC9C0;&#xB3C4; &#xBAA8;&#xB974;&#xACA0;&#xC9C0;&#xB9CC; &#xB2E4;&#xB978; &#xBC29;&#xBC95;&#xC744; &#xC11C;&#xCE6D;&#xD574;&#xC11C; Docker&#xC5D0; gitlab&#xC744; &#xC124;&#xCE58; &#xD558;&#xB294; &#xBC29;&#xBC95;&#xC73C;&#xB85C; &#xC804;&#xD658;&#xD558;&#xC600;&#xB2E4;.</p>
+<p>Docker &#xB294; <a href="https://www.docker.com/products/docker-desktop" target="_blank" rel="noopener">&#xC774;&#xACF3;</a> &#xC5D0;&#xC11C; &#xB2E4;&#xC6B4; &#xBC1B;&#xC544; &#xC124;&#xCE58;&#xD560; &#xC218; &#xC788;&#xB2E4;.<br>&#xAC00;&#xC785;&#xACFC; &#xB85C;&#xADF8;&#xC778;&#xC740; &#xAC1C;&#xBCC4;&#xC801;&#xC73C;&#xB85C; &#xD558;&#xC790;.</p>
+<p>&#xB2E4;&#xC74C;&#xACFC; &#xAC19;&#xC774; &#xCEE4;&#xBA58;&#xB4DC;&#xB97C; &#xC218;&#xD589;&#xD55C;&#xB2E4;.</p>
+<p></p><figure class="highlight plain hljs"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line">docker run --detach --name gitlab \</span><br><span class="line">    --hostname gitlab.local \</span><br><span class="line">    --publish 30000:30000 \</span><br><span class="line">    --publish 30001:22 \</span><br><span class="line">    --env GITLAB_OMNIBUS_CONFIG=&quot;external_url &apos;http://gitlab.local:30000&apos;;          </span><br><span class="line">    gitlab_rails[&apos;gitlab_shell_ssh_port&apos;]=30000;&quot; \</span><br><span class="line">    gitlab/gitlab-ce:9.1.0-ce.0</span><br></pre></td></tr></tbody></table></figure><p></p>
+<p>publish port &#xC640; external_url &#xC740; &#xAC1C;&#xC778;&#xC5D0; &#xB9DE;&#xAC8C; &#xC124;&#xC815;&#xD558;&#xC790;.</p>
+<p>&#xD574;&#xB2F9; &#xCEE4;&#xBA58;&#xB4DC;&#xAC00; &#xC624;&#xB958; &#xC5C6;&#xC774; &#xC218;&#xD589;&#xB418;&#xBA74; docker images&#xC5D0; gitlab&#xC11C;&#xBC84;&#xAC00; &#xC218;&#xD589; &#xC911;&#xC77C; &#xAC83;&#xC774;&#xB2E4;.  </p>
+<p><a href="http://gitlab.local:30000" target="_blank" rel="noopener">http://gitlab.local:30000</a> &#xC5D0; &#xC811;&#xC18D;&#xD558;&#xBA74; &#xAE43;&#xB819; &#xB85C;&#xADF8;&#xC778; &#xD654;&#xBA74;&#xC744; &#xD655;&#xC778;&#xD560; &#xC218; &#xC788;&#xB2E4;.</p>
+</body></html>
+    
+    </div>
+    
+    
+</article>
+
+
+
+
+    
+    
+    </div>
+</section>
+    <footer class="footer">
+    <div class="container">
+        <div class="columns content">
+            <div class="column is-narrow has-text-centered">
+                &copy; 2020 Ethan&nbsp;
+                Powered by <a href="http://hexo.io/" target="_blank">Hexo</a> & <a
+                        href="http://github.com/ppoffice/hexo-theme-minos">Minos</a>
+            </div>
+            <div class="column is-hidden-mobile"></div>
+
+            
+            
+        </div>
+    </div>
+</footer>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script src="//cdnjs.cloudflare.com/ajax/libs/moment.js/2.22.2/moment-with-locales.min.js"></script>
+
+<!-- test if the browser is outdated -->
+<div id="outdated">
+    <h6>Your browser is out-of-date!</h6>
+    <p>Update your browser to view this website correctly. <a id="btnUpdateBrowser" href="http://outdatedbrowser.com/" target="_blank" rel="noopener">Update my browser now </a></p>
+    <p class="last"><a href="#" id="btnCloseUpdateBrowser" title="Close">&times;</a></p>
+</div>
+<script src="//cdnjs.cloudflare.com/ajax/libs/outdated-browser/1.1.5/outdatedbrowser.min.js"></script>
+<script>
+    $(document).ready(function () {
+        // plugin function, place inside DOM ready function
+        outdatedBrowser({
+            bgColor: '#f25648',
+            color: '#ffffff',
+            lowerThan: 'flex'
+        })
+    });
+</script>
+
+<script>
+    window.FontAwesomeConfig = {
+        searchPseudoElements: true
+    }
+    moment.locale("en-AU");
+</script>
+
+
+    
+    
+<script src="//cdnjs.cloudflare.com/ajax/libs/lightgallery/1.6.8/js/lightgallery-all.min.js"></script>
+<script src="//cdnjs.cloudflare.com/ajax/libs/justifiedGallery/3.6.5/js/jquery.justifiedGallery.min.js"></script>
+<script>
+    (function ($) {
+        $(document).ready(function () {
+            if (typeof($.fn.lightGallery) === 'function') {
+                $('.article.gallery').lightGallery({ selector: '.gallery-item' });
+            }
+            if (typeof($.fn.justifiedGallery) === 'function') {
+                $('.justified-gallery').justifiedGallery();
+            }
+        });
+    })(jQuery);
+</script>
+
+    
+    
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/clipboard.js/2.0.0/clipboard.min.js"></script>
+    <style>
+        .hljs {
+            position: relative;
+        }
+
+        .hljs .clipboard-btn {
+            float: right;
+            color: #9a9a9a;
+            background: none;
+            border: none;
+            cursor: pointer;
+        }
+
+        .hljs .clipboard-btn:hover {
+          color: #8a8a8a;
+        }
+
+        .hljs > .clipboard-btn {
+            display: none;
+            position: absolute;
+            right: 4px;
+            top: 4px;
+        }
+
+        .hljs:hover > .clipboard-btn {
+            display: inline;
+        }
+
+        .hljs > figcaption > .clipboard-btn {
+            margin-right: 4px;
+        }
+    </style>
+    <script>
+      $(document).ready(function () {
+        $('figure.hljs').each(function(i, figure) {
+          var codeId = 'code-' + i;
+          var code = figure.querySelector('.code');
+          var copyButton = $('<button>Copy <i class="far fa-clipboard"></i></button>');
+          code.id = codeId;
+          copyButton.addClass('clipboard-btn');
+          copyButton.attr('data-clipboard-target-id', codeId);
+
+          var figcaption = figure.querySelector('figcaption');
+
+          if (figcaption) {
+            figcaption.append(copyButton[0]);
+          } else {
+            figure.prepend(copyButton[0]);
+          }
+        })
+
+        var clipboard = new ClipboardJS('.clipboard-btn', {
+          target: function(trigger) {
+            return document.getElementById(trigger.getAttribute('data-clipboard-target-id'));
+          }
+        });
+        clipboard.on('success', function(e) {
+          e.clearSelection();
+        })
+      })
+    </script>
+
+    
+    
+
+    
+
+
+
+<script src="/js/script.js"></script>
+
+
+    
+    <div class="searchbox ins-search">
+    <div class="searchbox-mask"></div>
+    <div class="searchbox-container ins-search-container">
+        <div class="searchbox-input-wrapper">
+            <input type="text" class="searchbox-input ins-search-input" placeholder="Type something..." />
+            <span class="searchbox-close ins-close ins-selectable"><i class="fa fa-times-circle"></i></span>
+        </div>
+        <div class="searchbox-result-wrapper ins-section-wrapper">
+            <div class="ins-section-container"></div>
+        </div>
+    </div>
+</div>
+<script>
+    (function (window) {
+        var INSIGHT_CONFIG = {
+            TRANSLATION: {
+                POSTS: 'Posts',
+                PAGES: 'Pages',
+                CATEGORIES: 'Categories',
+                TAGS: 'Tags',
+                UNTITLED: '(Untitled)',
+            },
+            CONTENT_URL: '/content.json',
+        };
+        window.INSIGHT_CONFIG = INSIGHT_CONFIG;
+    })(window);
+</script>
+
+<script src="/js/insight.js"></script>
+
+    
+</body>
+</html>
