@@ -2,7 +2,7 @@
 <html class="has-navbar-fixed-top">
 <head>
     <meta charset="utf-8">
-<title>리눅스 명령어 - Ethan DevLog</title>
+<title>리눅스 명령어 - DevLog</title>
 <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
 
 <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/outdated-browser/1.1.5/outdatedbrowser.min.css">
@@ -66,7 +66,7 @@
             <a class="navbar-item navbar-logo" href="/">
                 
                     
-                    Ethan DevLog
+                    DevLog
                     
                 
             </a>
@@ -140,7 +140,7 @@
                     
                     
                     
-                    <a class="navbar-item" href="#39">7.1&nbsp;&nbsp;12345678//마지막 100번째줄 까지 출력tail -n 숫자//바이트단위tail -c 숫자//실시간 출력tail -f</a>
+                    <a class="navbar-item" href="#42">7.1&nbsp;&nbsp;12345678//마지막 100번째줄 까지 출력tail -n 숫자//바이트단위tail -c 숫자//실시간 출력tail -f</a>
                     
                     
                     <hr class="navbar-divider">
@@ -192,7 +192,7 @@
 <h1 id="4-rm-&#xC0AD;&#xC81C;"><a href="#4-rm-&#xC0AD;&#xC81C;" class="headerlink" title="4. rm (&#xC0AD;&#xC81C;)"></a>4. rm (&#xC0AD;&#xC81C;)</h1><p></p><figure class="highlight javascript hljs"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br></pre></td><td class="code"><pre><span class="line"></span><br><span class="line"><span class="hljs-comment">//&#xC0AD;&#xC81C;</span></span><br><span class="line">$ rm home  </span><br><span class="line"></span><br><span class="line"><span class="hljs-comment">//&#xB514;&#xB809;&#xD1A0;&#xB9AC;&#xAE4C;&#xC9C0; &#xC0AD;&#xC81C;</span></span><br><span class="line">$ rm -r home/ </span><br><span class="line"></span><br><span class="line"><span class="hljs-comment">//&#xC4F0;&#xAE30;&#xBCF4;&#xD638; &#xB4F1; &#xAD8C;&#xD55C;&#xACFC; &#xC0C1;&#xAD00;&#xC5C6;&#xC774; &#xC0AD;&#xC81C;</span></span><br><span class="line">$ rm -f home</span><br><span class="line"></span><br><span class="line"><span class="hljs-comment">//&#xAC19;&#xC774; &#xC0AC;&#xC6A9;&#xD560; &#xC218; &#xC788;&#xB2E4;.</span></span><br><span class="line">$ rm -rf home</span><br></pre></td></tr></tbody></table></figure><p></p>
 <h1 id="5-cp-mv"><a href="#5-cp-mv" class="headerlink" title="5. cp , mv"></a>5. cp , mv</h1><p>&#xBCF5;&#xC0AC;, &#xC774;&#xB3D9;</p>
 <h1 id="6-mkdir-rmdir"><a href="#6-mkdir-rmdir" class="headerlink" title="6. mkdir , rmdir"></a>6. mkdir , rmdir</h1><p>&#xB514;&#xB809;&#xD1A0;&#xB9AC; &#xC0DD;&#xC131; , &#xC0AD;&#xC81C;</p>
-<h1 id="7-tail-&#xD30C;&#xC77C;-&#xB0B4;&#xC6A9;&#xC744;-&#xCD9C;&#xB825;"><a href="#7-tail-&#xD30C;&#xC77C;-&#xB0B4;&#xC6A9;&#xC744;-&#xCD9C;&#xB825;" class="headerlink" title="7. tail (&#xD30C;&#xC77C; &#xB0B4;&#xC6A9;&#xC744; &#xCD9C;&#xB825;)"></a>7. tail (&#xD30C;&#xC77C; &#xB0B4;&#xC6A9;&#xC744; &#xCD9C;&#xB825;)</h1><h2 id="39"><a href="#39" class="headerlink" title="39"></a><figure class="highlight javascript hljs"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line"><span class="hljs-comment">//&#xB9C8;&#xC9C0;&#xB9C9; 100&#xBC88;&#xC9F8;&#xC904; &#xAE4C;&#xC9C0; &#xCD9C;&#xB825;</span></span><br><span class="line">tail -n &#xC22B;&#xC790;</span><br><span class="line"></span><br><span class="line"><span class="hljs-comment">//&#xBC14;&#xC774;&#xD2B8;&#xB2E8;&#xC704;</span></span><br><span class="line">tail -c &#xC22B;&#xC790;</span><br><span class="line"></span><br><span class="line"><span class="hljs-comment">//&#xC2E4;&#xC2DC;&#xAC04; &#xCD9C;&#xB825;</span></span><br><span class="line">tail -f</span><br></pre></td></tr></tbody></table></figure></h2><h1 id="8-nohup"><a href="#8-nohup" class="headerlink" title="8. nohup"></a>8. nohup</h1><p>&#xD504;&#xB85C;&#xC138;&#xC2A4; &#xC911;&#xB2E8;(hangup)&#xC744; &#xBB34;&#xC2DC;&#xD558;&#xACE0; &#xBA85;&#xB839;&#xC5B4;&#xB97C; &#xC2E4;&#xD589;&#xD558;&#xB294; &#xBA85;&#xB839;&#xC5B4;<br>&#xBC31;&#xADF8;&#xB77C;&#xC6B4;&#xB4DC;&#xC5D0;&#xC11C; &#xB370;&#xBAAC;&#xC744; &#xC2E4;&#xD589; &#xD560;&#xB54C; &#xC885;&#xC885; &#xC0AC;&#xC6A9;&#xD55C;&#xB2E4;.<br>&#xD45C;&#xC900;&#xCD9C;&#xB825;&#xC744; nohup.out &#xC5D0; &#xC800;&#xC7A5;&#xD55C;&#xB2E4;. </p>
+<h1 id="7-tail-&#xD30C;&#xC77C;-&#xB0B4;&#xC6A9;&#xC744;-&#xCD9C;&#xB825;"><a href="#7-tail-&#xD30C;&#xC77C;-&#xB0B4;&#xC6A9;&#xC744;-&#xCD9C;&#xB825;" class="headerlink" title="7. tail (&#xD30C;&#xC77C; &#xB0B4;&#xC6A9;&#xC744; &#xCD9C;&#xB825;)"></a>7. tail (&#xD30C;&#xC77C; &#xB0B4;&#xC6A9;&#xC744; &#xCD9C;&#xB825;)</h1><h2 id="42"><a href="#42" class="headerlink" title="42"></a><figure class="highlight javascript hljs"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line"><span class="hljs-comment">//&#xB9C8;&#xC9C0;&#xB9C9; 100&#xBC88;&#xC9F8;&#xC904; &#xAE4C;&#xC9C0; &#xCD9C;&#xB825;</span></span><br><span class="line">tail -n &#xC22B;&#xC790;</span><br><span class="line"></span><br><span class="line"><span class="hljs-comment">//&#xBC14;&#xC774;&#xD2B8;&#xB2E8;&#xC704;</span></span><br><span class="line">tail -c &#xC22B;&#xC790;</span><br><span class="line"></span><br><span class="line"><span class="hljs-comment">//&#xC2E4;&#xC2DC;&#xAC04; &#xCD9C;&#xB825;</span></span><br><span class="line">tail -f</span><br></pre></td></tr></tbody></table></figure></h2><h1 id="8-nohup"><a href="#8-nohup" class="headerlink" title="8. nohup"></a>8. nohup</h1><p>&#xD504;&#xB85C;&#xC138;&#xC2A4; &#xC911;&#xB2E8;(hangup)&#xC744; &#xBB34;&#xC2DC;&#xD558;&#xACE0; &#xBA85;&#xB839;&#xC5B4;&#xB97C; &#xC2E4;&#xD589;&#xD558;&#xB294; &#xBA85;&#xB839;&#xC5B4;<br>&#xBC31;&#xADF8;&#xB77C;&#xC6B4;&#xB4DC;&#xC5D0;&#xC11C; &#xB370;&#xBAAC;&#xC744; &#xC2E4;&#xD589; &#xD560;&#xB54C; &#xC885;&#xC885; &#xC0AC;&#xC6A9;&#xD55C;&#xB2E4;.<br>&#xD45C;&#xC900;&#xCD9C;&#xB825;&#xC744; nohup.out &#xC5D0; &#xC800;&#xC7A5;&#xD55C;&#xB2E4;. </p>
 <p></p><figure class="highlight javascript hljs"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">nohup &#xD30C;&#xC77C;&#xBA85;</span><br><span class="line"></span><br><span class="line"><span class="hljs-comment">//&#xD30C;&#xC77C;&#xC744; &#xC2E4;&#xC2DC;&#xAC04;&#xC73C;&#xB85C; &#xD655;&#xC778;&#xD560; &#xC218; &#xC788;&#xB2E4;.</span></span><br><span class="line">tail -f nohup.out</span><br></pre></td></tr></tbody></table></figure><p></p>
 </body></html>
     
@@ -208,12 +208,12 @@
     <div class="columns is-mobile is-multiline article-nav">
         <span class="column is-12-mobile is-half-desktop  article-nav-prev">
             
-            <a href="/2020/06/16/development/2018-08-30-vscodetip/">VS Code TIP </a>
+            <a href="/2020/06/16/development/2018-08-21-CrossOrigin/">CrossOrigin REST API 서버 분리하기</a>
             
         </span>
         <span class="column is-12-mobile is-half-desktop  article-nav-next">
             
-            <a href="/2020/06/16/development/2018-09-12-IntellijLombok/">Lombok Intellij install</a>
+            <a href="/2020/06/16/development/2018-08-30-vscodetip/">VS Code TIP </a>
             
         </span>
     </div>

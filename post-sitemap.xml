@@ -40,14 +40,6 @@
     </url>
 
     <url>
-        <loc>https://coplayer.github.io/2020/02/09/lifestyle/%EB%8F%85%EC%84%9C%EB%AA%A9%EB%A1%9D2020/</loc>
-        <lastmod>2020-06-16T14:11:09.623Z</lastmod>
-        <changefreq>weekly</changefreq>
-        <priority>0.6</priority>
-
-    </url>
-
-    <url>
         <loc>https://coplayer.github.io/2019/11/01/lifestyle/%EB%8F%85%EC%84%9C%EB%AA%A9%EB%A1%9D/</loc>
         <lastmod>2020-06-16T14:11:09.623Z</lastmod>
         <changefreq>weekly</changefreq>
@@ -57,6 +49,14 @@
 
     <url>
         <loc>https://coplayer.github.io/2019/12/04/lifestyle/%ED%8A%B8%EB%9E%9C%EB%93%9C%EC%BD%94%EB%A6%AC%EC%95%842020/</loc>
+        <lastmod>2020-06-16T14:11:09.623Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.6</priority>
+
+    </url>
+
+    <url>
+        <loc>https://coplayer.github.io/2020/02/09/lifestyle/%EB%8F%85%EC%84%9C%EB%AA%A9%EB%A1%9D2020/</loc>
         <lastmod>2020-06-16T14:11:09.623Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.6</priority>
@@ -80,14 +80,6 @@
     </url>
 
     <url>
-        <loc>https://coplayer.github.io/2019/11/27/lifestyle/1%EB%A7%8C%EC%8B%9C%EA%B0%84%EC%9D%98%EC%9E%AC%EB%B0%9C%EA%B2%AC/</loc>
-        <lastmod>2020-06-16T14:11:09.622Z</lastmod>
-        <changefreq>weekly</changefreq>
-        <priority>0.6</priority>
-
-    </url>
-
-    <url>
         <loc>https://coplayer.github.io/2019/11/12/lifestyle/justThink/</loc>
         <lastmod>2020-06-16T14:11:09.622Z</lastmod>
         <changefreq>weekly</changefreq>
@@ -96,8 +88,8 @@
     </url>
 
     <url>
-        <loc>https://coplayer.github.io/2020/06/16/development/2019-03-29-GitlabServer/</loc>
-        <lastmod>2020-06-16T14:11:09.621Z</lastmod>
+        <loc>https://coplayer.github.io/2019/11/27/lifestyle/1%EB%A7%8C%EC%8B%9C%EA%B0%84%EC%9D%98%EC%9E%AC%EB%B0%9C%EA%B2%AC/</loc>
+        <lastmod>2020-06-16T14:11:09.622Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.6</priority>
 
@@ -113,6 +105,14 @@
 
     <url>
         <loc>https://coplayer.github.io/2020/06/16/development/2018-11-22-LinuxCommand2/</loc>
+        <lastmod>2020-06-16T14:11:09.621Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.6</priority>
+
+    </url>
+
+    <url>
+        <loc>https://coplayer.github.io/2020/06/16/development/2019-03-29-GitlabServer/</loc>
         <lastmod>2020-06-16T14:11:09.621Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.6</priority>
@@ -152,7 +152,7 @@
     </url>
 
     <url>
-        <loc>https://coplayer.github.io/2020/06/16/development/2018-09-12-IntellijLombok/</loc>
+        <loc>https://coplayer.github.io/2020/06/16/development/2018-09-26-mac-jekins/</loc>
         <lastmod>2020-06-16T14:11:09.620Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.6</priority>
@@ -161,6 +161,14 @@
 
     <url>
         <loc>https://coplayer.github.io/2020/06/16/development/2018-11-01-SvnToGit/</loc>
+        <lastmod>2020-06-16T14:11:09.620Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.6</priority>
+
+    </url>
+
+    <url>
+        <loc>https://coplayer.github.io/2020/06/16/development/2018-09-12-IntellijLombok/</loc>
         <lastmod>2020-06-16T14:11:09.620Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.6</priority>
@@ -177,14 +185,6 @@
 
     <url>
         <loc>https://coplayer.github.io/2020/06/16/development/2018-11-02-swagger/</loc>
-        <lastmod>2020-06-16T14:11:09.620Z</lastmod>
-        <changefreq>weekly</changefreq>
-        <priority>0.6</priority>
-
-    </url>
-
-    <url>
-        <loc>https://coplayer.github.io/2020/06/16/development/2018-09-26-mac-jekins/</loc>
         <lastmod>2020-06-16T14:11:09.620Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.6</priority>
@@ -216,7 +216,7 @@
     </url>
 
     <url>
-        <loc>https://coplayer.github.io/2020/06/16/development/2018-07-16-JavascriptCheckAll/</loc>
+        <loc>https://coplayer.github.io/2020/06/16/development/2018-06-20-javascriptTIP/</loc>
         <lastmod>2020-06-16T14:11:09.619Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.6</priority>
@@ -232,7 +232,7 @@
     </url>
 
     <url>
-        <loc>https://coplayer.github.io/2020/06/16/development/2018-06-20-javascriptTIP/</loc>
+        <loc>https://coplayer.github.io/2020/06/16/development/2018-07-16-JavascriptCheckAll/</loc>
         <lastmod>2020-06-16T14:11:09.619Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.6</priority>
@@ -248,14 +248,6 @@
     </url>
 
     <url>
-        <loc>https://coplayer.github.io/2020/06/16/development/2018-08-30-vscodetip/</loc>
-        <lastmod>2020-06-16T14:11:09.619Z</lastmod>
-        <changefreq>weekly</changefreq>
-        <priority>0.6</priority>
-
-    </url>
-
-    <url>
         <loc>https://coplayer.github.io/2020/06/16/development/2018-08-28-LinuxCommand/</loc>
         <lastmod>2020-06-16T14:11:09.619Z</lastmod>
         <changefreq>weekly</changefreq>
@@ -264,8 +256,8 @@
     </url>
 
     <url>
-        <loc>https://coplayer.github.io/2020/06/16/development/2018-06-01-oracleTip/</loc>
-        <lastmod>2020-06-16T14:11:09.618Z</lastmod>
+        <loc>https://coplayer.github.io/2020/06/16/development/2018-08-30-vscodetip/</loc>
+        <lastmod>2020-06-16T14:11:09.619Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.6</priority>
 
@@ -280,23 +272,7 @@
     </url>
 
     <url>
-        <loc>https://coplayer.github.io/2020/06/16/development/2018-06-05-springAnnotation/</loc>
-        <lastmod>2020-06-16T14:11:09.618Z</lastmod>
-        <changefreq>weekly</changefreq>
-        <priority>0.6</priority>
-
-    </url>
-
-    <url>
-        <loc>https://coplayer.github.io/2020/06/16/development/2018-06-11-SpringStudy/</loc>
-        <lastmod>2020-06-16T14:11:09.618Z</lastmod>
-        <changefreq>weekly</changefreq>
-        <priority>0.6</priority>
-
-    </url>
-
-    <url>
-        <loc>https://coplayer.github.io/2020/06/16/development/2018-06-07-iterator/</loc>
+        <loc>https://coplayer.github.io/2020/06/16/development/2018-06-01-oracleTip/</loc>
         <lastmod>2020-06-16T14:11:09.618Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.6</priority>
@@ -313,6 +289,30 @@
 
     <url>
         <loc>https://coplayer.github.io/2020/06/16/development/2018-06-05-spring/</loc>
+        <lastmod>2020-06-16T14:11:09.618Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.6</priority>
+
+    </url>
+
+    <url>
+        <loc>https://coplayer.github.io/2020/06/16/development/2018-06-07-iterator/</loc>
+        <lastmod>2020-06-16T14:11:09.618Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.6</priority>
+
+    </url>
+
+    <url>
+        <loc>https://coplayer.github.io/2020/06/16/development/2018-06-05-springAnnotation/</loc>
+        <lastmod>2020-06-16T14:11:09.618Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.6</priority>
+
+    </url>
+
+    <url>
+        <loc>https://coplayer.github.io/2020/06/16/development/2018-06-11-SpringStudy/</loc>
         <lastmod>2020-06-16T14:11:09.618Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.6</priority>
@@ -368,7 +368,7 @@
     </url>
 
     <url>
-        <loc>https://coplayer.github.io/2020/06/16/development/2018-05-29-HTML/</loc>
+        <loc>https://coplayer.github.io/2020/06/16/development/2018-05-29-Git/</loc>
         <lastmod>2020-06-16T14:11:09.616Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.6</priority>
@@ -376,7 +376,7 @@
     </url>
 
     <url>
-        <loc>https://coplayer.github.io/2020/06/16/development/2018-05-29-Git/</loc>
+        <loc>https://coplayer.github.io/2020/06/16/development/2018-05-29-HTML/</loc>
         <lastmod>2020-06-16T14:11:09.616Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.6</priority>

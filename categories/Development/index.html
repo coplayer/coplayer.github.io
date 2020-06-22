@@ -2,7 +2,7 @@
 <html class="has-navbar-fixed-top">
 <head>
     <meta charset="utf-8">
-<title>Category: Development - Ethan DevLog</title>
+<title>Category: Development - DevLog</title>
 <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
 
 <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/outdated-browser/1.1.5/outdatedbrowser.min.css">
@@ -66,7 +66,7 @@
             <a class="navbar-item navbar-logo" href="/">
                 
                     
-                    Ethan DevLog
+                    DevLog
                     
                 
             </a>
@@ -200,47 +200,6 @@
         <article class="article content gallery" itemscope itemprop="blogPost">
     <h1 class="article-title is-size-3 is-size-4-mobile" itemprop="name">
         
-            <a href="/2020/06/16/development/2019-03-29-GitlabServer/" itemprop="url">Gitlab 설치하기(Docker on Mac)</a>
-        
-    </h1>
-    <div class="article-meta columns is-variable is-1 is-multiline is-mobile is-size-7-mobile">
-        <span class="column is-narrow">
-            <time datetime="2020-06-16T14:11:09.621Z" itemprop="datePublished">Jun 16 2020</time>
-        </span>
-        
-        <span class="column is-narrow article-category">
-            <i class="far fa-folder"></i>
-            <a class="article-category-link" href="/categories/Development/">Development</a>
-        </span>
-        
-        
-    </div>
-    <div class="article-entry is-size-6-mobile" itemprop="articleBody">
-    
-        <html><head></head><body><p>Github&#xC640; Gitlab &#xBAA8;&#xB450; &#xD074;&#xB77C;&#xC6B0;&#xB4DC;&#xB97C; &#xC9C0;&#xC6D0;&#xD558;&#xACE0; &#xC788;&#xB2E4;.<br>&#xB2E4;&#xB978; &#xC124;&#xCE58; &#xC5C6;&#xC774; &#xAC00;&#xC785; &#xB808;&#xD30C;&#xC9C0;&#xD1A0;&#xB9AC; &#xC0DD;&#xC131;&#xC744; &#xD1B5;&#xD574; &#xC0AC;&#xC6A9;&#xD560; &#xC218; &#xC788;&#xB2E4;.</p>
-<p>&#xC790;&#xCCB4;&#xC801;&#xC73C;&#xB85C; Git&#xC744; &#xAD00;&#xB9AC;&#xD558;&#xACE0; &#xC788;&#xB358; &#xAC83;&#xC744; &#xC11C;&#xBC84;&#xB85C; &#xAD00;&#xB9AC;&#xD558;&#xACE0; &#xCF54;&#xB4DC;&#xB9AC;&#xBDF0;&#xB97C;<br>&#xC6D0;&#xD560;&#xD558;&#xAC8C; &#xD558;&#xACE0; &#xC2F6;&#xC740; &#xC695;&#xAD6C;&#xAC00; &#xC0DD;&#xACA8;&#xC11C; Gitlab&#xC744; &#xC124;&#xCE58;&#xD558;&#xACE0;&#xC790; &#xD588;&#xB2E4;.</p>
-<p>Gitlab <a href="https://docs.gitlab.com/runner/install/osx.html" target="_blank" rel="noopener">&#xACF5;&#xC2DD; &#xD648;&#xD398;&#xC774;&#xC9C0;</a> &#xC5D0;&#xC11C; &#xAC00;&#xC774;&#xB4DC;&#xB97C; &#xC81C;&#xACF5;&#xD558;&#xACE0; &#xC788;&#xB2E4;.</p>
-<p>&#xD558;&#xC9C0;&#xB9CC; &#xC815;&#xC0C1;&#xC801;&#xC73C;&#xB85C; &#xC791;&#xB3D9;&#xB418;&#xC9C0; &#xC54A;&#xC558;&#xB2E4;. &#xD604;&#xC7AC; &#xC0AC;&#xC6A9;&#xD558;&#xACE0; &#xC788;&#xB294; &#xAC1C;&#xBC1C; &#xC11C;&#xBC84;&#xAC00; &#xB9E5;&#xC774;&#xAE30; &#xB54C;&#xBB38;&#xC77C;&#xC9C0;&#xB3C4; &#xBAA8;&#xB974;&#xACA0;&#xC9C0;&#xB9CC; &#xB2E4;&#xB978; &#xBC29;&#xBC95;&#xC744; &#xC11C;&#xCE6D;&#xD574;&#xC11C; Docker&#xC5D0; gitlab&#xC744; &#xC124;&#xCE58; &#xD558;&#xB294; &#xBC29;&#xBC95;&#xC73C;&#xB85C; &#xC804;&#xD658;&#xD558;&#xC600;&#xB2E4;.</p>
-<p>Docker &#xB294; <a href="https://www.docker.com/products/docker-desktop" target="_blank" rel="noopener">&#xC774;&#xACF3;</a> &#xC5D0;&#xC11C; &#xB2E4;&#xC6B4; &#xBC1B;&#xC544; &#xC124;&#xCE58;&#xD560; &#xC218; &#xC788;&#xB2E4;.<br>&#xAC00;&#xC785;&#xACFC; &#xB85C;&#xADF8;&#xC778;&#xC740; &#xAC1C;&#xBCC4;&#xC801;&#xC73C;&#xB85C; &#xD558;&#xC790;.</p>
-<p>&#xB2E4;&#xC74C;&#xACFC; &#xAC19;&#xC774; &#xCEE4;&#xBA58;&#xB4DC;&#xB97C; &#xC218;&#xD589;&#xD55C;&#xB2E4;.</p>
-<p></p><figure class="highlight plain hljs"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line">docker run --detach --name gitlab \</span><br><span class="line">    --hostname gitlab.local \</span><br><span class="line">    --publish 30000:30000 \</span><br><span class="line">    --publish 30001:22 \</span><br><span class="line">    --env GITLAB_OMNIBUS_CONFIG=&quot;external_url &apos;http://gitlab.local:30000&apos;;          </span><br><span class="line">    gitlab_rails[&apos;gitlab_shell_ssh_port&apos;]=30000;&quot; \</span><br><span class="line">    gitlab/gitlab-ce:9.1.0-ce.0</span><br></pre></td></tr></tbody></table></figure><p></p>
-<p>publish port &#xC640; external_url &#xC740; &#xAC1C;&#xC778;&#xC5D0; &#xB9DE;&#xAC8C; &#xC124;&#xC815;&#xD558;&#xC790;.</p>
-<p>&#xD574;&#xB2F9; &#xCEE4;&#xBA58;&#xB4DC;&#xAC00; &#xC624;&#xB958; &#xC5C6;&#xC774; &#xC218;&#xD589;&#xB418;&#xBA74; docker images&#xC5D0; gitlab&#xC11C;&#xBC84;&#xAC00; &#xC218;&#xD589; &#xC911;&#xC77C; &#xAC83;&#xC774;&#xB2E4;.  </p>
-<p><a href="http://gitlab.local:30000" target="_blank" rel="noopener">http://gitlab.local:30000</a> &#xC5D0; &#xC811;&#xC18D;&#xD558;&#xBA74; &#xAE43;&#xB819; &#xB85C;&#xADF8;&#xC778; &#xD654;&#xBA74;&#xC744; &#xD655;&#xC778;&#xD560; &#xC218; &#xC788;&#xB2E4;.</p>
-</body></html>
-    
-    </div>
-    
-    
-</article>
-
-
-
-
-    
-        <article class="article content gallery" itemscope itemprop="blogPost">
-    <h1 class="article-title is-size-3 is-size-4-mobile" itemprop="name">
-        
             <a href="/2020/06/16/development/2019-06-12-javaIPAdress/" itemprop="url">Java IP address 사용하기</a>
         
     </h1>
@@ -315,6 +274,47 @@
 <hr>
 <h2 id="5-grep-option"><a href="#5-grep-option" class="headerlink" title="5. grep option"></a>5. grep option</h2><p></p><figure class="highlight plain hljs"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">grep</span><br></pre></td></tr></tbody></table></figure><p></p>
 <p>-E, &#x2013;extended-regexp : &#xD655;&#xC7A5; &#xC815;&#xADDC;&#xD45C;&#xD604;&#xC2DD;&#xC73C;&#xB85C; &#xD328;&#xD134;&#xC744; &#xD574;&#xC11D;&#xD55C;&#xB2E4;(=egrep &#xAC19;&#xC740; &#xC758;&#xBBF8;)<br>-F, &#x2013;fixed-strings : newline&#xC73C;&#xB85C; &#xBD84;&#xB9AC;&#xB41C; &#xACE0;&#xC815;&#xB41C; &#xBB38;&#xC790;&#xC5F4;&#xC758; &#xB9AC;&#xC2A4;&#xD2B8;&#xB85C;&#xC368; &#xD328;&#xD134;&#xC744; &#xD574;&#xC11D;&#xD55C;&#xB2E4;</p>
+</body></html>
+    
+    </div>
+    
+    
+</article>
+
+
+
+
+    
+        <article class="article content gallery" itemscope itemprop="blogPost">
+    <h1 class="article-title is-size-3 is-size-4-mobile" itemprop="name">
+        
+            <a href="/2020/06/16/development/2019-03-29-GitlabServer/" itemprop="url">Gitlab 설치하기(Docker on Mac)</a>
+        
+    </h1>
+    <div class="article-meta columns is-variable is-1 is-multiline is-mobile is-size-7-mobile">
+        <span class="column is-narrow">
+            <time datetime="2020-06-16T14:11:09.621Z" itemprop="datePublished">Jun 16 2020</time>
+        </span>
+        
+        <span class="column is-narrow article-category">
+            <i class="far fa-folder"></i>
+            <a class="article-category-link" href="/categories/Development/">Development</a>
+        </span>
+        
+        
+    </div>
+    <div class="article-entry is-size-6-mobile" itemprop="articleBody">
+    
+        <html><head></head><body><p>Github&#xC640; Gitlab &#xBAA8;&#xB450; &#xD074;&#xB77C;&#xC6B0;&#xB4DC;&#xB97C; &#xC9C0;&#xC6D0;&#xD558;&#xACE0; &#xC788;&#xB2E4;.<br>&#xB2E4;&#xB978; &#xC124;&#xCE58; &#xC5C6;&#xC774; &#xAC00;&#xC785; &#xB808;&#xD30C;&#xC9C0;&#xD1A0;&#xB9AC; &#xC0DD;&#xC131;&#xC744; &#xD1B5;&#xD574; &#xC0AC;&#xC6A9;&#xD560; &#xC218; &#xC788;&#xB2E4;.</p>
+<p>&#xC790;&#xCCB4;&#xC801;&#xC73C;&#xB85C; Git&#xC744; &#xAD00;&#xB9AC;&#xD558;&#xACE0; &#xC788;&#xB358; &#xAC83;&#xC744; &#xC11C;&#xBC84;&#xB85C; &#xAD00;&#xB9AC;&#xD558;&#xACE0; &#xCF54;&#xB4DC;&#xB9AC;&#xBDF0;&#xB97C;<br>&#xC6D0;&#xD560;&#xD558;&#xAC8C; &#xD558;&#xACE0; &#xC2F6;&#xC740; &#xC695;&#xAD6C;&#xAC00; &#xC0DD;&#xACA8;&#xC11C; Gitlab&#xC744; &#xC124;&#xCE58;&#xD558;&#xACE0;&#xC790; &#xD588;&#xB2E4;.</p>
+<p>Gitlab <a href="https://docs.gitlab.com/runner/install/osx.html" target="_blank" rel="noopener">&#xACF5;&#xC2DD; &#xD648;&#xD398;&#xC774;&#xC9C0;</a> &#xC5D0;&#xC11C; &#xAC00;&#xC774;&#xB4DC;&#xB97C; &#xC81C;&#xACF5;&#xD558;&#xACE0; &#xC788;&#xB2E4;.</p>
+<p>&#xD558;&#xC9C0;&#xB9CC; &#xC815;&#xC0C1;&#xC801;&#xC73C;&#xB85C; &#xC791;&#xB3D9;&#xB418;&#xC9C0; &#xC54A;&#xC558;&#xB2E4;. &#xD604;&#xC7AC; &#xC0AC;&#xC6A9;&#xD558;&#xACE0; &#xC788;&#xB294; &#xAC1C;&#xBC1C; &#xC11C;&#xBC84;&#xAC00; &#xB9E5;&#xC774;&#xAE30; &#xB54C;&#xBB38;&#xC77C;&#xC9C0;&#xB3C4; &#xBAA8;&#xB974;&#xACA0;&#xC9C0;&#xB9CC; &#xB2E4;&#xB978; &#xBC29;&#xBC95;&#xC744; &#xC11C;&#xCE6D;&#xD574;&#xC11C; Docker&#xC5D0; gitlab&#xC744; &#xC124;&#xCE58; &#xD558;&#xB294; &#xBC29;&#xBC95;&#xC73C;&#xB85C; &#xC804;&#xD658;&#xD558;&#xC600;&#xB2E4;.</p>
+<p>Docker &#xB294; <a href="https://www.docker.com/products/docker-desktop" target="_blank" rel="noopener">&#xC774;&#xACF3;</a> &#xC5D0;&#xC11C; &#xB2E4;&#xC6B4; &#xBC1B;&#xC544; &#xC124;&#xCE58;&#xD560; &#xC218; &#xC788;&#xB2E4;.<br>&#xAC00;&#xC785;&#xACFC; &#xB85C;&#xADF8;&#xC778;&#xC740; &#xAC1C;&#xBCC4;&#xC801;&#xC73C;&#xB85C; &#xD558;&#xC790;.</p>
+<p>&#xB2E4;&#xC74C;&#xACFC; &#xAC19;&#xC774; &#xCEE4;&#xBA58;&#xB4DC;&#xB97C; &#xC218;&#xD589;&#xD55C;&#xB2E4;.</p>
+<p></p><figure class="highlight plain hljs"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line">docker run --detach --name gitlab \</span><br><span class="line">    --hostname gitlab.local \</span><br><span class="line">    --publish 30000:30000 \</span><br><span class="line">    --publish 30001:22 \</span><br><span class="line">    --env GITLAB_OMNIBUS_CONFIG=&quot;external_url &apos;http://gitlab.local:30000&apos;;          </span><br><span class="line">    gitlab_rails[&apos;gitlab_shell_ssh_port&apos;]=30000;&quot; \</span><br><span class="line">    gitlab/gitlab-ce:9.1.0-ce.0</span><br></pre></td></tr></tbody></table></figure><p></p>
+<p>publish port &#xC640; external_url &#xC740; &#xAC1C;&#xC778;&#xC5D0; &#xB9DE;&#xAC8C; &#xC124;&#xC815;&#xD558;&#xC790;.</p>
+<p>&#xD574;&#xB2F9; &#xCEE4;&#xBA58;&#xB4DC;&#xAC00; &#xC624;&#xB958; &#xC5C6;&#xC774; &#xC218;&#xD589;&#xB418;&#xBA74; docker images&#xC5D0; gitlab&#xC11C;&#xBC84;&#xAC00; &#xC218;&#xD589; &#xC911;&#xC77C; &#xAC83;&#xC774;&#xB2E4;.  </p>
+<p><a href="http://gitlab.local:30000" target="_blank" rel="noopener">http://gitlab.local:30000</a> &#xC5D0; &#xC811;&#xC18D;&#xD558;&#xBA74; &#xAE43;&#xB819; &#xB85C;&#xADF8;&#xC778; &#xD654;&#xBA74;&#xC744; &#xD655;&#xC778;&#xD560; &#xC218; &#xC788;&#xB2E4;.</p>
 </body></html>
     
     </div>
@@ -510,7 +510,7 @@
         <article class="article content gallery" itemscope itemprop="blogPost">
     <h1 class="article-title is-size-3 is-size-4-mobile" itemprop="name">
         
-            <a href="/2020/06/16/development/2018-11-01-SvnToGit/" itemprop="url">SVN 을 GIT 으로 이관하기 (git svn)</a>
+            <a href="/2020/06/16/development/2018-09-26-mac-jekins/" itemprop="url">Jenkins 를 mac os 에 설치</a>
         
     </h1>
     <div class="article-meta columns is-variable is-1 is-multiline is-mobile is-size-7-mobile">
@@ -527,18 +527,17 @@
     </div>
     <div class="article-entry is-size-6-mobile" itemprop="articleBody">
     
-        <html><head></head><body><p>SVN &#xC73C;&#xB85C; &#xD615;&#xC0C1;&#xAD00;&#xB9AC; &#xD558;&#xB358; &#xC18C;&#xC2A4;&#xB97C; GIT&#xC73C;&#xB85C; &#xC774;&#xC804;&#xD558;&#xAE30; &#xC704;&#xD574;&#xC11C; &#xD3EC;&#xC2A4;&#xD305;&#xC744; &#xC815;&#xB9AC;&#xD574; &#xBD05;&#xB2C8;&#xB2E4;.</p>
-<p>SVN&#xC744; &#xC624;&#xB798; &#xB3D9;&#xC548; &#xC368; &#xC654;&#xACE0; &#xD070; &#xC5B4;&#xB824;&#xC6C0;&#xC774; &#xC5C6;&#xC774; &#xC0AC;&#xC6A9;&#xD574; &#xC654;&#xC2B5;&#xB2C8;&#xB2E4;.  </p>
-<p>&#xB2E8;&#xC77C; &#xD504;&#xB85C;&#xC81D;&#xD2B8;&#xB97C; &#xC8FC;&#xB85C; &#xC9C4;&#xD589;&#xD574; &#xC654;&#xACE0; &#xBAA8;&#xB4C8;&#xC744; &#xB098;&#xB220;&#xC11C; &#xAC1C;&#xBC1C;&#xD558;&#xB2E4;&#xBCF4;&#xBA74; GIT&#xC758; &#xD544;&#xC694;&#xC131;&#xC744;<br>&#xADF8;&#xB2E4;&#xC9C0; &#xB290;&#xB07C;&#xAE30; &#xC5B4;&#xB835;&#xB2E4;&#xACE0; &#xC0DD;&#xAC01;&#xD569;&#xB2C8;&#xB2E4;.</p>
-<p>&#xD558;&#xC9C0;&#xB9CC; &#xC6B4;&#xC601; &#xB418;&#xACE0; &#xC788;&#xB294; &#xC11C;&#xBE44;&#xC2A4;&#xB97C; &#xAC01;&#xAC01;&#xC758; &#xAC1C;&#xBC1C;&#xC790;&#xAC00; &#xC2E0;&#xADDC; &#xAC1C;&#xBC1C;&#xACFC; &#xC624;&#xB958; &#xC218;&#xC815;&#xD558;&#xBA74;&#xC11C;<br>&#xCF54;&#xB4DC;&#xB97C; &#xB9AC;&#xD399;&#xD1A0;&#xB9C1; &#xD558;&#xAE30;&#xC704;&#xD55C; &#xD65C;&#xB3D9; &#xB610;&#xB294; &#xC2E0;&#xADDC; &#xD14C;&#xC2A4;&#xD2B8;&#xB97C; &#xC704;&#xD574;&#xC11C;&#xB294; &#xD615;&#xC0C1; &#xAD00;&#xB9AC;&#xC758; &#xC720;&#xC5F0;&#xC131;&#xACFC; &#xD1B5;&#xD569;&#xC774; &#xC27D;&#xAC8C; &#xC774;&#xB8E8;&#xC5B4; &#xC838;&#xC57C; &#xD569;&#xB2C8;&#xB2E4;.</p>
-<p>&#xBE44;&#xC2B7;&#xD55C; &#xAE30;&#xB2A5;&#xC740; svn&#xC5D0;&#xC11C;&#xB3C4; &#xAC00;&#xB2A5;&#xD569;&#xB2C8;&#xB2E4;.<br>&#xB2E4;&#xB9CC; &#xAC19;&#xC740; &#xAE30;&#xB2A5;&#xC744; &#xD558;&#xB354;&#xB77C;&#xB3C4; &#xBE60;&#xB974;&#xACE0; &#xC720;&#xC5F0;&#xD55C; &#xB300;&#xCC98;&#xAC00; &#xAC00;&#xB2A5;&#xD558;&#xB2E4;&#xACE0; &#xB9D0;&#xC500; &#xB4DC;&#xB9AC;&#xACE0; &#xC2F6;&#xC2B5;&#xB2C8;&#xB2E4;.<br>&#xD574;&#xB2F9; &#xD3EC;&#xC2A4;&#xD305;&#xC740; svn &#xACFC; git&#xC740; &#xC124;&#xCE58; &#xB418;&#xC5C8;&#xB2E4;&#xB294; &#xC804;&#xC81C;&#xB85C; &#xC9C4;&#xD589;&#xD569;&#xB2C8;&#xB2E4;.</p>
-<h3 id="1-git-svn-&#xC124;&#xCE58;-&#xD569;&#xB2C8;&#xB2E4;"><a href="#1-git-svn-&#xC124;&#xCE58;-&#xD569;&#xB2C8;&#xB2E4;" class="headerlink" title="1. git-svn &#xC124;&#xCE58; &#xD569;&#xB2C8;&#xB2E4;."></a>1. git-svn &#xC124;&#xCE58; &#xD569;&#xB2C8;&#xB2E4;.</h3><p></p><figure class="highlight plain hljs"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ sudo apt-get install git-svn</span><br></pre></td></tr></tbody></table></figure><p></p>
-<h3 id="2-&#xC774;&#xAD00;&#xD558;&#xAE30;-&#xC704;&#xD55C;-&#xD658;&#xACBD;&#xC774;-&#xB418;&#xC5C8;&#xB294;&#xC9C0;&#xB97C;-&#xD655;&#xC778;&#xD569;&#xB2C8;&#xB2E4;"><a href="#2-&#xC774;&#xAD00;&#xD558;&#xAE30;-&#xC704;&#xD55C;-&#xD658;&#xACBD;&#xC774;-&#xB418;&#xC5C8;&#xB294;&#xC9C0;&#xB97C;-&#xD655;&#xC778;&#xD569;&#xB2C8;&#xB2E4;" class="headerlink" title="2. &#xC774;&#xAD00;&#xD558;&#xAE30; &#xC704;&#xD55C; &#xD658;&#xACBD;&#xC774; &#xB418;&#xC5C8;&#xB294;&#xC9C0;&#xB97C; &#xD655;&#xC778;&#xD569;&#xB2C8;&#xB2E4;."></a>2. &#xC774;&#xAD00;&#xD558;&#xAE30; &#xC704;&#xD55C; &#xD658;&#xACBD;&#xC774; &#xB418;&#xC5C8;&#xB294;&#xC9C0;&#xB97C; &#xD655;&#xC778;&#xD569;&#xB2C8;&#xB2E4;.</h3><p></p><figure class="highlight plain hljs"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">https://bitbucket.org/atlassian/svn-migration-scripts/src</span><br></pre></td></tr></tbody></table></figure><br> &#xC0AC;&#xC774;&#xD2B8;&#xC5D0;&#xC11C; &#xB2E4;&#xC6B4;&#xBC1B;&#xAE30;<br><figure class="highlight plain hljs"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ java -jar svn-migration-scripts.jar verify</span><br></pre></td></tr></tbody></table></figure><br> &#xBA85;&#xB839;&#xC5B4;&#xB85C; &#xD655;&#xC778;&#xD569;&#xB2C8;&#xB2E4;.<br><figure class="highlight plain hljs"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">Git: using version </span><br><span class="line">Subversion: using version</span><br><span class="line">git-svn: using version</span><br></pre></td></tr></tbody></table></figure><br> &#xC900;&#xBE44;&#xB41C; &#xC0C1;&#xD0DC;&#xC774;&#xBA74; &#xC704;&#xC640; &#xAC19;&#xC740; &#xCD9C;&#xB825;&#xC774; &#xC124;&#xCE58;&#xB41C; &#xBC84;&#xC804;&#xC5D0; &#xB530;&#xB77C; &#xBCF4;&#xC785;&#xB2C8;&#xB2E4;.<p></p>
-<h3 id="3-svn-&#xC18C;&#xC2A4;&#xB97C;-git-&#xC758;-&#xD615;&#xD0DC;&#xB85C;-clone-&#xD569;&#xB2C8;&#xB2E4;"><a href="#3-svn-&#xC18C;&#xC2A4;&#xB97C;-git-&#xC758;-&#xD615;&#xD0DC;&#xB85C;-clone-&#xD569;&#xB2C8;&#xB2E4;" class="headerlink" title="3. svn &#xC18C;&#xC2A4;&#xB97C; git &#xC758; &#xD615;&#xD0DC;&#xB85C; clone &#xD569;&#xB2C8;&#xB2E4;."></a>3. svn &#xC18C;&#xC2A4;&#xB97C; git &#xC758; &#xD615;&#xD0DC;&#xB85C; clone &#xD569;&#xB2C8;&#xB2E4;.</h3><p></p><figure class="highlight plain hljs"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ git svn clone &#xD504;&#xB85C;&#xC81D;&#xD2B8;svn&#xC8FC;&#xC18C; --no-metadata  &#xD504;&#xB85C;&#xC81D;&#xD2B8;&#xC774;&#xB984;</span><br></pre></td></tr></tbody></table></figure><br> &#xC774; &#xACFC;&#xC815; &#xC804;&#xC5D0; &#xB2E4;&#xB978; &#xD3EC;&#xC2A4;&#xD305;&#xB4E4;&#xC5D0;&#xC11C;&#xB294; &#xC0AC;&#xC6A9;&#xC790;&#xC815;&#xBCF4;&#xB97C; git &#xD615;&#xD0DC;&#xB85C; &#xBCC0;&#xD658;&#xD558;&#xB294; &#xACFC;&#xC815;&#xB4E4;&#xC774; &#xC788;&#xC2B5;&#xB2C8;&#xB2E4;.<br> &#xACFC;&#xC815; &#xC911;&#xC5D0; &#xD070; &#xC774;&#xC288;&#xAC00; &#xBC1C;&#xC0DD;&#xD558;&#xC9C0; &#xC54A;&#xC544; &#xADF8;&#xB300;&#xB85C; &#xC9C4;&#xD589; &#xD588;&#xC2B5;&#xB2C8;&#xB2E4;.<br><a href="http://lux.cuenet.kr/21" target="_blank" rel="noopener">&#xCC38;&#xACE0; &#xD398;&#xC774;&#xC9C0; &#xB9C1;&#xD06C; </a><p></p>
-<h3 id="4-git-&#xC11C;&#xBC84;-repository&#xB97C;-&#xC0DD;&#xC131;&#xD569;&#xB2C8;&#xB2E4;"><a href="#4-git-&#xC11C;&#xBC84;-repository&#xB97C;-&#xC0DD;&#xC131;&#xD569;&#xB2C8;&#xB2E4;" class="headerlink" title="4. git &#xC11C;&#xBC84; repository&#xB97C; &#xC0DD;&#xC131;&#xD569;&#xB2C8;&#xB2E4;."></a>4. git &#xC11C;&#xBC84; repository&#xB97C; &#xC0DD;&#xC131;&#xD569;&#xB2C8;&#xB2E4;.</h3><p> git &#xC11C;&#xBC84;&#xC5D0; .git &#xD3F4;&#xB354;&#xB97C; &#xC0DD;&#xC131;&#xD558;&#xACE0; &#xB2E4;&#xC74C; &#xBA85;&#xB839;&#xC5B4;&#xB97C; &#xC218;&#xD589;&#xD558;&#xC5EC; &#xB808;&#xD30C;&#xC9C0;&#xD1A0;&#xB9AC;&#xB85C; &#xC0DD;&#xC131;&#xD569;&#xB2C8;&#xB2E4;.<br></p><figure class="highlight plain hljs"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ git --bare init</span><br></pre></td></tr></tbody></table></figure><p></p>
-<h3 id="5-git-&#xC758;-remote-&#xC124;&#xC815;&#xC744;-&#xC9C4;&#xD589;&#xD569;&#xB2C8;&#xB2E4;"><a href="#5-git-&#xC758;-remote-&#xC124;&#xC815;&#xC744;-&#xC9C4;&#xD589;&#xD569;&#xB2C8;&#xB2E4;" class="headerlink" title="5. git &#xC758; remote &#xC124;&#xC815;&#xC744; &#xC9C4;&#xD589;&#xD569;&#xB2C8;&#xB2E4;."></a>5. git &#xC758; remote &#xC124;&#xC815;&#xC744; &#xC9C4;&#xD589;&#xD569;&#xB2C8;&#xB2E4;.</h3><p></p><figure class="highlight plain hljs"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ git remote add origin &#xD504;&#xB85C;&#xC81D;&#xD2B8;git&#xC8FC;&#xC18C;</span><br></pre></td></tr></tbody></table></figure><br> remote &#xC124;&#xC815;<p></p>
-<h3 id="6-git-push"><a href="#6-git-push" class="headerlink" title="6. git push"></a>6. git push</h3><p></p><figure class="highlight plain hljs"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ git push origin master</span><br></pre></td></tr></tbody></table></figure><br> &#xC815;&#xC0C1;&#xC801;&#xC73C;&#xB85C; remote&#xC5D0; &#xC18C;&#xC2A4;&#xAC00; push &#xB418;&#xC5C8;&#xB294;&#xC9C0; &#xD655;&#xC778;&#xD569;&#xB2C8;&#xB2E4;.<p></p>
-<p>&#xC704; &#xACFC;&#xC815;&#xC744; &#xD1B5;&#xD574;&#xC11C; &#xAC04;&#xB2E8;&#xD558;&#xAC8C; svn&#xC73C;&#xB85C; &#xAD00;&#xB9AC;&#xD558;&#xB294; &#xC18C;&#xC2A4;&#xB97C; git&#xC774;&#xB85C; &#xC774;&#xAD00;&#xD558;&#xC5EC; &#xAD00;&#xB9AC;&#xD560; &#xC218; &#xC788;&#xC2B5;&#xB2C8;&#xB2E4;.</p>
+        <html><head></head><body><p>&#xC18C;&#xD504;&#xD2B8; &#xC6E8;&#xC5B4; &#xAC1C;&#xBC1C;&#xC5D0; &#xC788;&#xC5B4;&#xC11C; &#xC9C0;&#xC18D;&#xC801;&#xC778; &#xD1B5;&#xD569; (CI - countinuous integration)&#xC744; &#xC81C;&#xACF5;&#xD558;&#xB294; &#xD234;&#xC758; &#xC885;&#xB958;&#xB85C; &#xC624;&#xD508;&#xC18C;&#xC2A4;&#xC774;&#xB2E4;.</p>
+<p>&#xB2E4;&#xC218;&#xC758; &#xC778;&#xC6D0;&#xC774; &#xAC1C;&#xBC1C;&#xC744; &#xD558;&#xB2E4;&#xBCF4;&#xBA74; &#xAC1C;&#xBC1C;&#xC774;&#xB098; &#xB610;&#xB294; &#xD14C;&#xC2A4;&#xD2B8; &#xC11C;&#xBC84;&#xC5D0; &#xD604;&#xC7AC; &#xAC1C;&#xBC1C; &#xC911;&#xC778; &#xC18C;&#xD504;&#xD2B8;&#xC6E8;&#xC5B4;&#xB97C; &#xBC30;&#xD3EC;&#xD558;&#xACE0; &#xD14C;&#xC2A4;&#xD2B8; &#xD558;&#xB294; &#xD658;&#xACBD;&#xC774; &#xC9C0;&#xC18D;&#xC801;&#xC73C;&#xB85C; &#xC774;&#xB8E8;&#xC5B4;&#xC9C4;&#xB2E4;. &#xB9E4;&#xBC88; &#xD55C; &#xAC1C;&#xBC1C;&#xC790;&#xAC00; &#xB2F4;&#xB2F9;&#xD558;&#xC5EC; &#xC9C4;&#xD589;&#xD558;&#xB294; &#xAC83;&#xB3C4; &#xC18C;&#xC2A4;&#xC758; &#xC591;&#xACFC; &#xC778;&#xC6D0;&#xC758; &#xB4E4;&#xC758; &#xCF54;&#xB4DC; &#xCDA9;&#xB3CC; &#xB4F1;&#xC758; &#xBB38;&#xC81C;&#xB97C; &#xD574;&#xACB0;&#xD558;&#xAE30; &#xC5D0;&#xB294; &#xD55C;&#xACC4;&#xAC00; &#xC788;&#xB2E4;. &#xC774;&#xB97C; &#xC790;&#xB3D9;&#xD558;&#xAE30;&#xC704; &#xD55C; &#xD234;&#xB85C; &#xC0AC;&#xC6A9;&#xD558;&#xB294; &#xAC83;&#xC774; &#xC820;&#xD0A8;&#xC2A4; &#xC774;&#xB2E4;.</p>
+<p>&#xC708;&#xB3C4;&#xC6B0; &#xD658;&#xACBD;&#xC5D0;&#xC11C;&#xB294; &#xC124;&#xCE58; &#xBC84;&#xC804;&#xC744; &#xC81C;&#xACF5;&#xD558;&#xC5EC; &#xC0AC;&#xC6A9;&#xC600;&#xC9C0;&#xB9CC; &#xB9E5;&#xC5D0;&#xC11C;&#xB294; &#xC0AC;&#xC6A9; &#xBC29;&#xBC95;&#xC774; &#xC870;&#xAE08; &#xB2EC;&#xB790;&#xB2E4;.</p>
+<p>&#xBA3C;&#xC800; homebrew &#xB97C; &#xC0AC;&#xC6A9;&#xD558;&#xC5EC; &#xC820;&#xD0A8;&#xC2A4;&#xB97C; &#xC124;&#xCE58;&#xD558;&#xC5EC;&#xC57C; &#xD55C;&#xB2E4;.</p>
+<p>Homebrew &#xC124;&#xCE58;</p>
+<p></p><figure class="highlight plain hljs"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">/usr/bin/ruby -e &quot;$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)&quot;</span><br></pre></td></tr></tbody></table></figure><p></p>
+<p>Jenkins &#xC124;&#xCE58;<br></p><figure class="highlight plain hljs"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">brew install jenkins</span><br></pre></td></tr></tbody></table></figure><p></p>
+<p>Jekins &#xC2E4;&#xD589;<br></p><figure class="highlight plain hljs"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">brew services start jenkins</span><br></pre></td></tr></tbody></table></figure><p></p>
+<p>Jekins &#xC911;&#xB2E8;<br></p><figure class="highlight plain hljs"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">brew services stop jenkins</span><br></pre></td></tr></tbody></table></figure><p></p>
+<p>Jekins &#xD3EC;&#xD2B8;&#xBCC0;&#xACBD;<br></p><figure class="highlight plain hljs"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">/usr/local/opt/jenkins/homebrew.mxcl.jenkins.plist</span><br></pre></td></tr></tbody></table></figure><br>&#xD30C;&#xC77C;&#xC758; &#x2013;httpPort= &#xB97C; &#xBCF8;&#xC778;&#xC774; &#xC6D0;&#xD558;&#xB294; &#xD3EC;&#xD2B8;&#xB85C; &#xBCC0;&#xACBD;&#xD558;&#xC5EC; &#xC0AC;&#xC6A9;&#xD558;&#xBA74; &#xB429;&#xB2C8;&#xB2E4;.<p></p>
+<p>&#xB9E5; &#xC790;&#xB3D9; &#xC2DC;&#xC791; &#xC2DC; &#xC0AC;&#xC6A9;&#xD558;&#xB824;&#xBA74;<br>~/Library/LaunchAgents/ &#xB85C; &#xD30C;&#xC77C;&#xC744; &#xBCF5;&#xC0AC;&#xD558;&#xACE0; &#xD30C;&#xC77C;&#xC5D0;<br></p><figure class="highlight plain hljs"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">&lt;key&gt;RunAtLoad&lt;/key&gt;</span><br><span class="line">    &lt;true/&gt;</span><br></pre></td></tr></tbody></table></figure><br>&#xB85C; &#xC124;&#xC815;&#xD558;&#xC5EC; &#xC0AC;&#xC6A9;&#xD569;&#xB2C8;&#xB2E4;.<p></p>
 </body></html>
     
     </div>
