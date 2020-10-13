@@ -2,7 +2,7 @@
 <html class="has-navbar-fixed-top">
 <head>
     <meta charset="utf-8">
-<title>About Me - Ethan DEVLOG</title>
+<title>Java HashMap - Ethan DEVLOG</title>
 <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
 
 <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/outdated-browser/1.1.5/outdatedbrowser.min.css">
@@ -133,22 +133,57 @@
     <article class="article content gallery" itemscope itemprop="blogPost">
     <h1 class="article-title is-size-3 is-size-4-mobile" itemprop="name">
         
-            About Me
+            Java HashMap
         
     </h1>
     <div class="article-meta columns is-variable is-1 is-multiline is-mobile is-size-7-mobile">
         <span class="column is-narrow">
-            <time datetime="2019-10-31T15:00:00.000Z" itemprop="datePublished">Nov 1 2019</time>
+            <time datetime="2020-06-28T15:00:00.000Z" itemprop="datePublished">Jun 29 2020</time>
+        </span>
+        
+        <span class="column is-narrow article-category">
+            <i class="far fa-folder"></i>
+            <a class="article-category-link" href="/categories/Java/">Java</a>
         </span>
         
         
     </div>
     <div class="article-entry is-size-6-mobile" itemprop="articleBody">
     
-        
+        <html><head></head><body><p>HashMap 2&#xCC28;&#xC6D0; &#xBC30;&#xC5F4; &#xD615;&#xD0DC; (&#xB2E4;&#xB978; &#xC5B8;&#xC5B4;&#xC758; Dictionary)</p>
+<ul>
+<li>Key, Value &#xC758; &#xC30D;&#xC73C;&#xB85C; &#xC774;&#xB8E8;&#xC5B4;&#xC838; &#xC788;&#xB2E4;.</li>
+<li>null Key, value &#xB97C; &#xD5C8;&#xC6A9;&#xD55C;&#xB2E4;.</li>
+<li>Key &#xC758; &#xC911;&#xBCF5;&#xC744; &#xD5C8;&#xC6A9;&#xD558;&#xC9C0; &#xC54A;&#xACE0; Value&#xB294; &#xC911;&#xBCF5;&#xC774; &#xAC00;&#xB2A5;&#xD558;&#xB2E4;.</li>
+<li>&#xB3D9;&#xAE30;&#xD654;&#xB97C; &#xC9C0;&#xC6D0;&#xD558;&#xC9C0; &#xC54A;&#xB294;&#xB2E4;.</li>
+</ul>
+<p>&#xC8FC;&#xC694; &#xBA54;&#xC18C;&#xB4DC;</p>
+<p></p><figure class="highlight java hljs"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br></pre></td><td class="code"><pre><span class="line">Map&lt;String, String&gt; hm = <span class="hljs-keyword">new</span> HashMap();</span><br><span class="line">hm.put(<span class="hljs-string">&quot;key&quot;</span>, <span class="hljs-string">&quot;value&quot;</span>); <span class="hljs-comment">// key, value &#xC800;&#xC7A5;</span></span><br><span class="line">hm.get(<span class="hljs-string">&quot;key&quot;</span>) <span class="hljs-comment">// key&#xB85C; value &#xD638;&#xCD9C;</span></span><br><span class="line">hm.remove(<span class="hljs-string">&quot;key&quot;</span>) <span class="hljs-comment">// key&#xB85C; &#xC0AD;&#xC81C;</span></span><br><span class="line">hm.isEmpty() <span class="hljs-comment">// hm&#xC774; &#xBE44;&#xC5B4;&#xC788;&#xB294;&#xC9C0; &#xD655;&#xC778;</span></span><br><span class="line"></span><br><span class="line">Set&lt;String&gt; keys = hm.keySet(); <span class="hljs-comment">// Key&#xB97C; set&#xC5D0; &#xB9AC;&#xD134;</span></span><br><span class="line"><span class="hljs-keyword">for</span> (String key : keys) {</span><br><span class="line">    System.out.println(<span class="hljs-string">&quot;key: &quot;</span> + key);</span><br><span class="line">}</span><br><span class="line"></span><br><span class="line">Collection&lt;String&gt; values = hm.values(); <span class="hljs-comment">// value&#xB97C; Collection &#xC73C;&#xB85C; &#xB9AC;&#xD134;</span></span><br><span class="line"><span class="hljs-keyword">for</span> (String value : values) {</span><br><span class="line">    System.out.println(<span class="hljs-string">&quot;value: &quot;</span> + value);</span><br><span class="line">}</span><br><span class="line"></span><br><span class="line">hm.containsKey(<span class="hljs-string">&quot;key&quot;</span>); <span class="hljs-comment">// hm&#xC5D0; key&#xAC00; &#xC788;&#xB294;&#xC9C0; &#xD655;&#xC778;</span></span><br><span class="line">hm.containsValue(<span class="hljs-string">&quot;value&quot;</span>); <span class="hljs-comment">//hm&#xC5D0; value&#xAC00; &#xC788;&#xB294;&#xC9C0; &#xD655;&#xC778;</span></span><br><span class="line">hm.replace(<span class="hljs-string">&quot;key&quot;</span>, <span class="hljs-string">&quot;newValue&quot;</span>); <span class="hljs-comment">//hm&#xC758; value&#xB97C; &#xBCC0;&#xACBD;</span></span><br><span class="line">hm.replace(<span class="hljs-string">&quot;key&quot;</span>, <span class="hljs-string">&quot;oldValue&quot;</span>, <span class="hljs-string">&quot;newValue&quot;</span>); <span class="hljs-comment">//hm&#xC758; oldvalue&#xAC00; &#xC77C;&#xCE58; &#xD558;&#xBA74; value&#xB97C; &#xBCC0;&#xACBD;</span></span><br></pre></td></tr></tbody></table></figure><p></p>
+<p>HashMap.forEach()</p>
+<p></p><figure class="highlight java hljs"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br></pre></td><td class="code"><pre><span class="line">Map&lt;String, String&gt; hm = <span class="hljs-keyword">new</span> HashMap();</span><br><span class="line">hm.put(<span class="hljs-string">&quot;key1&quot;</span>, <span class="hljs-string">&quot;value1&quot;</span>); <span class="hljs-comment">// key, value &#xC800;&#xC7A5;</span></span><br><span class="line">hm.put(<span class="hljs-string">&quot;key2&quot;</span>, <span class="hljs-string">&quot;value2&quot;</span>); <span class="hljs-comment">// key, value &#xC800;&#xC7A5;</span></span><br><span class="line">hm.put(<span class="hljs-string">&quot;key3&quot;</span>, <span class="hljs-string">&quot;value3&quot;</span>); <span class="hljs-comment">// key, value &#xC800;&#xC7A5;</span></span><br><span class="line"></span><br><span class="line"></span><br><span class="line"><span class="hljs-comment">//&#xD568;&#xC218;&#xD615; &#xC778;&#xD130;&#xD398;&#xC774;&#xC2A4;(Functional Interface) &#xB78C;&#xB2E4;&#xC2DD;(Lambda Expressions)</span></span><br><span class="line">hm.forEach((key, value)</span><br><span class="line">    -&gt; System.out.println(<span class="hljs-string">&quot;key: &quot;</span> + key + <span class="hljs-string">&quot;, value: &quot;</span> + value));</span><br><span class="line"></span><br><span class="line">hm.entrySet().forEach((entry) -&gt; System.out.println(</span><br><span class="line">        <span class="hljs-string">&quot;key: &quot;</span> + entry.getKey() + <span class="hljs-string">&quot;, value: &quot;</span> + entry.getValue()));</span><br><span class="line"></span><br><span class="line">hm.keySet().forEach((key) -&gt; System.out.println(<span class="hljs-string">&quot;key: &quot;</span> + key));</span><br><span class="line">hm.values().forEach((value) -&gt; System.out.println(<span class="hljs-string">&quot;value: &quot;</span> + value));</span><br></pre></td></tr></tbody></table></figure><p></p>
+</body></html>
     
     </div>
     
+    <div class="columns is-variable is-1 is-multiline is-mobile">
+    
+        <span class="column is-narrow"><a class="tag is-light article-tag" href="/tags/Java/">#Java</a></span>
+    
+    </div>
+    
+    
+    <div class="columns is-mobile is-multiline article-nav">
+        <span class="column is-12-mobile is-half-desktop  article-nav-prev">
+            
+            <a href="/2020/07/01/java/2020-07-01-java-String-method/">Java - startsWith(), endsWith()</a>
+            
+        </span>
+        <span class="column is-12-mobile is-half-desktop  article-nav-next">
+            
+            <a href="/2020/06/22/algorithm/2020-06-22-sort/">Sort</a>
+            
+        </span>
+    </div>
     
 </article>
 

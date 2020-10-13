@@ -2,7 +2,7 @@
 <html class="has-navbar-fixed-top">
 <head>
     <meta charset="utf-8">
-<title>About Me - Ethan DEVLOG</title>
+<title>Java 8 Specific Features - Ethan DEVLOG</title>
 <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
 
 <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/outdated-browser/1.1.5/outdatedbrowser.min.css">
@@ -133,22 +133,73 @@
     <article class="article content gallery" itemscope itemprop="blogPost">
     <h1 class="article-title is-size-3 is-size-4-mobile" itemprop="name">
         
-            About Me
+            Java 8 Specific Features
         
     </h1>
     <div class="article-meta columns is-variable is-1 is-multiline is-mobile is-size-7-mobile">
         <span class="column is-narrow">
-            <time datetime="2019-10-31T15:00:00.000Z" itemprop="datePublished">Nov 1 2019</time>
+            <time datetime="2020-10-13T21:15:28.000Z" itemprop="datePublished">Oct 14 2020</time>
+        </span>
+        
+        <span class="column is-narrow article-category">
+            <i class="far fa-folder"></i>
+            <a class="article-category-link" href="/categories/Java/">Java</a>
         </span>
         
         
     </div>
     <div class="article-entry is-size-6-mobile" itemprop="articleBody">
     
-        
+        <html><head></head><body><p>JAVA 1.8 </p>
+<p>&#xC790;&#xBC14;&#xBC84;&#xC804; &#xC911;&#xC5D0; &#xAC00;&#xC7A5; &#xD070; &#xBCC0;&#xD654;&#xB97C; &#xAC00;&#xC838;&#xC654;&#xACE0; &#xB9CE;&#xC740; &#xD504;&#xB85C;&#xC81D;&#xD2B8;&#xC5D0;&#xC11C; &#xC9C0;&#xAE08;&#xB3C4; &#xB9CE;&#xC774; &#xC4F0;&#xC774;&#xACE0; &#xC788;&#xB294; &#xBC84;&#xC804;&#xC774;&#xB2E4;.</p>
+<ol>
+<li><p>&#xB78C;&#xB2E4; &#xD45C;&#xD604;&#xC2DD;(Lambda Expression)<br> &#xBA54;&#xC11C;&#xB4DC; &#xBA85;&#xACFC; &#xBC18;&#xD658;&#xAC12;&#xC744; &#xC801;&#xC9C0; &#xC54A;&#xC544;&#xB3C4; &#xC791;&#xB3D9;&#xB418;&#xB294; &#xD45C;&#xD604;&#xC2DD; (Anonymous Function)</p>
+<p> </p><figure class="highlight java hljs"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br></pre></td><td class="code"><pre><span class="line">&#xBC18;&#xD658;&#xD0C0;&#xC785; &#xBA54;&#xC11C;&#xB4DC;&#xC774;&#xB984; (&#xB9E4;&#xAC1C;&#xBCC0;&#xC218; &#xC120;&#xC5B8;) {}</span><br><span class="line">~~&#xBC18;&#xD658;&#xD0C0;&#xC785; &#xBA54;&#xC11C;&#xB4DC;&#xC774;&#xB984;~~ () -&gt; {}</span><br><span class="line"></span><br><span class="line"><span class="hljs-function"><span class="hljs-keyword">int</span> <span class="hljs-title">max</span><span class="hljs-params">(<span class="hljs-keyword">int</span> a, <span class="hljs-keyword">int</span> b)</span> </span>{ <span class="hljs-keyword">return</span> a &gt; b ? a : b; }</span><br><span class="line">~~<span class="hljs-keyword">int</span> max~~<span class="hljs-function"><span class="hljs-keyword">int</span> <span class="hljs-title">max</span><span class="hljs-params">(<span class="hljs-keyword">int</span> a, <span class="hljs-keyword">int</span> b)</span> -&gt; </span>{ <span class="hljs-keyword">return</span> a &gt; b ? a : b; }</span><br><span class="line">(<span class="hljs-keyword">int</span> a, <span class="hljs-keyword">int</span> b) -&gt; { <span class="hljs-keyword">return</span> a &gt; b ? a : b; } <span class="hljs-comment">//retrun &#xBB38;&#xC77C; &#xACBD;&#xC6B0; {} &#xC0DD;&#xB7B5; &#xBD88;&#xAC00;</span></span><br><span class="line">(<span class="hljs-keyword">int</span> a, <span class="hljs-keyword">int</span> b) -&gt;  a &gt; b ? a : b</span><br><span class="line">(a, b) -&gt; a &gt; b ? a : b</span><br><span class="line"></span><br><span class="line">List&lt;String&gt; list = <span class="hljs-keyword">new</span> ArrayList();</span><br><span class="line">Collections.sort(list, <span class="hljs-keyword">new</span> Comparator&lt;String&gt;() {</span><br><span class="line">	<span class="hljs-function"><span class="hljs-keyword">public</span> <span class="hljs-keyword">int</span> <span class="hljs-title">compare</span><span class="hljs-params">(String s1, String s2)</span> </span>{</span><br><span class="line">		retrun s2.compreTo(s1);</span><br><span class="line">	} </span><br><span class="line">}</span><br><span class="line"></span><br><span class="line">Collections.sort(list, (s1,s2) -&gt; s2.compareTo(s1));</span><br></pre></td></tr></tbody></table></figure><p></p>
+</li>
+<li><p>&#xD568;&#xC218;&#xD615; &#xC778;&#xD130;&#xD398;&#xC774;&#xC2A4;</p>
+</li>
+<li><p>&#xBA54;&#xC11C;&#xB4DC; &#xCC38;&#xC870;(Method Reference)</p>
+</li>
+<li><p>&#xC2A4;&#xD2B8;&#xB9BC; API(Stream API)<br> &#xAE30;&#xC874;&#xC758; &#xCEEC;&#xB809;&#xC158; &#xD504;&#xB808;&#xC784; &#xC6CC;&#xD06C;&#xB97C; &#xD65C;&#xC6A9;&#xD558;&#xC5EC; &#xAC04;&#xACB0;&#xD558;&#xAC8C; &#xCF54;&#xB4DC;&#xB97C; &#xC791;&#xC131;&#xD560; &#xC218; &#xC788;&#xC73C;&#xBA70; &#xBCD1;&#xB82C; &#xCC98;&#xB9AC;, &#xC2A4;&#xD2B8;&#xB9BC; &#xD30C;&#xC774;&#xD504; &#xB77C;&#xC778; &#xB4F1;&#xC744; &#xD1B5;&#xD574; &#xD558;&#xB098;&#xC758; &#xBB38;&#xC7A5;&#xC73C;&#xB85C; &#xB2E4;&#xC591;&#xD55C; &#xB370;&#xC774;&#xD130; &#xCC98;&#xB9AC; &#xAE30;&#xB2A5;&#xC744; &#xAD6C;&#xD604;&#xD560; &#xC218; &#xC788;&#xB2E4;.</p>
+</li>
+<li><p>&#xC778;&#xD130;&#xD398;&#xC774;&#xC2A4;&#xC758; &#xAC1C;&#xC120;<br> &#xC778;&#xD130;&#xD398;&#xC774;&#xC2A4;&#xC5D0;&#xC11C;&#xB294; &#xBA54;&#xC11C;&#xB4DC;&#xB97C; &#xCD94;&#xAC00;&#xD560; &#xC218; &#xC5C6;&#xC5C8;&#xC73C;&#xB098; default &#xCD94;&#xAC00; &#xBA54;&#xC11C;&#xB4DC;&#xB97C; &#xD65C;&#xC6A9; &#xAC00;&#xB2A5;&#xD574;&#xC84C;&#xB2E4;. static</p>
+</li>
+<li><p>Optional<br> null &#xAC12;&#xC744; &#xD655;&#xC778;&#xD558;&#xACE0; &#xAD00;&#xB9AC;&#xD560; &#xC218; &#xC788;&#xB294; &#xC0C8;&#xB85C;&#xC6B4; &#xAE30;&#xB2A5;&#xC744; &#xC81C;&#xACF5;</p>
+</li>
+<li><p>java.time &#xD328;&#xD0A4;&#xC9C0; LocalDate</p>
+</li>
+<li><p>CompletableFuture &#xAE30;&#xB2A5;</p>
+</li>
+<li><p>Permanent Heap &#xC758; &#xC81C;&#xAC70;</p>
+<p> Java 7</p>
+<p> </p><figure class="highlight java hljs"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line">&lt;----- Java Heap -----&gt;             &lt;--- Native Memory ---&gt;</span><br><span class="line">+------+----+----+-----+-----------+--------+--------------+</span><br><span class="line">| Eden | S0 | S1 | Old | Permanent | C Heap | Thread Stack |</span><br><span class="line">+------+----+----+-----+-----------+--------+--------------+</span><br><span class="line">                        &lt;---------&gt;</span><br><span class="line">                       Permanent Heap</span><br><span class="line">S0: Survivor <span class="hljs-number">0</span></span><br><span class="line">S1: Survivor <span class="hljs-number">1</span></span><br></pre></td></tr></tbody></table></figure><p></p>
+<p> Java 8</p>
+<p> </p><figure class="highlight java hljs"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">&lt;----- Java Heap -----&gt; &lt;--------- Native Memory ---------&gt;</span><br><span class="line">+------+----+----+-----+-----------+--------+--------------+</span><br><span class="line">| Eden | S0 | S1 | Old | Metaspace | C Heap | Thread Stack |</span><br><span class="line">+------+----+----+-----+-----------+--------+--------------+</span><br></pre></td></tr></tbody></table></figure><p></p>
+</li>
+</ol>
+<hr>
+<p>&#xCC38;&#xACE0;<br>Pratical &#xBAA8;&#xB358; &#xC790;&#xBC14;<br><a href="https://johngrib.github.io/wiki/java-enhancements/" target="_blank" rel="noopener">https://johngrib.github.io/wiki/java-enhancements/</a></p>
+</body></html>
     
     </div>
     
+    <div class="columns is-variable is-1 is-multiline is-mobile">
+    
+        <span class="column is-narrow"><a class="tag is-light article-tag" href="/tags/Java/">#Java</a></span>
+    
+    </div>
+    
+    
+    <div class="columns is-mobile is-multiline article-nav">
+        <span class="column is-12-mobile is-half-desktop is-hidden-mobile article-nav-prev">
+            
+        </span>
+        <span class="column is-12-mobile is-half-desktop  article-nav-next">
+            
+            <a href="/2020/09/28/algorithm/2020-09-28-searchAlgorithms/">Search Algorithms (Linear , Binary)</a>
+            
+        </span>
+    </div>
     
 </article>
 
